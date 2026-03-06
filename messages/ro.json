@@ -1,0 +1,1236 @@
+{
+  "nav": {
+    "services": "Servicii",
+    "eventTurnkey": "Evenimente «la cheie»",
+    "eventLogistics": "Organizare și logistică",
+    "eventTechnical": "Suport tehnic",
+    "eventVideoproduction": "Producție video",
+    "eventDigital": "Soluții digitale",
+    "eventAdvertising": "Producție publicitară",
+    "eventSecurity": "Securitate și siguranță",
+    "projects": "Proiecte",
+    "about": "Despre noi",
+    "contacts": "Contacte",
+    "getInTouch": "Contactează-ne"
+  },
+  "hero": {
+    "titleLine1": "Agenție de evenimente",
+    "titleLine2": "cu ciclu complet",
+    "subtitle": "De la concept la realizare. Tehnologii, design, emoții.",
+    "cta": "Discută proiectul",
+    "viewProjects": "Vezi proiecte",
+    "watchReel": "Vezi showreel"
+  },
+  "stats": {
+    "years": "ani de experiență",
+    "yearsValue": "20",
+    "projects": "proiecte realizate",
+    "projectsValue": "5250",
+    "clients": "clienți mulțumiți",
+    "clientsValue": "500"
+  },
+  "marquee": {
+    "items": "Corporate • Concerte • Festivaluri • Prezentări • Conferințe • Seri de gală • Expoziții • Forumuri"
+  },
+  "showreel": {
+    "title": "Showreel",
+    "play": "Vizionează"
+  },
+  "services": {
+    "title": "Serviciile noastre",
+    "whatWeDo": "Ce facem",
+    "subtitle": "Soluții complete pentru orice tip de eveniment",
+    "learnMore": "Află mai multe",
+    "cta": "Contactează-ne",
+    "turnkey": {
+      "title": "Evenimente «la cheie»",
+      "description": "Dezvoltăm și organizăm evenimente de orice amploare — de la prezentări restrânse până la festivaluri cu mii de participanți. Ne asumăm strategia, conceptul creativ, producția, suportul tehnic, marketingul și coordonarea operațională completă."
+    },
+    "logistics": {
+      "title": "Organizare și logistică",
+      "description": "Realizăm evenimente corporative, publice și oficiale de orice format și dimensiune. Elaborăm concepte, scenarii, programe, selectăm artiști și moderatori. Asigurăm logistica complexă a proiectului și coordonarea tuturor echipelor implicate."
+    },
+    "technical": {
+      "title": "Suport tehnic",
+      "description": "Dezvoltăm conceptul scenelor și al structurilor folosind modelarea și vizualizarea 3D. Asigurăm livrarea și montarea profesională a structurilor scenice, ecranelor, echipamentelor de iluminat și sunet cu propriul parc de echipamente."
+    },
+    "videoproduction": {
+      "title": "Producție video",
+      "description": "Ciclu complet de producție foto și video: filmări profesionale de evenimente, clipuri publicitare, videoclipuri muzicale, podcasturi și transmisiuni în direct. Post-producție, grafică, animații 2D/3D și motion design."
+    },
+    "digital": {
+      "title": "Soluții digitale și comunicare",
+      "description": "Dezvoltăm site-uri, aplicații și platforme digitale cu integrarea sistemelor de vânzări, plăți online și înregistrarea participanților. Asigurăm un ciclu complet de comunicări de marketing: strategii, rețele sociale, publicitate targetată, campanii de PR și influencer marketing."
+    },
+    "advertising": {
+      "title": "Producție publicitară",
+      "description": "Publicitate outdoor și indoor pentru afaceri și evenimente. Construcții publicitare, instalații, amenajări de spații, decor și produse branduite — de la idee la montaj profesional."
+    },
+    "security": {
+      "title": "Securitate și siguranță",
+      "description": "Pază evenimentelor de amploare și controlul accesului, evaluarea riscurilor și reacție în situații neprevăzute. Protecție personală pentru persoanele VIP, artiști și oaspeți-cheie."
+    }
+  },
+  "projects": {
+    "sectionLabel": "Portofoliu",
+    "title": "Proiectele noastre",
+    "subtitle": "Momente care inspiră",
+    "viewAll": "Vezi toate proiectele",
+    "items": [
+      { "title": "Festivalul Lupilor", "slug": "festivalul-lupilor", "category": "Festivaluri", "venue": "Orheiul Vechi, 2021–2025", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/fl.jpg", "size": "large" },
+      { "title": "Ziua Națională a Vinului", "slug": "ziua-vinului", "category": "Festivaluri", "venue": "Chișinău, 2017–2024", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/ziuavinului.jpg", "size": "regular" },
+      { "title": "Festivalul Tradițiilor Românești", "slug": "traditii-romanesti", "category": "Festivaluri", "venue": "Grădina Botanică, 2024", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/traditiiromanesti.jpg", "size": "regular" },
+      { "title": "Festivalul Pădurilor", "slug": "festivalul-padurilor", "category": "Festivaluri", "venue": "Reședința Președintelui, 2024", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/padurilor.jpg", "size": "large" },
+      { "title": "Dan Balan — Soundstalgic", "slug": "soundstalgic", "category": "Concerte", "venue": "Chișinău Arena, 2026", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/danbalan.jpg", "size": "regular" },
+      { "title": "Finala Națională Eurovision", "slug": "eurovision", "category": "Concerte", "venue": "Chișinău Arena, 2026", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/euro.jpg", "size": "regular" },
+      { "title": "DDT — Turneu Mondial", "slug": "ddt-istanbul", "category": "Concerte", "venue": "JJ Arena, Istanbul, 2025", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/ddt.jpg", "size": "regular" },
+      { "title": "Zdob și Zdub — 30 de ani", "slug": "zdob-si-zdub", "category": "Concerte", "venue": "Chișinău Arena, 2025", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/zdob.jpg", "size": "large" },
+      { "title": "Scriptonite", "slug": "scriptonite", "category": "Concerte", "venue": "Chișinău Arena, 2024", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/skriptonit.jpg", "size": "regular" }
+    ]
+  },
+  "about": {
+    "title": "Despre Media Show Grup",
+    "description": "Din 2006, suntem lideri în organizarea evenimentelor în Moldova. Oferim servicii complete - de la concept până la realizare."
+  },
+  "contact": {
+    "title": "Să discutăm",
+    "subtitle": "Pregătiți să creați ceva extraordinar?",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Adresa",
+    "addressValue": "Chișinău, Moldova"
+  },
+  "process": {
+    "title": "Etapele de lucru",
+    "subtitle": "Proces transparent de la primul apel până la evenimentul de succes",
+    "cta": "Începe proiectul",
+    "ctaHint": "Sunteți gata să începeți? Prima consultație este gratuită",
+    "brief": {
+      "title": "Brief",
+      "description": "Ne întâlnim, discutăm obiectivele și așteptările dvs. de la eveniment"
+    },
+    "concept": {
+      "title": "Concept",
+      "description": "Dezvoltăm ideea creativă, vizualizarea și propunerea detaliată"
+    },
+    "planning": {
+      "title": "Planificare",
+      "description": "Creăm timeline, buget, formăm echipa și selectăm locația"
+    },
+    "execution": {
+      "title": "Realizare",
+      "description": "Coordonăm toate procesele, controlăm fiecare detaliu al evenimentului"
+    },
+    "report": {
+      "title": "Raportare",
+      "description": "Oferim raport complet cu analiză și recomandări"
+    }
+  },
+  "footer": {
+    "rights": "Toate drepturile rezervate",
+    "privacy": "Politica de confidențialitate",
+    "terms": "Termeni și condiții"
+  },
+  "aboutSection": {
+    "story": {
+      "slogan": { "label": "01", "headline": "Events as Statement", "body": "Creăm evenimente care devin istorie. Oferim emoții care depășesc momentul." },
+      "origin": { "label": "02", "headline": "Născută dintr-un vis", "body": "Această poveste a început cu un vis îndrăzneț — de a transforma spațiul emoțiilor. Când tot ce aveam era credința, o echipă de trei oameni și un laptop vechi." },
+      "growth": { "label": "03", "headline": "Călită de experiență", "body": "Am parcurs drumul prin îndoieli și stereotipuri, transformând fiecare provocare într-un punct de creștere. De la evenimente intime la proiecte de amploare." },
+      "mission": { "label": "04", "headline": "Precizie. Experiență. Detalii.", "body": "Credem că un eveniment adevărat depășește o dată din calendar. Munca noastră este să combinăm precizia, experiența și sensibilitatea la detalii." },
+      "positioning": { "label": "05", "headline": "Experience + Expertise + Emotions", "body": "MEDIA SHOW GRUP — agenția de evenimente lider din Moldova, care creează evenimente de amploare, emoționale și tehnologice cu ciclu complet." }
+    },
+    "values": {
+      "title": "Valorile noastre",
+      "subtitle": "Principii care definesc fiecare proiect",
+      "quality": { "title": "Calitate", "description": "Construită pe calitate care nu acceptă compromisuri" },
+      "experience": { "title": "Experiență", "description": "Peste 20 de ani de creare a evenimentelor de clasă mondială" },
+      "responsibility": { "title": "Responsabilitate", "description": "Control complet la fiecare etapă — de la concept la realizare" },
+      "creativity": { "title": "Creativitate", "description": "Soluții neconvenționale care transformă ideile în experiențe de neuitat" },
+      "involvement": { "title": "Implicare", "description": "Ne dedicăm fiecărui proiect ca și cum ar fi al nostru" },
+      "reliability": { "title": "Fiabilitate", "description": "Un partener pe care te poți baza la orice scară" }
+    }
+  },
+  "expertise": {
+    "sectionLabel": "Ce creăm",
+    "title": "Expertiza noastră",
+    "subtitle": "20 de ani de creare a evenimentelor de orice format și amploare",
+    "whatWeDoLabel": "Ce facem",
+    "casesLabel": "Cazuri",
+    "festivals": {
+      "title": "Festivaluri",
+      "description": "Festivaluri muzicale, urbane și naționale de amploare, cu o concepție bine definită și un model comercial solid.",
+      "whatWeDo": [
+        "Elaborarea conceptului și a scenariului",
+        "Relația cu partenerii și agenții economici",
+        "Selecția, zonarea și dotarea locației",
+        "Scenografie, construcții, producție tehnică",
+        "Booking artiști și moderatori",
+        "PR, promovare digitală, SMM",
+        "Gestionarea fluxurilor de vizitatori și securitatea"
+      ],
+      "result": "Eveniment cu impact mediatic puternic, audiență implicată și acoperire mare",
+      "cases": [
+        { "name": "Festivalul Lupilor", "venue": "Orheiul Vechi, 2021–2025" },
+        { "name": "Ziua Națională a Vinului", "venue": "Chișinău, 2017–2024" },
+        { "name": "Festivalul Tradițiilor Românești", "venue": "Grădina Botanică, 2024" },
+        { "name": "Festivalul Pădurilor", "venue": "Reședința de Stat, 2024" }
+      ]
+    },
+    "concerts": {
+      "title": "Concerte",
+      "description": "Suport tehnic pentru performanțele artiștilor și trupelor muzicale, atât în format de show-uri individuale, cât și în cadrul turneelor.",
+      "whatWeDo": [
+        "Selectarea echipamentului conform riderului tehnic",
+        "Transportul și montarea structurilor scenice",
+        "Design artistic pentru scenariile de lumini și sunet",
+        "Configurarea echipamentului și sincronizarea prin time-code",
+        "Asistență tehnică completă pe durata concertului",
+        "Filmări video și regia transmisiunilor pe ecrane"
+      ],
+      "result": "Execuție tehnică impecabilă și conformitate strictă cu riderii internaționali",
+      "cases": [
+        { "name": "Dan Bălan — Soundstalgic", "venue": "Chișinău Arena, 2026" },
+        { "name": "Finala Națională Eurovision", "venue": "Chișinău Arena, 2026" },
+        { "name": "Zdob și Zdub — 30 ani", "venue": "Chișinău Arena, 2025" },
+        { "name": "DDT", "venue": "JJ Arena, Istanbul, 2025" },
+        { "name": "Skryptonite", "venue": "Chișinău Arena, 2024" },
+        { "name": "Zemfira", "venue": "Chișinău Arena, 2024" }
+      ]
+    },
+    "conceptProjects": {
+      "title": "Proiecte conceptuale",
+      "description": "Producții unice la intersecția dintre teatru, muzică și show, cu scenografie și dramaturgie originală, care reunesc pe aceeași scenă orchestre simfonice, trupe de coregrafie și artiști de diverse genuri.",
+      "whatWeDo": [
+        "Elaborarea conceptului artistic și a scenariului",
+        "Interacțiunea cu artiștii și managementul acestora",
+        "Selecția locației și proiectarea scenei",
+        "Dezvoltarea platformei web, promovare și PR",
+        "Vânzarea biletelor și gestionarea fluxului de vizitatori",
+        "Producție tehnică și decorul spațiului scenic",
+        "Coordonare tehnică și logistică deplină",
+        "Filmări multi-cameră și producție video"
+      ],
+      "result": "Rezonanță culturală și socială largă, ocuparea maximă a locației și creșterea audienței loiale",
+      "cases": [
+        { "name": "Rock Operă VOIEVOD", "venue": "Chișinău Arena, 2025" },
+        { "name": "Povestea de Iarnă", "venue": "Palatul «Nicolae Sulac», 2020–2024" },
+        { "name": "Manifest", "venue": "Palatul «Nicolae Sulac», 2024" },
+        { "name": "Festivalul EXAMEN", "venue": "Chișinău Arena, 2023" }
+      ]
+    },
+    "conferences": {
+      "title": "Conferințe / Forumuri",
+      "description": "Evenimente de afaceri și instituționale pentru mediul de business, structuri de stat și organizații internaționale.",
+      "whatWeDo": [
+        "Concept și programarea conținutului",
+        "Protocol și asistență VIP",
+        "Managementul speakerilor",
+        "Brandingul spațiului",
+        "Înregistrarea participanților",
+        "Suport media"
+      ],
+      "result": "Un eveniment de prestigiu cu o valoare de afaceri ridicată și o audiență de calitate",
+      "cases": [
+        { "name": "Automotive Forum Moldova", "venue": "Chișinău Arena, 2025" },
+        { "name": "Congresul Mondial al Viei și Vinului", "venue": "Palatul Republicii, 2025" },
+        { "name": "Platforma de Parteneriat", "venue": "Palatul Republicii, 2024" },
+        { "name": "Conferința Curților Constituționale", "venue": "Palatul Republicii, 2024" },
+        { "name": "Moldova Security Forum", "venue": "Radisson Blu, 2024" },
+        { "name": "Summitul EPC", "venue": "Castel Mimi, 2023" }
+      ]
+    },
+    "brandLaunches": {
+      "title": "Lansări de brand",
+      "description": "Prezentări de companii, servicii și inițiative – offline sau hibrid.",
+      "whatWeDo": [
+        "Concept creativ și program",
+        "Stil vizual și scenografie",
+        "Selecția cateringului și a personalului",
+        "Decor și echipamente tehnice",
+        "Producție foto/video și grafică",
+        "Relația cu media și invitați speciali"
+      ],
+      "result": "Un eveniment mediatic de impact, recunoaștere și consolidarea imaginii brandului",
+      "cases": [
+        { "name": "Lansarea LOTUS Moldova", "venue": "Chișinău, 2025" },
+        { "name": "Lansarea GWM TANK", "venue": "Chișinău, 2025" },
+        { "name": "Inaugurarea K1 Beton", "venue": "Chișinău, 2025" },
+        { "name": "Prezentarea Range Rover SV", "venue": "Vinăria «Poiana», 2024" },
+        { "name": "Test-drive Land Rover Defender", "venue": "«Cricova», 2024" }
+      ]
+    },
+    "sports": {
+      "title": "Competiții sportive",
+      "description": "Evenimente și campionate sportive locale și internaționale.",
+      "whatWeDo": [
+        "Dezvoltarea identității vizuale",
+        "Scenografie și zonarea locației",
+        "Grafică animată și conținut pentru ecrane",
+        "Echipamente tehnice complete și suport operațional",
+        "Transmisii live pentru TV satelit și platforme online",
+        "Colaborare cu federații și organizații sportive internaționale",
+        "Suport logistic pentru sportivi și echipe",
+        "Coordonare operațională și securitate"
+      ],
+      "result": "Nivel înalt de organizare, conformitate cu standardele internaționale, rezonanță socială pozitivă",
+      "cases": [
+        { "name": "CE de Haltere", "venue": "Chișinău Arena, 2025" },
+        { "name": "CE de Rugby", "venue": "Stadionul «Dinamo», 2025" },
+        { "name": "CE de Rugby pe Plajă", "venue": "Orange Arena, 2025" },
+        { "name": "Balkan Ultimate Fighting (BUF)", "venue": "Chișinău, 2024" }
+      ]
+    },
+    "corporate": {
+      "title": "Corporate și team-building",
+      "description": "Evenimente pentru consolidarea culturii organizaționale și motivarea echipei.",
+      "whatWeDo": [
+        "Dezvoltarea conceptului adaptat valorilor companiei",
+        "Programe interactive și de divertisment",
+        "Selecția locației, cateringului și personalului",
+        "Amenajarea spațiului și cadouri corporate",
+        "Suport tehnic și logistic complet"
+      ],
+      "result": "O echipă unită, implicare sporită și consolidarea brandului de angajator",
+      "cases": [
+        { "name": "Autodoc team building", "venue": "Vara Vara Aquacity, 2025" },
+        { "name": "Romstal pentru clienți", "venue": "Madison Park, 2025" },
+        { "name": "K1 Beton Crăciun", "venue": "Premium Park, 2025" },
+        { "name": "EFES Revelion", "venue": "Madison Park, 2024" },
+        { "name": "Victoriabank aniversar", "venue": "Chișinău Arena, 2024" }
+      ]
+    },
+    "custom": {
+      "title": "Proiecte personalizate",
+      "description": "Implementăm soluții individuale pentru cele mai neobișnuite provocări – de la concept unic până la producție completă.",
+      "whatWeDo": [
+        "Analiza și definirea proiectului",
+        "Dezvoltarea unui format unic",
+        "Coordonarea tuturor serviciilor",
+        "Protocol și asistență VIP",
+        "Soluții tehnice specializate",
+        "Raportare completă"
+      ],
+      "result": "Proiecte realizate la cel mai înalt nivel, indiferent de format și complexitate",
+      "cases": [
+        { "name": "Caravana de Crăciun MAIB", "venue": "2025" },
+        { "name": "Exercițiul «Border shield 25»", "venue": "Presa" },
+        { "name": "Proiect media «Patrimoniale»", "venue": "2023–2025" }
+      ]
+    }
+  },
+  "serviceSecurity": {
+    "meta": {
+      "title": "Securitate si siguranta",
+      "description": "Media Show Grup — securitatea evenimentelor, controlul accesului, protectie VIP, evaluarea riscurilor. Solutii complete de siguranta pentru evenimente de orice amploare."
+    },
+    "hero": {
+      "label": "Securitate si siguranta",
+      "titleLine1": "Siguranta —",
+      "titleLine2": "baza fiecarui eveniment",
+      "subtitle": "Securitatea evenimentelor de amploare, controlul accesului, protectie VIP si gestionarea riscurilor — abordare profesionala a sigurantei",
+      "cta": "Discuta proiectul"
+    },
+    "overview": {
+      "label": "Ce asiguram",
+      "title": "Securitate complexa",
+      "description": "Dezvoltam si implementam planuri de securitate pentru evenimente de orice amploare — de la receptii private la festivaluri cu mii de participanti.",
+      "includes": [
+        "Evaluarea riscurilor si plan de securitate",
+        "Controlul accesului si sisteme de acreditare",
+        "Securitatea perimetrului si a zonelor",
+        "Securitate VIP si protectie personala",
+        "Gestionarea fluxurilor de spectatori",
+        "Reactie in situatii de urgenta",
+        "Coordonare cu serviciile de urgenta",
+        "Supraveghere video si monitorizare"
+      ]
+    },
+    "features": {
+      "label": "Directii",
+      "title": "Competentele noastre",
+      "subtitle": "Gama completa de servicii de securitate pentru evenimente",
+      "items": [
+        {
+          "title": "Securitatea evenimentelor",
+          "description": "Securitate profesionala pentru concerte, festivaluri, evenimente corporate si sportive — de la 50 la 50.000 participanti"
+        },
+        {
+          "title": "Controlul accesului",
+          "description": "Sisteme de acreditare, zonare, verificare bilete si acreditari, gestionarea grupurilor de intrare"
+        },
+        {
+          "title": "Protectie VIP",
+          "description": "Securitate personala pentru artisti, speakeri si oaspeti-cheie la eveniment si in timpul transferului"
+        },
+        {
+          "title": "Gestionarea multimilor",
+          "description": "Planificarea traseelor, separarea fluxurilor, prevenirea aglomeratiilor si evacuare de urgenta"
+        },
+        {
+          "title": "Supraveghere video",
+          "description": "Instalare si monitorizare camere, centru operational, controlul tuturor zonelor locatiei"
+        },
+        {
+          "title": "Reactie la crize",
+          "description": "Protocoale de urgenta, coordonare cu politia si ambulanta, planuri de evacuare"
+        }
+      ]
+    },
+    "approach": {
+      "label": "Abordarea noastră",
+      "title": "Cum asigurăm securitatea",
+      "subtitle": "Un sistem de protecție pe mai multe niveluri, adaptat fiecărui eveniment",
+      "items": [
+        { "title": "Analiză preventivă", "description": "Evaluăm riscurile înainte de eveniment: analiza locației, rutele de evacuare, vulnerabilitățile potențiale, densitatea publicului" },
+        { "title": "Zonare și control acces", "description": "Separarea clară a zonelor de acces — VIP, backstage, zone pentru public. Fiecare zonă cu propriul protocol de securitate" },
+        { "title": "Management operațional", "description": "Un centru de comandă unificat cu supraveghere video, comunicare radio și coordonare în timp real a tuturor serviciilor" },
+        { "title": "Răspuns de urgență", "description": "Protocoale pregătite pentru orice situație de urgență: evacuare, asistență medicală, coordonare cu poliția și serviciile de urgență" }
+      ]
+    },
+    "stats": {
+      "label": "În cifre",
+      "title": "Experiență de încredere",
+      "items": [
+        { "value": "800+", "label": "Evenimente", "description": "Securitate asigurată din 2006" },
+        { "value": "50K", "label": "Audiență maximă", "description": "Experiență cu cele mai mari locații" },
+        { "value": "0", "label": "Incidente majore", "description": "Pe toată durata istoriei companiei" },
+        { "value": "200+", "label": "Specialiști", "description": "Personal instruit de securitate și coordonare" }
+      ]
+    },
+    "process": {
+      "label": "Cum lucram",
+      "title": "Flux de lucru",
+      "subtitle": "De la evaluarea riscurilor la suport eveniment",
+      "steps": [
+        { "title": "Evaluare riscuri", "description": "Analizam formatul, locatia, numarul de invitati si amenintarile potentiale" },
+        { "title": "Plan securitate", "description": "Elaboram schema de paza, rute de evacuare, protocoale de raspuns" },
+        { "title": "Formare echipa", "description": "Formam echipa de securitate, selectam echipamentele si mijloacele de comunicare" },
+        { "title": "Executie", "description": "Control acces, patrulare, protectie VIP, coordonare cu serviciile de urgenta" },
+        { "title": "Raport", "description": "Rezumatul rezultatelor, analiza incidentelor, recomandari de imbunatatire" }
+      ],
+      "cta": "Discuta securitatea"
+    },
+    "cta": {
+      "title": "Aveti nevoie de securitate?",
+      "subtitle": "Vom dezvolta un plan de securitate si vom asigura protectia pentru formatul dvs.",
+      "button": "Solicita o oferta"
+    }
+  },
+  "serviceDigital": {
+    "meta": {
+      "title": "Solutii digitale",
+      "description": "Media Show Grup — dezvoltare de site-uri, aplicatii si platforme digitale pentru evenimente. Inregistrare online, vanzare bilete, marketing si analitice."
+    },
+    "hero": {
+      "label": "Solutii digitale",
+      "titleLine1": "Tehnologii",
+      "titleLine2": "care sustin evenimentul",
+      "subtitle": "Site-uri, aplicatii, platforme de inregistrare si vanzari — productie digitala completa pentru evenimente de orice amploare",
+      "cta": "Discuta proiectul"
+    },
+    "overview": {
+      "label": "Ce cream",
+      "title": "Ecosistemul digital al evenimentului",
+      "description": "Dezvoltam si integram instrumente digitale care fac evenimentul dvs. comod pentru public si gestionabil pentru organizator.",
+      "includes": [
+        "Site-uri web si landing page-uri",
+        "Aplicatii mobile pentru evenimente",
+        "Sisteme de inregistrare online",
+        "Integrarea sistemelor de plata",
+        "CRM si baze de date participanti",
+        "Marketing si publicitate targetata",
+        "SMM si strategie de continut",
+        "Analitice si raportare"
+      ]
+    },
+    "features": {
+      "label": "Directii",
+      "title": "Competentele noastre digitale",
+      "subtitle": "Ciclul complet de productie digitala pentru evenimente",
+      "items": [
+        {
+          "title": "Site-uri si landing page-uri",
+          "description": "Site-uri promo pentru evenimente, portaluri corporative si landing page-uri cu integrare de inregistrare si vanzare bilete"
+        },
+        {
+          "title": "Aplicatii mobile",
+          "description": "Aplicatii native si cross-platform: agenda, navigare, networking, notificari push"
+        },
+        {
+          "title": "Sisteme de inregistrare",
+          "description": "Inregistrare online cu coduri QR, check-in la intrare, gestionarea fluxului de participanti in timp real"
+        },
+        {
+          "title": "Marketing si SMM",
+          "description": "Strategii de promovare, publicitate targetata, planuri de continut, relatii cu influenceri si media"
+        },
+        {
+          "title": "Solutii de plata",
+          "description": "Integrarea platilor online, vanzare bilete, sisteme de plata cashless pe locatie"
+        },
+        {
+          "title": "Analitice si CRM",
+          "description": "Colectare date, raportare, CRM pentru gestionarea bazei de participanti si clienti"
+        }
+      ]
+    },
+    "stack": {
+      "label": "Tehnologii",
+      "title": "Stiva noastră tehnologică",
+      "subtitle": "Utilizăm instrumente și platforme moderne pentru fiecare proiect",
+      "items": [
+        {
+          "title": "Dezvoltare web",
+          "tools": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "WordPress"]
+        },
+        {
+          "title": "Dezvoltare mobilă",
+          "tools": ["React Native", "Flutter", "iOS", "Android", "PWA"]
+        },
+        {
+          "title": "Înregistrare și bilete",
+          "tools": ["Sisteme QR", "NFC", "Stripe", "Custom API", "Dashboard în timp real"]
+        },
+        {
+          "title": "Marketing și analiză",
+          "tools": ["Google Ads", "Meta Ads", "Google Analytics", "Data Studio", "CRM"]
+        },
+        {
+          "title": "Design și UX",
+          "tools": ["Figma", "Adobe CC", "Prototipare", "Testare A/B", "Audit UX"]
+        },
+        {
+          "title": "Infrastructură",
+          "tools": ["Vercel", "AWS", "Docker", "CI/CD", "Monitorizare"]
+        }
+      ]
+    },
+    "stats": {
+      "label": "În cifre",
+      "title": "Rezultatele proiectelor noastre",
+      "items": [
+        { "value": "150+", "label": "Proiecte digitale", "description": "Site-uri, aplicații și platforme pentru evenimente" },
+        { "value": "2M+", "label": "Înregistrări", "description": "Procesate prin sistemele noastre de înregistrare" },
+        { "value": "99.9%", "label": "Uptime", "description": "Performanță stabilă în timpul evenimentelor" },
+        { "value": "30+", "label": "Integrări", "description": "Sisteme de plată, CRM-uri și servicii terțe" }
+      ]
+    },
+    "process": {
+      "label": "Cum lucram",
+      "title": "Flux de lucru",
+      "subtitle": "De la analiza la lansare",
+      "steps": [
+        { "title": "Analiza", "description": "Studiem afacerea, publicul, competitorii, formam strategia digitala" },
+        { "title": "Proiectare", "description": "Prototipuri, design UX/UI, specificatie tehnica, arhitectura solutiei" },
+        { "title": "Dezvoltare", "description": "Frontend, backend, integrari, sisteme de plata si inregistrare" },
+        { "title": "Lansare", "description": "Testare, deploy, configurare analitica si instrumente de marketing" },
+        { "title": "Suport", "description": "Monitorizare, optimizare, actualizari si scalare pe masura cresterii" }
+      ],
+      "cta": "Discuta proiectul"
+    },
+    "cta": {
+      "title": "Aveti nevoie de o solutie digitala?",
+      "subtitle": "Vom dezvolta o platforma, un site sau o aplicatie pentru evenimentul dvs.",
+      "button": "Discutati sarcina"
+    }
+  },
+  "serviceLogistics": {
+    "meta": {
+      "title": "Organizare si logistica",
+      "description": "Media Show Grup — organizare si logistica evenimentelor de orice amploare: de la evenimente corporative la forumuri internationale. Coordonarea echipelor, transportului si tuturor serviciilor."
+    },
+    "hero": {
+      "label": "Organizare si logistica",
+      "titleLine1": "Coordonare impecabila",
+      "titleLine2": "la fiecare etapa",
+      "subtitle": "Organizare si logistica complexa pentru evenimente corporative, publice si oficiale de orice format si amploare",
+      "cta": "Discuta proiectul"
+    },
+    "overview": {
+      "label": "Ce asiguram",
+      "title": "Coordonare operationala completa",
+      "description": "Realizam evenimente de orice format si dimensiune: de la petreceri corporative mici la forumuri, concerte si campionate internationale. Asiguram logistica complexa a proiectului si coordonarea tuturor echipelor implicate.",
+      "includes": [
+        "Elaborarea conceptului si scenariului",
+        "Crearea programului evenimentului",
+        "Selectie si booking artisti si moderatori",
+        "Coordonarea tuturor echipelor și serviciilor",
+        "Logistica transportului si echipamentelor",
+        "Controlul termenelor si bugetelor",
+        "Gestionarea fluxurilor de invitati",
+        "Suport operational pe locatie"
+      ]
+    },
+    "features": {
+      "label": "Competente",
+      "title": "Expertiza organizationala",
+      "subtitle": "20 de ani de experienta in coordonarea evenimentelor de orice complexitate",
+      "items": [
+        {
+          "title": "Concept si scenariu",
+          "description": "Dezvoltam concepte unice, scenarii detaliate si programe adaptate obiectivelor si publicului fiecarui eveniment"
+        },
+        {
+          "title": "Booking talente",
+          "description": "Selectam si invitam artisti, speakeri si moderatori — de la vedete locale la staruri internationale, asigurand riderele si logistica"
+        },
+        {
+          "title": "Logistica proiectului",
+          "description": "Coordonare complexa a transportului, marfurilor, echipamentelor si personalului. Timing si rutare precisa pentru fiecare element"
+        },
+        {
+          "title": "Managementul echipelor",
+          "description": "Coordonarea și controlul calității tuturor serviciilor — de la catering la securitate și producție tehnică"
+        },
+        {
+          "title": "Control bugetar",
+          "description": "Estimari transparente, urmarirea cheltuielilor la fiecare etapa, optimizarea bugetului fara compromiterea calitatii"
+        },
+        {
+          "title": "Management operational",
+          "description": "Echipa de coordonatori pe locatie, gestionarea fluxurilor de invitati, rezolvarea in timp real a situatiilor neprevazute"
+        }
+      ]
+    },
+    "formats": {
+      "label": "Formate",
+      "title": "Ce evenimente organizăm",
+      "subtitle": "Experiență în organizarea evenimentelor de orice scară și format",
+      "items": [
+        {
+          "title": "Festivaluri și concerte",
+          "examples": ["Open-air", "Sărbători urbane", "Festivaluri muzicale", "Concerte de gală"]
+        },
+        {
+          "title": "Conferințe și forumuri",
+          "examples": ["Forumuri de afaceri", "Conferințe științifice", "Summituri internaționale", "Discuții de panel"]
+        },
+        {
+          "title": "Evenimente corporative",
+          "examples": ["Team building", "Aniversări ale companiilor", "Petreceri corporative", "Ceremonii de premiere"]
+        },
+        {
+          "title": "Evenimente oficiale",
+          "examples": ["Ceremonii de stat", "Recepții diplomatice", "Inaugurări", "Evenimente de protocol"]
+        },
+        {
+          "title": "Evenimente sportive",
+          "examples": ["Campionate", "Maratoane", "Ceremonii de deschidere", "Festivaluri sportive"]
+        },
+        {
+          "title": "Expoziții și prezentări",
+          "examples": ["Expoziții", "Lansări de produse", "Showroom-uri", "Conferințe de presă"]
+        }
+      ]
+    },
+    "stats": {
+      "label": "În cifre",
+      "title": "20 de ani de organizare impecabilă",
+      "items": [
+        { "value": "5250+", "label": "Evenimente", "description": "Organizate și realizate din 2006" },
+        { "value": "2.5M+", "label": "Oaspeți", "description": "Au participat la proiectele noastre" },
+        { "value": "300+", "label": "Specialiști", "description": "Echipa proprie de coordonatori și producție" },
+        { "value": "98%", "label": "Retenția clienților", "description": "Revin pentru a colabora din nou" }
+      ]
+    },
+    "process": {
+      "label": "Cum lucram",
+      "title": "Etapele organizarii",
+      "subtitle": "Proces transparent de la brief la raport",
+      "steps": [
+        { "title": "Brief si audit", "description": "Definim obiectivele, formatul, publicul, locatia si bugetul" },
+        { "title": "Concept", "description": "Elaboram scenariul, programul, selectam artistii si moderatorii" },
+        { "title": "Asamblare", "description": "Formăm echipele, coordonăm riderele tehnice și logistica" },
+        { "title": "Coordonare", "description": "Gestionam toate echipele pe locatie, controlam timingul si bugetul" },
+        { "title": "Finalizare", "description": "Rezumam rezultatele, pregatim raportul si recomandarile" }
+      ],
+      "cta": "Discuta organizarea"
+    },
+    "cases": {
+      "label": "Proiecte realizate",
+      "title": "Evenimentele noastre",
+      "subtitle": "Proiecte organizate de echipa noastra",
+      "viewAll": "Toate proiectele"
+    },
+    "cta": {
+      "title": "Aveti nevoie de organizare eveniment?",
+      "subtitle": "Discutam formatul si pregatim un plan de realizare",
+      "button": "Discuta proiectul"
+    }
+  },
+  "serviceTechnical": {
+    "meta": {
+      "title": "Productie tehnica",
+      "description": "Media Show Grup — productie tehnica pentru evenimente: sunet, lumini, ecrane LED, structuri scenice. Parc propriu de echipamente, modelare 3D."
+    },
+    "hero": {
+      "label": "Productie tehnica",
+      "titleLine1": "Ne asumam",
+      "titleLine2": "intregul ciclu tehnic",
+      "subtitle": "De la conceptul 3D al scenei pana la executie impecabila — sunet, lumini, ecrane si structuri pentru evenimente de orice amploare",
+      "cta": "Discuta proiectul"
+    },
+    "overview": {
+      "label": "Ce asiguram",
+      "title": "Parc propriu de echipamente",
+      "description": "Productie tehnica completa bazata pe echipamente proprii. Proiectam, livram, montam si asiguram suportul — de la arene la open-air.",
+      "includes": [
+        "Modelare 3D si vizualizare a scenei",
+        "Proiectarea structurilor scenice",
+        "Sisteme profesionale de sunet",
+        "Solutii de iluminare si lumina artistica",
+        "Ecrane LED si proiectie video",
+        "Montaj si demontaj structuri",
+        "Sincronizare prin timecode",
+        "Suport tehnic in timp real"
+      ]
+    },
+    "features": {
+      "label": "Competente",
+      "title": "Dotare tehnica",
+      "subtitle": "Parc propriu de echipamente si expertiza inginereasca",
+      "items": [
+        {
+          "title": "Sisteme de sunet",
+          "description": "Line arrays, sisteme de monitorizare, microfoane si console de mixaj — orice scala de la 100 la 50.000 de persoane"
+        },
+        {
+          "title": "Solutii de iluminare",
+          "description": "Iluminare artistica si arhitecturala, moving heads, bare LED, sisteme laser, programare spectacole de lumini"
+        },
+        {
+          "title": "Ecrane LED",
+          "description": "Panouri LED modulare pentru indoor si outdoor, proiectie video, servere media, transmisie in timp real"
+        },
+        {
+          "title": "Structuri scenice",
+          "description": "Proiectare si montaj scene, podiumuri, ferme, structuri cu copertina de orice complexitate"
+        },
+        {
+          "title": "Vizualizare 3D",
+          "description": "Modelare 3D completa a locatiei, vizualizare scena si zona de spectatori inainte de montaj"
+        },
+        {
+          "title": "Suport tehnic",
+          "description": "Echipa de ingineri pe locatie de la montaj la demontaj, sincronizare timecode, redundanta sistemelor"
+        }
+      ]
+    },
+    "equipment": {
+      "label": "Parcul de echipamente",
+      "title": "Baza tehnică proprie",
+      "subtitle": "Peste 500 de unități de echipament profesional de la branduri de top mondiale",
+      "items": [
+        {
+          "title": "Sisteme de sunet",
+          "specs": ["Linii de sunet L-Acoustics, JBL", "Console de mixare DiGiCo, Yamaha", "Sisteme de monitorizare Shure PSM", "Microfoane Shure, Sennheiser, DPA", "Acoperire până la 50 000 de persoane"]
+        },
+        {
+          "title": "Echipament de iluminat",
+          "specs": ["Moving heads Clay Paky, Robe", "Bare și panouri LED", "Sisteme laser", "Console de iluminat grandMA", "Stroboscoapele și hazere"]
+        },
+        {
+          "title": "Ecrane LED și video",
+          "specs": ["Panouri LED P2.9 – P4.8 indoor/outdoor", "Servere media Resolume, Disguise", "Camere pentru transmisiuni", "Proiectoare 10 000+ lumeni", "Mixere video Blackmagic"]
+        },
+        {
+          "title": "Construcții scenice",
+          "specs": ["Ferme din aluminiu Prolyte", "Podiumuri și scene până la 200 m²", "Construcții cu corturi", "Rigging și sisteme de suspendare", "Bariere și garduri"]
+        }
+      ]
+    },
+    "stats": {
+      "label": "În cifre",
+      "title": "Experiență confirmată de proiecte",
+      "items": [
+        { "value": "500+", "label": "Unități de echipament", "description": "Parcul propriu de tehnică pentru orice scară" },
+        { "value": "1200+", "label": "Evenimente", "description": "Suport tehnic din 2006" },
+        { "value": "50K", "label": "Audiență maximă", "description": "Acoperire cu sunet și lumină pentru locații mari" },
+        { "value": "24/7", "label": "Suport", "description": "Echipă de ingineri pe loc toată perioada evenimentului" }
+      ]
+    },
+    "process": {
+      "label": "Cum lucram",
+      "title": "Flux de lucru",
+      "subtitle": "De la proiectare la demontaj",
+      "steps": [
+        { "title": "Caiet de sarcini", "description": "Analizam locatia, definim cerintele tehnice, cream specificatia" },
+        { "title": "Proiect 3D", "description": "Cream modelul 3D al scenei, vizualizarea zonelor, schema echipamentelor" },
+        { "title": "Echipamente", "description": "Selectam echipamentele din parcul propriu, planificam logistica livrarii" },
+        { "title": "Montaj", "description": "Montaj profesional structuri, calibrare sunet, lumini si video" },
+        { "title": "Suport", "description": "Echipa de ingineri pe locatie pe toata durata evenimentului, demontaj la final" }
+      ],
+      "cta": "Solicita o oferta"
+    },
+    "cases": {
+      "label": "Proiecte realizate",
+      "title": "Proiecte cu suport tehnic",
+      "subtitle": "Evenimente dotate cu echipamentele noastre",
+      "viewAll": "Toate proiectele"
+    },
+    "cta": {
+      "title": "Aveti nevoie de productie tehnica?",
+      "subtitle": "Calculam costurile si propunem o solutie pentru formatul dvs.",
+      "button": "Solicita o oferta"
+    }
+  },
+  "serviceVideoproduction": {
+    "meta": {
+      "title": "Productie video",
+      "description": "Media Show Grup — ciclu complet de productie foto si video: filmari evenimente, clipuri publicitare, videoclipuri muzicale, podcasturi, transmisiuni live, post-productie si animatie."
+    },
+    "hero": {
+      "label": "Productie video",
+      "titleLine1": "Continut care",
+      "titleLine2": "aduce rezultate",
+      "subtitle": "Ciclu complet de productie foto si video pentru afaceri — de la filmare la post-productie si adaptare pentru toate platformele",
+      "cta": "Discuta proiectul"
+    },
+    "overview": {
+      "label": "Ce facem",
+      "title": "Ciclu complet de productie video",
+      "description": "Cream continut foto si video profesional de orice format: de la filmari de evenimente si clipuri publicitare la videoclipuri muzicale, podcasturi si transmisiuni live. Asiguram toata post-productia si adaptarea pentru platforme.",
+      "includes": [
+        "Filmari evenimente si reportaje",
+        "Clipuri publicitare si de imagine",
+        "Videoclipuri muzicale",
+        "Podcasturi si transmisiuni live",
+        "Montaj si corectie de culoare",
+        "Sound design si voiceover",
+        "Animatie 2D/3D si motion design",
+        "Grafica pentru digital si print"
+      ]
+    },
+    "features": {
+      "label": "Competente",
+      "title": "Capacitati de productie",
+      "subtitle": "Studio propriu, echipamente si o echipa de profesionisti",
+      "items": [
+        {
+          "title": "Filmari evenimente",
+          "description": "Filmare multi-camera la evenimente de orice amploare — festivaluri, conferinte, concerte, corporate. Format reportaj si regizat"
+        },
+        {
+          "title": "Productie publicitara",
+          "description": "Clipuri publicitare si de imagine pentru afaceri, video de produs, continut promo pentru campanii digitale si TV"
+        },
+        {
+          "title": "Videoclipuri muzicale",
+          "description": "Ciclu complet de productie videoclipuri — de la dezvoltarea conceptului si cautarea locatiilor la filmare si montaj final"
+        },
+        {
+          "title": "Podcasturi si streamuri",
+          "description": "Organizarea inregistrarii podcasturilor si transmisiunilor live: studio, echipamente, operare camera, difuzare pe platforme"
+        },
+        {
+          "title": "Post-productie",
+          "description": "Montaj profesional, corectie de culoare, sound design, titrare si adaptarea video pentru diverse platforme si formate"
+        },
+        {
+          "title": "Animatie si grafica",
+          "description": "Animatie 2D/3D, motion design, solutii multimedia pentru ecrane, infografice si grafica pentru digital si print"
+        }
+      ]
+    },
+    "equipment": {
+      "label": "Echipament",
+      "title": "Parc profesional de echipamente",
+      "subtitle": "Echipament propriu pentru orice format și scară de producție",
+      "items": [
+        {
+          "title": "Camere",
+          "specs": ["Sony FX6 / FX3", "Blackmagic URSA", "Canon C70", "Filmări multi-cameră până la 8 camere", "Drone DJI pentru filmări aeriene"]
+        },
+        {
+          "title": "Optică și stabilizare",
+          "specs": ["Obiective cinema Sony, Canon", "Steadicam și gimbal DJI RS", "Slidere și macarale", "Teleprompter pentru speakeri"]
+        },
+        {
+          "title": "Iluminat pentru producție",
+          "specs": ["Panouri LED Aputure, Nanlite", "Softbox-uri și reflectoare", "Iluminat pentru interviuri", "Kituri portabile pentru deplasări"]
+        },
+        {
+          "title": "Înregistrare audio",
+          "specs": ["Recordere Zoom, Sound Devices", "Microfoane lavalieră Sennheiser", "Microfoane direcționale Rode", "Înregistrare multi-canal"]
+        },
+        {
+          "title": "Streaming și transmisiuni",
+          "specs": ["Mixere video Blackmagic ATEM", "Encodere pentru transmisiuni live", "Streaming multi-platformă", "Grafică și titluri în timp real"]
+        },
+        {
+          "title": "Post-producție",
+          "specs": ["Stații de lucru Apple / PC", "DaVinci Resolve, Premiere Pro", "After Effects, Cinema 4D", "Color grading pe monitoare calibrate"]
+        }
+      ]
+    },
+    "stats": {
+      "label": "În cifre",
+      "title": "Experiență în cifre",
+      "items": [
+        { "value": "500+", "label": "Proiecte video", "description": "Clipuri, reclame, transmisiuni și reportaje" },
+        { "value": "50+", "label": "Videoclipuri muzicale", "description": "Pentru artiști moldoveni și internaționali" },
+        { "value": "200+", "label": "Transmisiuni live", "description": "Transmisiuni online ale evenimentelor și concertelor" },
+        { "value": "8", "label": "Camere simultan", "description": "Producție multi-cameră maximă" }
+      ]
+    },
+    "process": {
+      "label": "Cum lucram",
+      "title": "Etapele productiei",
+      "subtitle": "De la idee la produs finit",
+      "steps": [
+        { "title": "Pre-productie", "description": "Dezvoltam conceptul, scenariul, cautam locatii, formam echipa" },
+        { "title": "Filmare", "description": "Filmare multi-camera cu iluminare, sunet si regie profesionala" },
+        { "title": "Montaj", "description": "Asamblarea materialului, structurarea povestii, montaj brut si final" },
+        { "title": "Post-productie", "description": "Corectie de culoare, sound design, grafica, titrare si VFX" },
+        { "title": "Livrare", "description": "Render final, adaptare pentru platforme, livrarea tuturor materialelor" }
+      ],
+      "cta": "Discuta filmarea"
+    },
+    "gallery": {
+      "label": "Portofoliu",
+      "title": "Lucrarile noastre",
+      "items": [
+        { "image": "/expertise/concerts.jpg", "title": "Festivalul Lupilor 2024" },
+        { "image": "/expertise/festivals.jpg", "title": "Ziua Nationala a Vinului" },
+        { "image": "/expertise/concept-projects.jpg", "title": "Clip publicitar GoQode" },
+        { "image": "/expertise/brand-launches.jpg", "title": "Promo Festivalul Padurilor" }
+      ]
+    },
+    "cases": {
+      "label": "Cazuri",
+      "title": "Proiecte cu filmare",
+      "subtitle": "Evenimente cu productia noastra video",
+      "viewAll": "Toate proiectele"
+    },
+    "cta": {
+      "title": "Aveti nevoie de continut video?",
+      "subtitle": "Discutam formatul si pregatim o propunere",
+      "button": "Discuta proiectul"
+    }
+  },
+  "serviceAdvertising": {
+    "meta": {
+      "title": "Productie publicitara",
+      "description": "Media Show Grup (Art Garage) — publicitate outdoor si indoor, constructii publicitare, instalatii, amenajare spatii, decor evenimente, produse branduite."
+    },
+    "hero": {
+      "label": "Productie publicitara",
+      "titleLine1": "De la idee la",
+      "titleLine2": "constructia finalizata",
+      "subtitle": "Publicitate outdoor si indoor, instalatii, amenajarea spatiilor si decor evenimente — de la proiectare la montaj profesional",
+      "cta": "Discuta proiectul"
+    },
+    "overview": {
+      "label": "Ce facem",
+      "title": "Productie publicitara completa",
+      "description": "Ne specializam in publicitate outdoor si indoor pentru afaceri si evenimente. Insotim proiectul pe toate etapele — de la idee si proiectare pana la fabricare si montaj profesional.",
+      "includes": [
+        "Reclame outdoor si firme luminoase",
+        "Publicitate indoor si semnalistica",
+        "Constructii publicitare si instalatii",
+        "Amenajare spatii si decor",
+        "Brandare vehicule si obiecte",
+        "Produse branduite si merch",
+        "Tipar format mare si UV",
+        "Montaj si intretinere constructii"
+      ]
+    },
+    "features": {
+      "label": "Competente",
+      "title": "Capacitati de productie",
+      "subtitle": "Productie proprie si echipa de designeri",
+      "items": [
+        {
+          "title": "Publicitate outdoor",
+          "description": "Firme luminoase, casete luminoase, litere volumetrice, instalatii pe acoperis, piloni si panouri publicitare de orice format"
+        },
+        {
+          "title": "Amenajare spatii",
+          "description": "Decor evenimente, brandare locatii, standuri expozitionale, zone foto, instalatii tematice si obiecte de arta"
+        },
+        {
+          "title": "Constructii si instalatii",
+          "description": "Proiectarea si fabricarea constructiilor publicitare, arcuri, grupuri de intrare, stele si obiecte nestandardizate"
+        },
+        {
+          "title": "Productie tipar",
+          "description": "Tipar format mare, tipar UV pe orice suprafata, bannere, folii, autocolante, postere si cataloage"
+        },
+        {
+          "title": "Produse branduite",
+          "description": "Merch, produse promotionale, cadouri corporative, aplicare logo pe textile, vesela si accesorii"
+        },
+        {
+          "title": "Montaj si suport",
+          "description": "Montaj profesional constructii, intretinere tehnica, inlocuire elemente si demontaj la finalizare"
+        }
+      ]
+    },
+    "materials": {
+      "label": "Materiale și tehnologii",
+      "title": "Cu ce lucrăm",
+      "subtitle": "Producția proprie ne permite să lucrăm cu orice materiale și tehnologii",
+      "items": [
+        {
+          "title": "Construcții luminoase",
+          "types": ["Casete luminoase", "Litere volumetrice", "Neon", "Iluminat LED", "Semne retroiluminate"]
+        },
+        {
+          "title": "Tehnologii de tipărire",
+          "types": ["Tipărire de mare format", "Tipărire UV", "Sublimare", "Tipărire latex", "Serigrafie"]
+        },
+        {
+          "title": "Materiale de construcție",
+          "types": ["Acrilic", "Compozit", "PVC", "Metal", "Lemn", "Sticlă"]
+        },
+        {
+          "title": "Branding",
+          "types": ["Aplicare folie", "Textile", "Broderie", "Tampografie", "Gravură laser"]
+        },
+        {
+          "title": "Decor și instalații",
+          "types": ["Obiecte de artă", "Zone foto", "Grupuri de intrare", "Arcuri", "Stele"]
+        },
+        {
+          "title": "Semnalistică și navigare",
+          "types": ["Standuri informative", "Plăci", "Indicatoare", "Sisteme banner", "Roll-up-uri"]
+        }
+      ]
+    },
+    "stats": {
+      "label": "În cifre",
+      "title": "Experiență de producție",
+      "items": [
+        { "value": "3000+", "label": "Obiecte", "description": "Firme, construcții și decor pentru afaceri și evenimente" },
+        { "value": "500+", "label": "Evenimente decorate", "description": "Decor, branding și navigare la locații" },
+        { "value": "800m²", "label": "Producție", "description": "Ateliere proprii pentru fabricare" },
+        { "value": "48h", "label": "Comenzi urgente", "description": "Termen minim pentru proiecte standard" }
+      ]
+    },
+    "process": {
+      "label": "Cum lucram",
+      "title": "Etapele productiei",
+      "subtitle": "De la idee la montaj pe obiect",
+      "steps": [
+        { "title": "Brief si masuratori", "description": "Definim sarcina, vizitam obiectul, facem masuratori si foto" },
+        { "title": "Design", "description": "Dezvoltam conceptul vizual, vizualizare 3D si documentatie tehnica" },
+        { "title": "Aprobare", "description": "Aprobam machetele, materialele si termenele. Obtinem autorizatii daca e nevoie" },
+        { "title": "Productie", "description": "Fabricam constructiile, printam materialele, asamblam elementele" },
+        { "title": "Montaj", "description": "Montaj profesional pe obiect, configurare elemente luminoase, predare proiect" }
+      ],
+      "cta": "Solicita o oferta"
+    },
+    "gallery": {
+      "label": "Portofoliu",
+      "title": "Lucrarile noastre",
+      "items": [
+        { "image": "/expertise/brand-launches.jpg", "title": "Brandare Festivalul Lupilor" },
+        { "image": "/expertise/festivals.jpg", "title": "Decor Ziua Vinului" },
+        { "image": "/expertise/corporate.jpg", "title": "Stand expozitional MSG" },
+        { "image": "/expertise/sports.jpg", "title": "Reclama outdoor Art Garage" }
+      ]
+    },
+    "cases": {
+      "label": "Cazuri",
+      "title": "Proiecte cu productia noastra",
+      "subtitle": "Evenimente cu design publicitar",
+      "viewAll": "Toate proiectele"
+    },
+    "cta": {
+      "title": "Aveti nevoie de productie publicitara?",
+      "subtitle": "Calculam costurile si propunem o solutie pentru nevoile dvs.",
+      "button": "Solicita o oferta"
+    }
+  },
+  "serviceTurnkey": {
+    "meta": {
+      "title": "Evenimente «la cheie»",
+      "description": "Media Show Grup — organizarea evenimentelor «la cheie» de orice amploare: de la prezentari restranse pana la festivaluri. 20 de ani de experienta in Moldova."
+    },
+    "hero": {
+      "label": "Evenimente «la cheie»",
+      "titleLine1": "Cream evenimente",
+      "titleLine2": "care raman in memorie",
+      "subtitle": "De la prezentari intime pana la festivaluri cu mii de participanti — ciclu complet de organizare a evenimentelor",
+      "cta": "Discuta proiectul"
+    },
+    "overview": {
+      "label": "Ce include serviciul",
+      "title": "Ciclu complet de organizare",
+      "description": "Ne asumam totul — de la strategie si concept creativ pana la productie tehnica si coordonare. Obtineti rezultatul, nu procesul.",
+      "includes": [
+        "Strategie si concept creativ",
+        "Bugetare și planificarea resurselor",
+        "Scenografie si design de spatiu",
+        "Productie tehnica (sunet, lumini, ecrane)",
+        "Booking artisti si moderatori",
+        "Marketing si suport PR",
+        "Logistica si coordonare",
+        "Securitate si managementul fluxurilor"
+      ]
+    },
+    "expertise": {
+      "label": "Formate de evenimente",
+      "title": "Expertiza noastra",
+      "subtitle": "8 directii — orice amploare, orice format"
+    },
+    "cases": {
+      "label": "Portofoliu",
+      "title": "Proiecte selectate",
+      "subtitle": "Evenimente care au facut istorie",
+      "viewAll": "Toate proiectele"
+    },
+    "clients": {
+      "label": "Au incredere in noi",
+      "items": [
+        "Guvernul Moldovei",
+        "Resedinta Presedintelui",
+        "Primaria Chisinau",
+        "Moldova 1",
+        "Orange Moldova",
+        "Moldcell",
+        "Purcari Wineries",
+        "Cricova",
+        "Kaufland",
+        "UNDP Moldova"
+      ]
+    },
+    "results": {
+      "label": "Rezultate",
+      "title": "Cifrele noastre vorbesc",
+      "items": [
+        {
+          "value": "2.5M+",
+          "label": "Invitati in 20 de ani",
+          "description": "Audienta totala a festivalurilor, concertelor si evenimentelor organizate"
+        },
+        {
+          "value": "5250+",
+          "label": "Proiecte realizate",
+          "description": "De la corporate intimate la festivaluri internationale pentru 50.000+ persoane"
+        },
+        {
+          "value": "20+",
+          "label": "Ani pe piata",
+          "description": "Activam din 2004 — unul dintre cei mai vechi operatori de evenimente din Moldova"
+        },
+        {
+          "value": "98%",
+          "label": "Clienti revin",
+          "description": "Colaborarile repetate si contractele pe termen lung sunt principalul nostru indicator de calitate"
+        }
+      ]
+    },
+    "testimonials": {
+      "label": "Testimoniale",
+      "title": "Ce spun clientii nostri",
+      "items": [
+        {
+          "quote": "Media Show Grup este contractorul nostru general din 2017. In fiecare an, Ziua Nationala a Vinului atrage peste 200.000 de invitati, si de fiecare data echipa MSG asigura o organizare impecabila.",
+          "author": "Dionis Boroga",
+          "role": "Director, Oficiul National al Viei si Vinului",
+          "project": "Ziua Nationala a Vinului"
+        },
+        {
+          "quote": "Primul eveniment de masa din istoria Resedintei Presedintelui. MSG au preluat totul — de la logistica la scenografie. Rezultatul a depasit asteptarile.",
+          "author": "Comitetul organizatoric",
+          "role": "Administratia Presedintelui",
+          "project": "Festivalul Padurilor"
+        },
+        {
+          "quote": "Pentru prima data, finala Eurovision a fost mutata din studio intr-o arena. MSG au dezvoltat conceptul, au construit scena si au coordonat intregul proces — de la repetitii la transmisiunea live.",
+          "author": "Echipa de productie",
+          "role": "TeleRadio-Moldova",
+          "project": "Eurovision Moldova 2026"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Intrebari frecvente",
+      "items": [
+        {
+          "question": "Cat costa organizarea unui eveniment «la cheie»?",
+          "answer": "Costurile depind de format, amploare, locatie si program. Lucram cu bugete de la $5.000 pentru evenimente corporate la $500.000+ pentru festivaluri internationale. Dupa brief, pregatim un deviz detaliat cu justificarea fiecarei cheltuieli."
+        },
+        {
+          "question": "Cu cat timp inainte trebuie sa ne contactati?",
+          "answer": "Ideal — cu 3-6 luni pentru evenimente mari si 1-2 luni pentru corporate. Pregatirea festivalurilor incepe cu 6-12 luni. In cazuri urgente, putem organiza un eveniment in 2-3 saptamani."
+        },
+        {
+          "question": "Lucrati doar in Moldova?",
+          "answer": "Geografia principală este Moldova și România. Însă am realizat proiecte și în alte țări. Echipa și infrastructura noastră asigură un nivel constant de calitate în orice locație."
+        },
+        {
+          "question": "Ce include serviciul «la cheie»?",
+          "answer": "Totul: de la dezvoltarea conceptului si scenariului la productie tehnica, booking artisti, logistica, marketing, securitate si coordonare pe locatie. Primiti un singur responsabil pentru intregul proiect."
+        },
+        {
+          "question": "Cum controlati bugetul?",
+          "answer": "Lucram cu devize transparente: fiecare cheltuiala este agreata in prealabil. Vedeti unde se duc banii. Dupa eveniment, furnizam un raport financiar complet cu documente justificative."
+        },
+        {
+          "question": "Putem comanda doar o parte din servicii?",
+          "answer": "Da, putem asigura separat productia tehnica, bookingul artistilor, productia video sau logistica. Avem o abordare modulara — alegeti doar ce aveti nevoie."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Pregatiti pentru evenimentul vis?",
+      "subtitle": "Povestiti-ne despre evenimentul dvs. — vom oferi solutia",
+      "button": "Incepe proiectul"
+    }
+  },
+  "caseStudies": {
+    "backToProjects": "Înapoi la proiecte",
+    "aboutProject": "Despre proiect",
+    "ourServices": "Serviciile noastre",
+    "resultLabel": "Rezultat",
+    "nextProject": "Proiectul următor",
+    "festivalul-lupilor": {
+      "about": "Festivalul Lupilor este unul dintre cele mai mari proiecte din sfera turismului evenimentelor din Moldova, desfășurat pe teritoriul rezervației «Orheiul Vechi». Început ca un concert cameral, proiectul s-a transformat de-a lungul anilor într-un open-air regional de amploare. Astăzi este un eveniment de mai multe zile cu camping, târguri și zone interactive, care anual atrage zeci de mii de oaspeți și turiști din străinătate.",
+      "services": "Media Show Grup este organizatorul festivalului încă de la fondarea acestuia, asigurând ciclul complet de realizare. Echipa noastră dezvoltă conceptul creativ și strategia de promovare, precum și implementează soluții IT proprii pentru vânzarea și verificarea biletelor. Ne asumăm managementul producției tehnice complexe, construcția locației, coordonarea securității și logistica pe teritoriul rezervației. O atenție deosebită este acordată programului și conținutului interactiv: festivalul îmbină organic folclorul cu genurile muzicale contemporane, oferind activități pentru oaspeți de toate vârstele și atrăgând artiști locali și internaționali.",
+      "result": "Dezvoltarea sistematică a proiectului a asigurat o creștere anuală stabilă a audienței și a consolidat statutul festivalului ca eveniment național semnificativ. Alegerea locației în rezervația «Orheiul Vechi» a oferit un impuls puternic potențialului turistic al regiunii, iar implementarea tehnologiilor moderne de eveniment a permis integrarea eficientă a patrimoniului cultural într-un format de divertisment contemporan."
+    },
+    "ziua-vinului": {
+      "about": "Ziua Națională a Vinului este un festival anual desfășurat din 2002 în primul weekend din octombrie în piața centrală a Chișinăului. Evenimentul reunește principalii producători de vin din Moldova și atrage mii de oaspeți din întreaga lume. Programul include degustări profesionale, ateliere tematice, târguri gastronomice și meșteșugărești, precum și un program de concerte de amploare cu participarea artiștilor populari și contemporani.",
+      "services": "Timp de șapte ani (2017–2024, cu excepția anului 2020) Media Show Grup a fost contractorul general al evenimentului, asigurând suportul tehnic și organizatoric complet. Am fost responsabili pentru elaborarea scenariului, zonarea locației, coordonarea producătorilor de vin și a agenților economici, managementul logistic, producția decorațiunilor și echiparea completă a tuturor zonelor — de la scena principală până la sectoarele interactive.",
+      "result": "Realizarea multianuală a proiectului și abordarea sistematică a organizării au transformat sărbătoarea într-un eveniment de nivel mondial, consolidând imaginea internațională a Moldovei. Festivalul a oferit un impuls puternic dezvoltării industriei vinicole, corespunzând standardelor celor mai mari expoziții globale și atrăgând atenția comunității profesionale."
+    },
+    "traditii-romanesti": {
+      "about": "Festivalul Tradițiilor Românești este un proiect cultural internațional destinat popularizării patrimoniului regiunilor istorice ale României. Festivalul este conceput ca un «pod cultural» care unește meșteșugurile autentice, folclorul și arta contemporană. Programul include în mod tradițional expoziții ale meșterilor populari, un food court cu bucătărie regională și un program de concerte amplu cu participarea artiștilor români și locali.",
+      "services": "În 2024, echipa Media Show Grup a realizat proiectul pe teritoriul Grădinii Botanice din Chișinău. Am asigurat managementul complex, inclusiv dezvoltarea conceptului și modelarea 3D a locației, precum și coordonarea completă cu artiștii și participanții. Departamentul tehnic a realizat montajul construcțiilor scenice, regia sunetului și luminii, precum și transmisia live multi-cameră a tuturor spectacolelor pe ecrane în timp real.",
+      "result": "Sincronizarea precisă a proceselor și respectarea strictă a timpilor au permis realizarea cu succes a unui program internațional bogat. Echipa a reușit să creeze un spațiu confortabil pentru schimbul cultural, unde managementul profesionist a subliniat autenticitatea tradițiilor, asigurând un nivel înalt de servicii pentru oaspeți și participanți."
+    },
+    "festivalul-padurilor": {
+      "about": "Festivalul Pădurilor este un proiect unic sub patronajul Președintelui Republicii Moldova, dedicat ecologiei, tradițiilor naționale și unirii societății în jurul Programului Național de Reîmpădurire. Conceptul festivalului a permis oaspeților să se cufunde în atmosfera unității cu natura prin expoziții interactive, ateliere și un program muzical în peisajul natural al pădurii.",
+      "services": "Media Show Grup a devenit prima companie care a organizat un eveniment de masă pe teritoriul Reședinței Prezidențiale din Condrița. Echipa noastră a asigurat ciclul complet de pregătire și management al evenimentului. Am dezvoltat un sistem detaliat de navigare și o hartă ergonomică a locației, am produs elemente de scenografie și decor care au asigurat unitatea vizuală a tuturor zonelor. Departamentul tehnic a realizat montajul scenelor principale și secundare, integrarea ecranelor video pentru panelurile de discuții, electrificarea completă a locației, iluminatul artistic și sonorizarea pe întregul teritoriu. Un bloc separat a fost crearea conținutului media dinamic: de la grafică animată la filmare multi-cameră și aftermovie-ul final.",
+      "result": "Am reușit să integrăm organic infrastructura de amploare în ecosistemul pădurii fără a afecta mediul înconjurător. Crearea unui spațiu funcțional și sigur a permis sublinierea importanței de stat a programului de reîmpădurire, asigurând totodată un nivel excepțional de confort pentru vizitatori într-o locație nestandardizată."
+    },
+    "soundstalgic": {
+      "about": "Soundstalgic este un spectacol multimedia de amploare al lui Dan Balan, singurul artist moldovean nominalizat la premiile Grammy. La baza conceptului original se află o retrospectivă a carierei sale de 30 de ani și formarea stilului său muzical. Proiectul este realizat ca o narațiune scenică complexă unde proiecțiile high-tech, lumina și decorurile creează un spațiu vizual unitar, unind hiturile mondiale legendare cu lumea muzicală personală a interpretului.",
+      "services": "Echipa Media Show Grup a realizat ciclul tehnic complet al proiectului, de la montajul scenei și decorurilor până la elaborarea scenariilor artistice de iluminare, sincronizate prin timecode cu sunetul și grafica pe ecrane. Am implementat soluții unice, inclusiv ecrane de podea cu acoperire din plexiglas, am asigurat filmarea și transmisia live pe ecrane, precum și securitatea la grupurile de intrare, tribune și în jurul scenei. O provocare deosebită a fost programul extrem: din cauza montajului paralel al unui alt spectacol, am lucrat în regim de resurse încrucișate, asigurând timing-ul precis al repetițiilor și spectacolului în sine.",
+      "result": "Sincronizarea impecabilă a luminii, sunetului și video-ului a permis realizarea unui spectacol high-tech de nivel mondial, păstrând pe deplin conceptul unic. Echipa a reușit să creeze un spațiu vizual coerent, oferind spectatorilor puritatea emoțiilor și efectul de imersiune totală în atmosfera concertului."
+    },
+    "eurovision": {
+      "about": "Finala Națională Eurovision a devenit un eveniment muzical de referință al anului 2026, marcând revenirea Moldovei la concursul internațional după o pauză de un an. Pentru prima dată în istorie, show-ul a fost mutat din studiourile de televiziune pe cea mai mare platformă închisă din țară — Arena Chișinău. Această decizie a permis organizatorilor să schimbe radical formatul selecției, transformând-o într-un spectacol de arenă, iar spectatorii au putut vedea finala în direct, să-și susțină favoriții și să devină parte a unei producții televizate de amploare cu sunet live și producție modernă.",
+      "services": "Echipa Media Show Grup a asigurat pregătirea și realizarea proiectului în termene extrem de scurte — doar două săptămâni. În strânsă colaborare cu organizatorii și administrația locației, am fost responsabili pentru dezvoltarea conceptului, proiectarea 3D și montajul construcțiilor scenice complexe, inclusiv zonele tehnice, Green Room și amenajarea vizuală a spațiului. Responsabilitățile au inclus coordonarea complexă cu artiștii și prezentatorii, logistica, suportul tehnic al spectacolelor, crearea conținutului grafic și regia transmisiei în direct. Una dintre cele mai complexe sarcini a fost coordonarea tuturor departamentelor în direct: datorită repetițiilor minuțioase și managementului precis, schimbarea backline-ului și decorurilor pentru 16 artiști a avut loc în intervale minime de timp, invizibil pentru telespectatori.",
+      "result": "Am realizat un spectacol high-tech corespunzător standardelor europene de difuzare, unde fiecare element a funcționat ca un ceas. Standardul înalt de producție a asigurat o «imagine» impecabilă în eter, fapt remarcat separat de experții internaționali. Succesul finalei din 2026 a ridicat selecția națională la un nou nivel, demonstrând capacitatea Media Show Grup de a realiza proiecte de cea mai mare complexitate și de a gestiona formate de nivel european."
+    },
+    "ddt-istanbul": {
+      "about": "Concertul grupului «ДДТ» din 29 noiembrie 2025 la Istanbul a marcat finalul unui turneu mondial extins. Spectacolul legendarei formații rock s-a desfășurat pe una dintre cele mai mari scene de concerte ale orașului, adunând mii de fani din diferite țări. Programul a combinat hituri iconice cu compoziții noi, însoțite de un spectacol high-tech de lumini și video, ce necesita o realizare tehnică impecabilă și respectarea strictă a rider-ului internațional al artiștilor.",
+      "services": "Media Show Grup a fost contractorul tehnic general al evenimentului, asumându-și un complex dificil de sarcini logistice și operaționale. Provocarea principală a fost transportul echipamentelor și echipei din Chișinău la Istanbul, inclusiv organizarea procedurilor vamale și găsirea transportatorilor specializați. În paralel, am coordonat livrarea echipamentelor suplimentare din Grecia. Munca coordonată a permis sincronizarea sosirii tehnicii cu zborurile specialiștilor, asigurând montajul la timp al scenei, ecranelor, sistemelor de sunet și lumini, precum și filmarea profesională multi-cameră cu regia transmisiei pe ecrane.",
+      "result": "Echipa a asigurat suportul tehnic al spectacolului final al turneului mondial în condiții de timing strict și logistică internațională complexă. Am construit un lanț de aprovizionare eficient din mai multe țări, iar calitatea impecabilă a sunetului și efectelor vizuale a consolidat statutul companiei ca partener de încredere pentru realizarea turneelor de concerte de amploare pe scene internaționale."
+    },
+    "zdob-si-zdub": {
+      "about": "Concertul aniversar «Zdubii Forever» de la Arena Chișinău a marcat treizeci de ani de carieră a legendarei formații. Show-ul a reunit pe aceeași scenă Zdob și Zdub și artiști invitați, inclusiv Irina Rimeș, frații Advahov, Satoshi și mulți alții. Evenimentul a prezentat o sinteză de rock și folclor balcanic, devenind unul dintre cele mai notabile evenimente muzicale ale anului și reunind fanii formației din diferite generații.",
+      "services": "Media Show Grup a asigurat suportul complex al proiectului, folosind resursele tuturor subdiviziunilor. Am fost responsabili de logistica organizatorică, echiparea tehnică completă a arenei (scenă, sunet, lumini, ecrane, backline), precum și de montajul fotozonei tematice și sectorului de vânzare a merch-ului. Echipa de producție video a asigurat filmarea multi-cameră și transmisia live a spectacolelor pe ecrane, iar serviciul de securitate al holdingului a preluat controlul tuturor zonelor — de la grupurile de intrare până la backstage.",
+      "result": "Munca coordonată a tuturor departamentelor a permis realizarea unui spectacol de arenă tehnic complex cu respectarea precisă a timing-ului și standardelor înalte de securitate. Am creat un mediu audiovizual puternic care a amplificat energia spectacolului live și a asigurat acoperirea calitativă cu sunet și lumini pe întregul teritoriu al arenei."
+    },
+    "scriptonite": {
+      "about": "Primul spectacol al lui Scriptonite la Chișinău a avut loc pe 8 martie 2024 și a devenit unul dintre cele mai așteptate evenimente ale sezonului de concerte. Un spectacol al unui artist de acest calibru necesita o pregătire tehnică impecabilă, capabilă să transmită sonoritatea unică și conceptul vizual complex al show-ului într-o arenă mare.",
+      "services": "Echipa Media Show Grup a fost contractorul tehnic general al concertului. Am asigurat montajul scenei, echipamentul de iluminare și sunet, instalarea ecranelor și backline-ul complet conform rider-ului artistului. O atenție deosebită a fost acordată realizării partiturii de iluminare: configurația complexă a aparatelor a permis realizarea scenariilor de iluminare autoriale, creând atmosfera profundă caracteristică spectacolelor live ale lui Scriptonite.",
+      "result": "Datorită clasei înalte a echipamentului utilizat, am obținut calitatea ideală a sunetului și redarea detaliată a spectacolului de lumini, corespunzând pe deplin standardelor internaționale ale artistului. Proiectul a confirmat capacitatea holdingului de a asigura baza tehnică pentru ridere de orice complexitate, garantând funcționarea stabilă a tuturor sistemelor în condițiile unui spectacol live al unui artist de top."
+    }
+  }
+}

@@ -1,0 +1,1236 @@
+{
+  "nav": {
+    "services": "Services",
+    "eventTurnkey": "Turnkey Events",
+    "eventLogistics": "Management & Logistics",
+    "eventTechnical": "Technical Support",
+    "eventVideoproduction": "Video Production",
+    "eventDigital": "Digital Solutions",
+    "eventAdvertising": "Advertising Production",
+    "eventSecurity": "Security & Safety",
+    "projects": "Projects",
+    "about": "About",
+    "contacts": "Contacts",
+    "getInTouch": "Get in Touch"
+  },
+  "hero": {
+    "titleLine1": "Full-cycle",
+    "titleLine2": "event agency",
+    "subtitle": "From concept to execution. Technology, design, emotions.",
+    "cta": "Start a Project",
+    "viewProjects": "View Projects",
+    "watchReel": "Watch Showreel"
+  },
+  "stats": {
+    "years": "years of experience",
+    "yearsValue": "20",
+    "projects": "projects completed",
+    "projectsValue": "5250",
+    "clients": "happy clients",
+    "clientsValue": "500"
+  },
+  "marquee": {
+    "items": "Corporate • Concerts • Festivals • Presentations • Conferences • Gala Evenings • Exhibitions • Forums"
+  },
+  "showreel": {
+    "title": "Showreel",
+    "play": "Watch"
+  },
+  "services": {
+    "title": "Our Services",
+    "whatWeDo": "What We Do",
+    "subtitle": "Complete solutions for any event",
+    "learnMore": "Learn more",
+    "cta": "Get in Touch",
+    "turnkey": {
+      "title": "Turnkey Events",
+      "description": "We develop and organize events of any scale – from private presentations to multi-thousand-person festivals. We handle strategy, creative concept, production, technical support, marketing, and full operational coordination."
+    },
+    "logistics": {
+      "title": "Event Management & Logistics",
+      "description": "We execute business, public, and official events of all formats and sizes. We develop concepts, scripts, and programs, book artists and hosts. We provide comprehensive project logistics and coordination of all teams and transport."
+    },
+    "technical": {
+      "title": "Technical Support",
+      "description": "We design stage concepts and structures using 3D modeling and visualization. We handle delivery and professional installation of stage structures, LED screens, lighting, and sound equipment using our own fleet."
+    },
+    "videoproduction": {
+      "title": "Video Production",
+      "description": "Full cycle of photo and video content production: professional event coverage, commercials, music videos, podcasts, and live streams. Post-production, graphics, 2D/3D animation, and motion design."
+    },
+    "digital": {
+      "title": "Digital Solutions & Communications",
+      "description": "We develop websites, apps, and digital platforms with sales, online payment, and attendee registration integration. We provide a full cycle of marketing communications: strategies, social media, targeted advertising, PR and influencer campaigns."
+    },
+    "advertising": {
+      "title": "Advertising Production",
+      "description": "Outdoor and indoor advertising for businesses and events. Advertising structures, installations, venue branding, event decor, and branded merchandise — from concept to professional installation."
+    },
+    "security": {
+      "title": "Security & Safety",
+      "description": "Security for mass events and access control, risk assessment, and emergency response. Executive protection for VIPs, artists, and key guests during events and in transit."
+    }
+  },
+  "projects": {
+    "sectionLabel": "Portfolio",
+    "title": "Our Projects",
+    "subtitle": "Moments that inspire",
+    "viewAll": "View All Projects",
+    "items": [
+      { "title": "Festivalul Lupilor", "slug": "festivalul-lupilor", "category": "Festivals", "venue": "Old Orhei, 2021–2025", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/fl.jpg", "size": "large" },
+      { "title": "National Wine Day", "slug": "ziua-vinului", "category": "Festivals", "venue": "Chișinău, 2017–2024", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/ziuavinului.jpg", "size": "regular" },
+      { "title": "Festivalul Tradițiilor Românești", "slug": "traditii-romanesti", "category": "Festivals", "venue": "Botanical Garden, 2024", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/traditiiromanesti.jpg", "size": "regular" },
+      { "title": "Festivalul Pădurilor", "slug": "festivalul-padurilor", "category": "Festivals", "venue": "Presidential Residence, 2024", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/padurilor.jpg", "size": "large" },
+      { "title": "Dan Balan — Soundstalgic", "slug": "soundstalgic", "category": "Concerts", "venue": "Chișinău Arena, 2026", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/danbalan.jpg", "size": "regular" },
+      { "title": "Eurovision National Final", "slug": "eurovision", "category": "Concerts", "venue": "Chișinău Arena, 2026", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/euro.jpg", "size": "regular" },
+      { "title": "DDT — World Tour", "slug": "ddt-istanbul", "category": "Concerts", "venue": "JJ Arena, Istanbul, 2025", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/ddt.jpg", "size": "regular" },
+      { "title": "Zdob și Zdub — 30 Years", "slug": "zdob-si-zdub", "category": "Concerts", "venue": "Chișinău Arena, 2025", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/zdob.jpg", "size": "large" },
+      { "title": "Scriptonite", "slug": "scriptonite", "category": "Concerts", "venue": "Chișinău Arena, 2024", "image": "https://res.cloudinary.com/dkivlfyk4/image/upload/cases/cases/skriptonit.jpg", "size": "regular" }
+    ]
+  },
+  "about": {
+    "title": "About Media Show Grup",
+    "description": "Since 2006, we have been leaders in event organization in Moldova. We provide full-service solutions — from concept to execution."
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "subtitle": "Ready to create something extraordinary?",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "addressValue": "Chișinău, Moldova"
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "Transparent process from the first call to a successful event",
+    "cta": "Start a Project",
+    "ctaHint": "Ready to start? First consultation is free",
+    "brief": {
+      "title": "Brief",
+      "description": "We meet, discuss your goals, objectives and expectations for the event"
+    },
+    "concept": {
+      "title": "Concept",
+      "description": "We develop a creative idea, visualization and detailed proposal"
+    },
+    "planning": {
+      "title": "Planning",
+      "description": "We create timeline, budget, assemble the team and select venue"
+    },
+    "execution": {
+      "title": "Execution",
+      "description": "We coordinate all processes, control every detail of the event"
+    },
+    "report": {
+      "title": "Reporting",
+      "description": "We provide a complete report with analytics and recommendations"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "aboutSection": {
+    "story": {
+      "slogan": { "label": "01", "headline": "Events as Statement", "body": "We create events that become history. We deliver emotions that transcend the moment." },
+      "origin": { "label": "02", "headline": "Born from a Dream", "body": "This story began with a bold dream — to transform the space of emotions. When all we had was belief, a team of three, and an old laptop." },
+      "growth": { "label": "03", "headline": "Forged by Experience", "body": "We walked through doubts and stereotypes, turning every challenge into a growth point. From intimate events to large-scale projects, from an idea to a system." },
+      "mission": { "label": "04", "headline": "Precision. Experience. Detail.", "body": "We believe a true event extends beyond a date on the calendar. Our work is to combine precision, experience, and sensitivity to detail, so every moment is truly lived." },
+      "positioning": { "label": "05", "headline": "Experience + Expertise + Emotions", "body": "MEDIA SHOW GRUP — Moldova's leading event agency, creating large-scale, emotional, and technologically advanced full-cycle events." }
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "Principles that define every project",
+      "quality": { "title": "Quality", "description": "Built on quality that accepts no compromise" },
+      "experience": { "title": "Experience", "description": "Over 20 years of creating world-class events" },
+      "responsibility": { "title": "Responsibility", "description": "Full control at every stage — from concept to execution" },
+      "creativity": { "title": "Creativity", "description": "Unconventional solutions that turn ideas into unforgettable experiences" },
+      "involvement": { "title": "Involvement", "description": "We immerse ourselves in every project as if it were our own" },
+      "reliability": { "title": "Reliability", "description": "A partner you can count on at any scale" }
+    }
+  },
+  "expertise": {
+    "sectionLabel": "What We Create",
+    "title": "Our Expertise",
+    "subtitle": "20 years of creating events across every format and scale",
+    "whatWeDoLabel": "What we do",
+    "casesLabel": "Case studies",
+    "festivals": {
+      "title": "Festivals",
+      "description": "Large-scale musical, urban, and national festivals with well-thought-out concept and commercial model.",
+      "whatWeDo": [
+        "Concept and script development",
+        "Partnership and economic agent relations",
+        "Site selection, zoning, and equipment",
+        "Scenography, construction, and technical production",
+        "Artist and host booking",
+        "PR, digital promotion, and SMM",
+        "Crowd management and security"
+      ],
+      "result": "A powerful media hook, high reach, and an engaged audience",
+      "cases": [
+        { "name": "Festivalul Lupilor", "venue": "Old Orhei, 2021–2025" },
+        { "name": "National Wine Day", "venue": "Chișinău, 2017–2024" },
+        { "name": "Festivalul Tradițiilor Românești", "venue": "Botanical Garden, 2024" },
+        { "name": "Festivalul Pădurilor", "venue": "Presidential Residence, 2024" }
+      ]
+    },
+    "concerts": {
+      "title": "Live Concerts",
+      "description": "Technical production for solo artists and musical groups, available for both standalone shows and international tours.",
+      "whatWeDo": [
+        "Equipment selection according to technical riders",
+        "Logistics and installation of stage structures",
+        "Creative lighting and sound design",
+        "Equipment configuration and timecode synchronization",
+        "Full technical management during the event",
+        "Professional filming and video directing for live screens"
+      ],
+      "result": "Flawless technical execution and precise compliance with international riders",
+      "cases": [
+        { "name": "Dan Balan — Soundstalgic", "venue": "Chișinău Arena, 2026" },
+        { "name": "Eurovision National Selection", "venue": "Chișinău Arena, 2026" },
+        { "name": "Zdob și Zdub — 30 Years", "venue": "Chișinău Arena, 2025" },
+        { "name": "DDT Rock Band", "venue": "JJ Arena, Istanbul, 2025" },
+        { "name": "Skryptonite", "venue": "Chișinău Arena, 2024" },
+        { "name": "Zemfira", "venue": "Chișinău Arena, 2024" }
+      ]
+    },
+    "conceptProjects": {
+      "title": "Concept Projects",
+      "description": "Unique productions at the intersection of theater, music, and show, featuring original scenography and dramaturgy that unite symphony orchestras, choreographic troupes, and multi-genre performers on a single stage.",
+      "whatWeDo": [
+        "Development of artistic concepts and scripts",
+        "Artist and management relations",
+        "Venue selection and stage design",
+        "Web platform development, promotion, and PR",
+        "Ticketing and audience flow management",
+        "Technical production and stage décor",
+        "Full technical and logistical coordination",
+        "Multi-camera filming and video production"
+      ],
+      "result": "Wide cultural and public impact, maximum venue capacity, and growth of a loyal audience",
+      "cases": [
+        { "name": "Rock Opera VOIEVOD", "venue": "Chișinău Arena, 2025" },
+        { "name": "Povestea de Iarnă", "venue": "Nicolae Sulac Palace, 2020–2024" },
+        { "name": "Manifest", "venue": "Nicolae Sulac Palace, 2024" },
+        { "name": "EXAMEN Festival", "venue": "Chișinău Arena, 2023" }
+      ]
+    },
+    "conferences": {
+      "title": "Conferences / Forums",
+      "description": "Business and institutional events for corporations, government agencies, and international organizations.",
+      "whatWeDo": [
+        "Concept and content programming",
+        "Protocol and VIP handling",
+        "Speaker management",
+        "Space branding",
+        "Participant registration",
+        "Media support"
+      ],
+      "result": "A high-status event with significant business value and a premium audience",
+      "cases": [
+        { "name": "Automotive Forum Moldova", "venue": "Chișinău Arena, 2025" },
+        { "name": "World Congress of Vine and Wine", "venue": "Palace of the Republic, 2025" },
+        { "name": "Moldova Partnership Platform", "venue": "Palace of the Republic, 2024" },
+        { "name": "European Constitutional Courts Conference", "venue": "Palace of the Republic, 2024" },
+        { "name": "Moldova Security Forum", "venue": "Radisson Blu, 2024" },
+        { "name": "EPC Summit", "venue": "Castel Mimi, 2023" }
+      ]
+    },
+    "brandLaunches": {
+      "title": "Brand / Product Launches",
+      "description": "Presentations of companies, services, and initiatives — offline or hybrid.",
+      "whatWeDo": [
+        "Creative concept and program",
+        "Visual style and scenography",
+        "Catering and staff selection",
+        "Decor and technical equipment",
+        "Photo/video and motion graphics production",
+        "Media and guest relations"
+      ],
+      "result": "A vibrant media impact, brand awareness, and image enhancement",
+      "cases": [
+        { "name": "LOTUS Moldova Showroom", "venue": "Chișinău, 2025" },
+        { "name": "GWM TANK Showroom", "venue": "Chișinău, 2025" },
+        { "name": "K1 Beton Factory Launch", "venue": "Chișinău, 2025" },
+        { "name": "Range Rover SV Presentation", "venue": "Poiana Winery, 2024" },
+        { "name": "Land Rover Defender Test Drive", "venue": "Cricova Winery, 2024" }
+      ]
+    },
+    "sports": {
+      "title": "Sports Competitions",
+      "description": "Local and international sporting events and championships.",
+      "whatWeDo": [
+        "Visual identity development",
+        "Scenography and site zoning",
+        "Animated graphics and screen content",
+        "Full technical equipment and support",
+        "Live broadcasting for satellite TV and online platforms",
+        "Collaboration with federations and international sports authorities",
+        "Logistic support for athletes and teams",
+        "Operational coordination and security"
+      ],
+      "result": "High organizational standards, compliance with international regulations, and positive public resonance",
+      "cases": [
+        { "name": "European Weightlifting Championships", "venue": "Chișinău Arena, 2025" },
+        { "name": "Rugby Europe Trophy Series", "venue": "Dinamo Stadium, 2025" },
+        { "name": "European Beach Rugby Championship", "venue": "Orange Arena, 2025" },
+        { "name": "Balkan Ultimate Fighting (BUF)", "venue": "Chișinău, 2024" }
+      ]
+    },
+    "corporate": {
+      "title": "Corporate Events & Team Buildings",
+      "description": "Events to strengthen company culture and motivate the team.",
+      "whatWeDo": [
+        "Concept development aligned with company values",
+        "Interactive and entertainment programming",
+        "Venue, catering, and staff selection",
+        "Decor and corporate gifts",
+        "Full technical and logistical support"
+      ],
+      "result": "A cohesive team, high engagement, and strengthened HR brand",
+      "cases": [
+        { "name": "Autodoc Summer Event", "venue": "Vara Vara Aquacity, 2025" },
+        { "name": "Romstal Customer Event", "venue": "Madison Park, 2025" },
+        { "name": "K1 Beton Christmas Party", "venue": "Premium Park, 2025" },
+        { "name": "EFES New Year Corporate", "venue": "Madison Park, 2024" },
+        { "name": "Victoriabank Anniversary", "venue": "Chișinău Arena, 2024" }
+      ]
+    },
+    "custom": {
+      "title": "Custom Projects",
+      "description": "We implement tailored solutions for the most unconventional challenges — from unique concept development to full-scale production.",
+      "whatWeDo": [
+        "Tailored project scoping and analysis",
+        "Custom format development",
+        "Multi-vendor coordination",
+        "Protocol and VIP management",
+        "Specialized technical solutions",
+        "Full post-event reporting"
+      ],
+      "result": "Bespoke events delivered to the highest standards, regardless of format or complexity",
+      "cases": [
+        { "name": "MAIB Christmas Caravan", "venue": "2025" },
+        { "name": "Border Shield 25 Exercise", "venue": "Press Release" },
+        { "name": "Media Project «Patrimoniale»", "venue": "2023–2025" }
+      ]
+    }
+  },
+  "serviceSecurity": {
+    "meta": {
+      "title": "Security & Safety",
+      "description": "Media Show Grup — event security, access control, VIP protection, risk assessment. Comprehensive safety solutions for events of any scale."
+    },
+    "hero": {
+      "label": "Security & Safety",
+      "titleLine1": "Safety is",
+      "titleLine2": "the foundation of every event",
+      "subtitle": "Mass event security, access control, VIP protection, and risk management — a professional approach to safety",
+      "cta": "Discuss Your Project"
+    },
+    "overview": {
+      "label": "What We Provide",
+      "title": "Comprehensive Event Security",
+      "description": "We develop and execute security plans for events of any scale — from private receptions to multi-thousand festivals.",
+      "includes": [
+        "Risk assessment & security planning",
+        "Access control & badge systems",
+        "Perimeter & zone security",
+        "VIP security & personal protection",
+        "Crowd management",
+        "Emergency response",
+        "Coordination with emergency services",
+        "Video surveillance & monitoring"
+      ]
+    },
+    "features": {
+      "label": "Capabilities",
+      "title": "Our Expertise",
+      "subtitle": "Full range of security services for events",
+      "items": [
+        {
+          "title": "Event Security",
+          "description": "Professional security for concerts, festivals, corporate events, and sports — from 50 to 50,000 attendees"
+        },
+        {
+          "title": "Access Control",
+          "description": "Badge systems, zoning, ticket and accreditation verification, entrance group management"
+        },
+        {
+          "title": "VIP Protection",
+          "description": "Personal security for artists, speakers, and key guests at the event and during transfers"
+        },
+        {
+          "title": "Crowd Management",
+          "description": "Route planning, flow separation, crush prevention, and emergency evacuation"
+        },
+        {
+          "title": "Video Surveillance",
+          "description": "Camera installation and monitoring, operations center, full venue zone control"
+        },
+        {
+          "title": "Crisis Response",
+          "description": "Emergency protocols, police and ambulance coordination, evacuation plans"
+        }
+      ]
+    },
+    "approach": {
+      "label": "Our Approach",
+      "title": "How We Ensure Safety",
+      "subtitle": "A multi-layered security system tailored to each event",
+      "items": [
+        { "title": "Preventive Analysis", "description": "We assess risks before the event: venue analysis, evacuation routes, potential vulnerabilities, crowd density" },
+        { "title": "Zoning & Access Control", "description": "Clear separation of access zones — VIP, backstage, audience areas. Each zone with its own security protocol" },
+        { "title": "Operations Management", "description": "A unified command center with video surveillance, radio communication, and real-time coordination of all services" },
+        { "title": "Emergency Response", "description": "Ready-made protocols for any emergency: evacuation, medical assistance, coordination with police and emergency services" }
+      ]
+    },
+    "stats": {
+      "label": "By the Numbers",
+      "title": "Experience You Can Trust",
+      "items": [
+        { "value": "800+", "label": "Events", "description": "Security provided since 2006" },
+        { "value": "50K", "label": "Max Audience", "description": "Experience with the largest venues" },
+        { "value": "0", "label": "Major Incidents", "description": "Throughout our entire company history" },
+        { "value": "200+", "label": "Specialists", "description": "Trained security and coordination staff" }
+      ]
+    },
+    "process": {
+      "label": "How We Work",
+      "title": "Workflow",
+      "subtitle": "From risk assessment to event support",
+      "steps": [
+        { "title": "Risk Assessment", "description": "Analyze format, venue, guest count, and potential threats" },
+        { "title": "Security Plan", "description": "Develop security layout, evacuation routes, response protocols" },
+        { "title": "Team Assembly", "description": "Form security team, select equipment and communication tools" },
+        { "title": "Execution", "description": "Access control, patrolling, VIP protection, emergency coordination" },
+        { "title": "Report", "description": "Summary of results, incident analysis, improvement recommendations" }
+      ],
+      "cta": "Discuss Security"
+    },
+    "cta": {
+      "title": "Need event security?",
+      "subtitle": "We'll develop a security plan and provide protection for your format",
+      "button": "Request a Quote"
+    }
+  },
+  "serviceDigital": {
+    "meta": {
+      "title": "Digital Solutions",
+      "description": "Media Show Grup — websites, apps, and digital platforms for events. Online registration, ticketing, marketing, and analytics."
+    },
+    "hero": {
+      "label": "Digital Solutions",
+      "titleLine1": "Technology",
+      "titleLine2": "that powers events",
+      "subtitle": "Websites, apps, registration platforms, and sales tools — full digital production for events of any scale",
+      "cta": "Discuss Your Project"
+    },
+    "overview": {
+      "label": "What We Build",
+      "title": "Digital Event Ecosystem",
+      "description": "We develop and integrate digital tools that make your event seamless for the audience and manageable for the organizer.",
+      "includes": [
+        "Event websites & landing pages",
+        "Mobile event applications",
+        "Online registration systems",
+        "Payment system integration",
+        "CRM & attendee databases",
+        "Marketing & targeted advertising",
+        "SMM & content strategy",
+        "Analytics & reporting"
+      ]
+    },
+    "features": {
+      "label": "Capabilities",
+      "title": "Our Digital Expertise",
+      "subtitle": "Full-cycle digital production for events",
+      "items": [
+        {
+          "title": "Websites & Landing Pages",
+          "description": "Event promo sites, corporate portals, and landing pages with integrated registration and ticket sales"
+        },
+        {
+          "title": "Mobile Applications",
+          "description": "Native and cross-platform apps: agenda, navigation, networking, push notifications"
+        },
+        {
+          "title": "Registration Systems",
+          "description": "Online registration with QR codes, check-in at entry, real-time attendee flow management"
+        },
+        {
+          "title": "Marketing & SMM",
+          "description": "Promotion strategies, targeted advertising, content planning, influencer and media relations"
+        },
+        {
+          "title": "Payment Solutions",
+          "description": "Online payment integration, ticket sales, cashless on-site payment systems"
+        },
+        {
+          "title": "Analytics & CRM",
+          "description": "Data collection, reporting, CRM for managing attendee and client databases"
+        }
+      ]
+    },
+    "stack": {
+      "label": "Technologies",
+      "title": "Our Technology Stack",
+      "subtitle": "We use modern tools and platforms for every project",
+      "items": [
+        {
+          "title": "Web Development",
+          "tools": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "WordPress"]
+        },
+        {
+          "title": "Mobile Development",
+          "tools": ["React Native", "Flutter", "iOS", "Android", "PWA"]
+        },
+        {
+          "title": "Registration & Ticketing",
+          "tools": ["QR Systems", "NFC", "Stripe", "Custom API", "Real-time Dashboard"]
+        },
+        {
+          "title": "Marketing & Analytics",
+          "tools": ["Google Ads", "Meta Ads", "Google Analytics", "Data Studio", "CRM"]
+        },
+        {
+          "title": "Design & UX",
+          "tools": ["Figma", "Adobe CC", "Prototyping", "A/B Testing", "UX Audit"]
+        },
+        {
+          "title": "Infrastructure",
+          "tools": ["Vercel", "AWS", "Docker", "CI/CD", "Monitoring"]
+        }
+      ]
+    },
+    "stats": {
+      "label": "By the Numbers",
+      "title": "Our Project Results",
+      "items": [
+        { "value": "150+", "label": "Digital Projects", "description": "Websites, apps, and platforms for events" },
+        { "value": "2M+", "label": "Registrations", "description": "Processed through our registration systems" },
+        { "value": "99.9%", "label": "Uptime", "description": "Stable performance during events" },
+        { "value": "30+", "label": "Integrations", "description": "Payment systems, CRMs, and third-party services" }
+      ]
+    },
+    "process": {
+      "label": "How We Work",
+      "title": "Workflow",
+      "subtitle": "From analytics to launch",
+      "steps": [
+        { "title": "Analytics", "description": "Study business, audience, competitors, form digital strategy" },
+        { "title": "Design", "description": "Prototypes, UX/UI design, technical spec, solution architecture" },
+        { "title": "Development", "description": "Frontend, backend, integrations, payment and registration systems" },
+        { "title": "Launch", "description": "Testing, deployment, analytics setup, marketing tools configuration" },
+        { "title": "Support", "description": "Monitoring, optimization, updates, and scaling as you grow" }
+      ],
+      "cta": "Discuss Your Project"
+    },
+    "cta": {
+      "title": "Need a digital solution?",
+      "subtitle": "We'll build a platform, website, or app tailored to your event",
+      "button": "Discuss Your Task"
+    }
+  },
+  "serviceLogistics": {
+    "meta": {
+      "title": "Event Management & Logistics",
+      "description": "Media Show Grup — event management and logistics of any scale: from corporate events to international forums. Team coordination, transport, and all services."
+    },
+    "hero": {
+      "label": "Event Management & Logistics",
+      "titleLine1": "Flawless coordination",
+      "titleLine2": "at every stage",
+      "subtitle": "Comprehensive management and logistics for corporate, public, and official events of all formats and scales",
+      "cta": "Discuss Your Project"
+    },
+    "overview": {
+      "label": "What We Provide",
+      "title": "Full Operational Coordination",
+      "description": "We execute events of all formats and sizes: from small corporate parties to international forums, concerts, and championships. We provide comprehensive project logistics and coordination of all teams involved.",
+      "includes": [
+        "Concept & script development",
+        "Event program creation",
+        "Artist & host booking",
+        "Coordination of all teams and services",
+        "Transport & equipment logistics",
+        "Timeline & budget control",
+        "Guest flow management",
+        "On-site operational support"
+      ]
+    },
+    "features": {
+      "label": "Expertise",
+      "title": "Organizational Expertise",
+      "subtitle": "20 years of experience coordinating events of any complexity",
+      "items": [
+        {
+          "title": "Concept & Script",
+          "description": "We develop unique concepts, detailed scripts, and programs tailored to the goals and audience of each event"
+        },
+        {
+          "title": "Talent Booking",
+          "description": "We select and invite artists, speakers, and hosts — from local to international stars, handling riders and logistics"
+        },
+        {
+          "title": "Project Logistics",
+          "description": "Comprehensive coordination of transport, cargo, equipment, and personnel. Precise timing and routing for every element"
+        },
+        {
+          "title": "Team Management",
+          "description": "Coordination and quality control of all service teams — from catering to security and technical production"
+        },
+        {
+          "title": "Budget Control",
+          "description": "Transparent estimates, expense tracking at every stage, budget optimization without compromising quality"
+        },
+        {
+          "title": "Operations Management",
+          "description": "Coordinator team on-site, guest flow management, real-time resolution of unexpected situations"
+        }
+      ]
+    },
+    "formats": {
+      "label": "Formats",
+      "title": "Events We Organize",
+      "subtitle": "Experience in organizing events of any scale and format",
+      "items": [
+        {
+          "title": "Festivals & Concerts",
+          "examples": ["Open-air", "City celebrations", "Music festivals", "Gala concerts"]
+        },
+        {
+          "title": "Conferences & Forums",
+          "examples": ["Business forums", "Scientific conferences", "International summits", "Panel discussions"]
+        },
+        {
+          "title": "Corporate Events",
+          "examples": ["Team building", "Company anniversaries", "Corporate parties", "Awards ceremonies"]
+        },
+        {
+          "title": "Official Events",
+          "examples": ["State ceremonies", "Diplomatic receptions", "Inaugurations", "Protocol events"]
+        },
+        {
+          "title": "Sports Events",
+          "examples": ["Championships", "Marathons", "Opening ceremonies", "Sports festivals"]
+        },
+        {
+          "title": "Exhibitions & Presentations",
+          "examples": ["Exhibitions", "Product launches", "Showrooms", "Press conferences"]
+        }
+      ]
+    },
+    "stats": {
+      "label": "By the Numbers",
+      "title": "20 Years of Flawless Organization",
+      "items": [
+        { "value": "5250+", "label": "Events", "description": "Organized and delivered since 2006" },
+        { "value": "2.5M+", "label": "Guests", "description": "Attended our projects" },
+        { "value": "300+", "label": "Specialists", "description": "Our own team of coordinators and production crew" },
+        { "value": "98%", "label": "Client Retention", "description": "Return to work with us again" }
+      ]
+    },
+    "process": {
+      "label": "How We Work",
+      "title": "Organization Stages",
+      "subtitle": "Transparent process from brief to report",
+      "steps": [
+        { "title": "Brief & Audit", "description": "Define goals, format, audience, venue, and budget" },
+        { "title": "Concept", "description": "Develop script, program, select artists and hosts" },
+        { "title": "Assembly", "description": "Assemble teams, coordinate technical riders and logistics" },
+        { "title": "Coordination", "description": "Manage all teams on-site, control timing and budget" },
+        { "title": "Wrap-up", "description": "Summarize results, prepare report and recommendations" }
+      ],
+      "cta": "Discuss Organization"
+    },
+    "cases": {
+      "label": "Completed Projects",
+      "title": "Our Events",
+      "subtitle": "Projects organized by our team",
+      "viewAll": "All Projects"
+    },
+    "cta": {
+      "title": "Need event management?",
+      "subtitle": "Let's discuss the format and prepare an implementation plan",
+      "button": "Discuss Your Project"
+    }
+  },
+  "serviceTechnical": {
+    "meta": {
+      "title": "Technical Production",
+      "description": "Media Show Grup — full technical production for events: sound, lighting, LED screens, stage structures. Own equipment fleet, 3D modeling."
+    },
+    "hero": {
+      "label": "Technical Production",
+      "titleLine1": "We handle",
+      "titleLine2": "the entire technical cycle",
+      "subtitle": "From 3D stage concepts to flawless execution — sound, lighting, screens, and structures for events of any scale",
+      "cta": "Discuss Your Project"
+    },
+    "overview": {
+      "label": "What We Provide",
+      "title": "Our Own Equipment Fleet",
+      "description": "Full technical production based on our own equipment. We design, deliver, install, and support — from arenas to open-air venues.",
+      "includes": [
+        "3D modeling & stage visualization",
+        "Stage structure engineering",
+        "Professional sound systems",
+        "Lighting design & artistic lighting",
+        "LED screens & video projection",
+        "Assembly & disassembly",
+        "Timecode synchronization",
+        "Real-time technical support"
+      ]
+    },
+    "features": {
+      "label": "Expertise",
+      "title": "Technical Capabilities",
+      "subtitle": "Own equipment fleet and engineering expertise",
+      "items": [
+        {
+          "title": "Sound Systems",
+          "description": "Line arrays, monitor systems, microphones, and mixing consoles — any scale from 100 to 50,000 people"
+        },
+        {
+          "title": "Lighting Design",
+          "description": "Artistic and architectural lighting, moving heads, LED bars, laser systems, light show programming"
+        },
+        {
+          "title": "LED Screens",
+          "description": "Modular LED panels for indoor and outdoor, video projection, media servers, real-time broadcasting"
+        },
+        {
+          "title": "Stage Structures",
+          "description": "Design and assembly of stages, podiums, trusses, tent and canopy structures of any complexity"
+        },
+        {
+          "title": "3D Visualization",
+          "description": "Full 3D venue modeling, stage and audience zone visualization before assembly begins"
+        },
+        {
+          "title": "Technical Support",
+          "description": "Engineering team on-site from setup to teardown, timecode sync, system redundancy"
+        }
+      ]
+    },
+    "equipment": {
+      "label": "Equipment Fleet",
+      "title": "Our Own Technical Base",
+      "subtitle": "Over 500 units of professional equipment from world-leading brands",
+      "items": [
+        {
+          "title": "Sound Systems",
+          "specs": ["L-Acoustics, JBL line arrays", "DiGiCo, Yamaha mixing consoles", "Shure PSM monitoring systems", "Shure, Sennheiser, DPA microphones", "Coverage up to 50,000 people"]
+        },
+        {
+          "title": "Lighting Equipment",
+          "specs": ["Clay Paky, Robe moving heads", "LED bars and panels", "Laser systems", "grandMA lighting consoles", "Strobes and hazers"]
+        },
+        {
+          "title": "LED Screens & Video",
+          "specs": ["P2.9 – P4.8 LED panels indoor/outdoor", "Resolume, Disguise media servers", "Broadcast cameras", "10,000+ lumen projectors", "Blackmagic video mixers"]
+        },
+        {
+          "title": "Stage Structures",
+          "specs": ["Prolyte aluminum trusses", "Stages and platforms up to 200 m²", "Tent structures", "Rigging and suspension systems", "Barriers and fencing"]
+        }
+      ]
+    },
+    "stats": {
+      "label": "By the Numbers",
+      "title": "Experience Proven by Projects",
+      "items": [
+        { "value": "500+", "label": "Equipment Units", "description": "Our own fleet for any scale" },
+        { "value": "1200+", "label": "Events", "description": "Technical support since 2006" },
+        { "value": "50K", "label": "Max Audience", "description": "Sound and light coverage for large venues" },
+        { "value": "24/7", "label": "Support", "description": "Engineering team on-site for the entire event" }
+      ]
+    },
+    "process": {
+      "label": "How We Work",
+      "title": "Workflow",
+      "subtitle": "From engineering to teardown",
+      "steps": [
+        { "title": "Tech Brief", "description": "Analyze venue, define technical requirements, create specification" },
+        { "title": "3D Design", "description": "Create 3D stage model, zone visualization, equipment layout" },
+        { "title": "Equipment", "description": "Select gear from our fleet, plan delivery logistics" },
+        { "title": "Setup", "description": "Professional assembly of structures, sound, lighting, and video calibration" },
+        { "title": "Support", "description": "Engineering team on-site throughout the event, teardown after completion" }
+      ],
+      "cta": "Request a Quote"
+    },
+    "cases": {
+      "label": "Completed Projects",
+      "title": "Technical Production Projects",
+      "subtitle": "Events powered by our equipment",
+      "viewAll": "All Projects"
+    },
+    "cta": {
+      "title": "Need technical production?",
+      "subtitle": "We'll calculate costs and propose a solution for your format",
+      "button": "Request a Quote"
+    }
+  },
+  "serviceVideoproduction": {
+    "meta": {
+      "title": "Video Production",
+      "description": "Media Show Grup — full-cycle photo and video production: event coverage, commercials, music videos, podcasts, live streams, post-production, and animation."
+    },
+    "hero": {
+      "label": "Video Production",
+      "titleLine1": "Content that",
+      "titleLine2": "delivers results",
+      "subtitle": "Full-cycle photo and video content production for business — from filming to post-production and adaptation for all platforms",
+      "cta": "Discuss Your Project"
+    },
+    "overview": {
+      "label": "What We Do",
+      "title": "Full-Cycle Video Production",
+      "description": "We create professional photo and video content of any format: from event coverage and commercials to music videos, podcasts, and live streams. We handle all post-production and platform adaptation.",
+      "includes": [
+        "Event filming & coverage",
+        "Commercials & brand videos",
+        "Music videos",
+        "Podcasts & live streams",
+        "Editing & color grading",
+        "Sound design & voiceover",
+        "2D/3D animation & motion design",
+        "Graphics for digital & print"
+      ]
+    },
+    "features": {
+      "label": "Expertise",
+      "title": "Production Capabilities",
+      "subtitle": "In-house studio, equipment, and a team of professionals",
+      "items": [
+        {
+          "title": "Event Coverage",
+          "description": "Multi-camera filming of events of any scale — festivals, conferences, concerts, corporate events. Documentary and staged formats"
+        },
+        {
+          "title": "Commercial Production",
+          "description": "Commercials and brand videos for business, product videos, promo content for digital campaigns and TV"
+        },
+        {
+          "title": "Music Videos",
+          "description": "Full-cycle music video production — from concept development and location scouting to filming and final edit"
+        },
+        {
+          "title": "Podcasts & Streams",
+          "description": "Podcast recording and live stream setup: studio, equipment, camera operation, platform broadcasting"
+        },
+        {
+          "title": "Post-Production",
+          "description": "Professional editing, color grading, sound design, titling, and video adaptation for various platforms and formats"
+        },
+        {
+          "title": "Animation & Graphics",
+          "description": "2D/3D animation, motion design, multimedia solutions for screens, infographics, and graphics for digital and print"
+        }
+      ]
+    },
+    "equipment": {
+      "label": "Equipment",
+      "title": "Professional Equipment Fleet",
+      "subtitle": "Our own gear for any format and scale of production",
+      "items": [
+        {
+          "title": "Cameras",
+          "specs": ["Sony FX6 / FX3", "Blackmagic URSA", "Canon C70", "Multi-camera setups up to 8 cameras", "DJI drones for aerial footage"]
+        },
+        {
+          "title": "Lenses & Stabilization",
+          "specs": ["Cinema lenses Sony, Canon", "Steadicams & DJI RS gimbals", "Sliders & camera cranes", "Teleprompters for speakers"]
+        },
+        {
+          "title": "Lighting for Production",
+          "specs": ["Aputure, Nanlite LED panels", "Softboxes & reflectors", "Interview lighting setups", "Portable kits for on-location"]
+        },
+        {
+          "title": "Audio Recording",
+          "specs": ["Zoom, Sound Devices recorders", "Sennheiser lavalier mics", "Rode shotgun microphones", "Multi-channel recording"]
+        },
+        {
+          "title": "Streaming & Broadcast",
+          "specs": ["Blackmagic ATEM video mixers", "Encoders for live streaming", "Multi-platform streaming", "Real-time graphics & titles"]
+        },
+        {
+          "title": "Post-Production",
+          "specs": ["Apple / PC workstations", "DaVinci Resolve, Premiere Pro", "After Effects, Cinema 4D", "Color grading on calibrated monitors"]
+        }
+      ]
+    },
+    "stats": {
+      "label": "By the Numbers",
+      "title": "Experience in Numbers",
+      "items": [
+        { "value": "500+", "label": "Video Projects", "description": "Commercials, music videos, broadcasts & reports" },
+        { "value": "50+", "label": "Music Videos", "description": "For Moldovan and international artists" },
+        { "value": "200+", "label": "Live Streams", "description": "Online broadcasts of events and concerts" },
+        { "value": "8", "label": "Cameras Simultaneously", "description": "Maximum multi-camera production" }
+      ]
+    },
+    "process": {
+      "label": "How We Work",
+      "title": "Production Stages",
+      "subtitle": "From idea to finished product",
+      "steps": [
+        { "title": "Pre-production", "description": "Develop concept, script, scout locations, assemble crew" },
+        { "title": "Filming", "description": "Multi-camera shoot with professional lighting, sound, and direction" },
+        { "title": "Editing", "description": "Assemble footage, structure the story, rough and final cut" },
+        { "title": "Post-production", "description": "Color grading, sound design, graphics, titles, and VFX" },
+        { "title": "Delivery", "description": "Final render, platform adaptation, delivery of all materials" }
+      ],
+      "cta": "Discuss Filming"
+    },
+    "gallery": {
+      "label": "Portfolio",
+      "title": "Our Work",
+      "items": [
+        { "image": "/expertise/concerts.jpg", "title": "Festivalul Lupilor 2024" },
+        { "image": "/expertise/festivals.jpg", "title": "National Wine Day" },
+        { "image": "/expertise/concept-projects.jpg", "title": "GoQode Commercial" },
+        { "image": "/expertise/brand-launches.jpg", "title": "Festivalul Pădurilor Promo" }
+      ]
+    },
+    "cases": {
+      "label": "Cases",
+      "title": "Projects with Video",
+      "subtitle": "Events featuring our video production",
+      "viewAll": "All Projects"
+    },
+    "cta": {
+      "title": "Need video content?",
+      "subtitle": "Let's discuss the format and prepare a proposal",
+      "button": "Discuss Your Project"
+    }
+  },
+  "serviceAdvertising": {
+    "meta": {
+      "title": "Advertising Production",
+      "description": "Media Show Grup (Art Garage) — outdoor and indoor advertising, advertising structures, installations, venue branding, event decor, branded merchandise."
+    },
+    "hero": {
+      "label": "Advertising Production",
+      "titleLine1": "From concept to",
+      "titleLine2": "finished structure",
+      "subtitle": "Outdoor and indoor advertising, installations, venue branding, and event decor — from design to professional installation",
+      "cta": "Discuss Your Project"
+    },
+    "overview": {
+      "label": "What We Do",
+      "title": "Full-Cycle Advertising Production",
+      "description": "We specialize in outdoor and indoor advertising for businesses and events. We support projects at every stage — from initial concept and design to manufacturing and professional installation.",
+      "includes": [
+        "Outdoor signage & displays",
+        "Indoor advertising & wayfinding",
+        "Advertising structures & installations",
+        "Venue branding & decor",
+        "Vehicle & object wrapping",
+        "Branded merchandise & merch",
+        "Large-format & UV printing",
+        "Installation & maintenance"
+      ]
+    },
+    "features": {
+      "label": "Expertise",
+      "title": "Production Capabilities",
+      "subtitle": "In-house manufacturing and a team of designers",
+      "items": [
+        {
+          "title": "Outdoor Advertising",
+          "description": "Signage, light boxes, dimensional letters, rooftop installations, pylons, and billboards of any format and complexity"
+        },
+        {
+          "title": "Venue Branding",
+          "description": "Event decor, venue branding, exhibition stands, photo zones, themed installations, and art objects"
+        },
+        {
+          "title": "Structures & Installations",
+          "description": "Design and fabrication of advertising structures, arches, entrance groups, pylons, and custom objects"
+        },
+        {
+          "title": "Print Production",
+          "description": "Large-format printing, UV printing on any surface, banners, films, stickers, posters, and catalogs"
+        },
+        {
+          "title": "Branded Merchandise",
+          "description": "Merch, promotional products, corporate gifts, logo application on textiles, drinkware, and accessories"
+        },
+        {
+          "title": "Installation & Support",
+          "description": "Professional structure installation, technical maintenance, element replacement, and post-event disassembly"
+        }
+      ]
+    },
+    "materials": {
+      "label": "Materials & Technologies",
+      "title": "What We Work With",
+      "subtitle": "Our own production facility allows us to work with any materials and technologies",
+      "items": [
+        {
+          "title": "Illuminated Structures",
+          "types": ["Light boxes", "3D letters", "Neon", "LED lighting", "Backlit signs"]
+        },
+        {
+          "title": "Printing Technologies",
+          "types": ["Large-format printing", "UV printing", "Sublimation", "Latex printing", "Screen printing"]
+        },
+        {
+          "title": "Construction Materials",
+          "types": ["Acrylic", "Composite", "PVC", "Metal", "Wood", "Glass"]
+        },
+        {
+          "title": "Branding",
+          "types": ["Vinyl wrapping", "Textile", "Embroidery", "Pad printing", "Laser engraving"]
+        },
+        {
+          "title": "Decor & Installations",
+          "types": ["Art objects", "Photo zones", "Entrance groups", "Arches", "Steles"]
+        },
+        {
+          "title": "Signage & Wayfinding",
+          "types": ["Info stands", "Plaques", "Directional signs", "Banner systems", "Roll-ups"]
+        }
+      ]
+    },
+    "stats": {
+      "label": "By the Numbers",
+      "title": "Production Experience",
+      "items": [
+        { "value": "3000+", "label": "Objects", "description": "Signs, structures, and decor for business and events" },
+        { "value": "500+", "label": "Events Decorated", "description": "Decor, branding, and wayfinding at venues" },
+        { "value": "800m²", "label": "Production Facility", "description": "Our own workshops for manufacturing" },
+        { "value": "48h", "label": "Rush Orders", "description": "Minimum turnaround for standard projects" }
+      ]
+    },
+    "process": {
+      "label": "How We Work",
+      "title": "Production Stages",
+      "subtitle": "From idea to on-site installation",
+      "steps": [
+        { "title": "Brief & Survey", "description": "Define the task, visit the site, take measurements and photos" },
+        { "title": "Design", "description": "Develop visual concept, 3D visualization, and technical documentation" },
+        { "title": "Approval", "description": "Approve layouts, materials, and timelines. Obtain permits if needed" },
+        { "title": "Manufacturing", "description": "Fabricate structures, print materials, assemble components" },
+        { "title": "Installation", "description": "Professional on-site installation, lighting setup, project handover" }
+      ],
+      "cta": "Request a Quote"
+    },
+    "gallery": {
+      "label": "Portfolio",
+      "title": "Our Work",
+      "items": [
+        { "image": "/expertise/brand-launches.jpg", "title": "Festivalul Lupilor Branding" },
+        { "image": "/expertise/festivals.jpg", "title": "National Wine Day Decor" },
+        { "image": "/expertise/corporate.jpg", "title": "MSG Exhibition Stand" },
+        { "image": "/expertise/sports.jpg", "title": "Art Garage Outdoor Signage" }
+      ]
+    },
+    "cases": {
+      "label": "Cases",
+      "title": "Projects with Our Production",
+      "subtitle": "Events with advertising design",
+      "viewAll": "All Projects"
+    },
+    "cta": {
+      "title": "Need advertising production?",
+      "subtitle": "We'll calculate costs and propose a solution for your needs",
+      "button": "Request a Quote"
+    }
+  },
+  "serviceTurnkey": {
+    "meta": {
+      "title": "Turnkey Events",
+      "description": "Media Show Grup — turnkey event management at any scale: from intimate presentations to large-scale festivals. 20 years of experience in Moldova."
+    },
+    "hero": {
+      "label": "Turnkey Events",
+      "titleLine1": "We create events",
+      "titleLine2": "that leave a mark",
+      "subtitle": "From intimate presentations to large-scale festivals — full-cycle event management",
+      "cta": "Discuss Your Project"
+    },
+    "overview": {
+      "label": "What's Included",
+      "title": "Full-Cycle Management",
+      "description": "We take care of everything — from strategy and creative concept to technical production and coordination. You get results, not process.",
+      "includes": [
+        "Strategy & creative concept",
+        "Budgeting & resource planning",
+        "Set design & space design",
+        "Technical production (sound, light, screens)",
+        "Artist & host booking",
+        "Marketing & PR support",
+        "Logistics & coordination",
+        "Security & crowd management"
+      ]
+    },
+    "expertise": {
+      "label": "Event Formats",
+      "title": "Our Expertise",
+      "subtitle": "8 directions — any scale, any format"
+    },
+    "cases": {
+      "label": "Portfolio",
+      "title": "Featured Projects",
+      "subtitle": "Events that made history",
+      "viewAll": "All Projects"
+    },
+    "clients": {
+      "label": "Trusted by",
+      "items": [
+        "Government of Moldova",
+        "Presidential Residence",
+        "Chișinău City Hall",
+        "Moldova 1",
+        "Orange Moldova",
+        "Moldcell",
+        "Purcari Wineries",
+        "Cricova",
+        "Kaufland",
+        "UNDP Moldova"
+      ]
+    },
+    "results": {
+      "label": "Results",
+      "title": "Our numbers speak",
+      "items": [
+        {
+          "value": "2.5M+",
+          "label": "Guests in 20 years",
+          "description": "Total audience across our festivals, concerts, and events"
+        },
+        {
+          "value": "5250+",
+          "label": "Projects delivered",
+          "description": "From intimate corporate events to international festivals for 50,000+ people"
+        },
+        {
+          "value": "20+",
+          "label": "Years in business",
+          "description": "Operating since 2004 — one of Moldova's longest-standing event operators"
+        },
+        {
+          "value": "98%",
+          "label": "Clients return",
+          "description": "Repeat business and long-term contracts are our key quality indicator"
+        }
+      ]
+    },
+    "testimonials": {
+      "label": "Testimonials",
+      "title": "What our clients say",
+      "items": [
+        {
+          "quote": "Media Show Grup has been our general contractor since 2017. Each year, National Wine Day attracts over 200,000 guests, and every time the MSG team delivers flawless organization.",
+          "author": "Dionis Boroga",
+          "role": "Director, National Office of Vine and Wine",
+          "project": "National Wine Day"
+        },
+        {
+          "quote": "The first-ever mass event at the Presidential Residence. MSG took on everything — from logistics to scenography. The result exceeded expectations.",
+          "author": "Organizing Committee",
+          "role": "Presidential Administration",
+          "project": "Festivalul Pădurilor"
+        },
+        {
+          "quote": "For the first time, the Eurovision final was moved from a studio to an arena. MSG developed the concept, built the stage, and coordinated the entire process — from rehearsals to live broadcast.",
+          "author": "Production Team",
+          "role": "TeleRadio-Moldova",
+          "project": "Eurovision Moldova 2026"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "How much does a turnkey event cost?",
+          "answer": "Costs depend on format, scale, venue, and program. We work with budgets from $5,000 for corporate events to $500,000+ for international festivals. After the briefing, we prepare a detailed estimate with justification for each expense item."
+        },
+        {
+          "question": "How far in advance should we contact you?",
+          "answer": "Ideally 3-6 months for large events and 1-2 months for corporate events. Festival preparation starts 6-12 months ahead. In urgent cases, we can organize an event in 2-3 weeks."
+        },
+        {
+          "question": "Do you only work in Moldova?",
+          "answer": "Our primary geography is Moldova and Romania. However, we've delivered projects in other countries as well. Our team and infrastructure ensure consistent quality in any location."
+        },
+        {
+          "question": "What does 'turnkey' include?",
+          "answer": "Everything: from concept and script development to technical production, artist booking, logistics, marketing, security, and on-site coordination. You get one point of contact responsible for the entire project."
+        },
+        {
+          "question": "How do you control the budget?",
+          "answer": "We work with transparent estimates: every expense item is agreed upon in advance. You see where every dollar goes. After the event, we provide a complete financial report with supporting documents."
+        },
+        {
+          "question": "Can we order just some of the services?",
+          "answer": "Yes, we can provide technical production, artist booking, video production, or logistics separately. We take a modular approach — you choose only what you need."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready for your dream event?",
+      "subtitle": "Tell us about your event — we'll provide the solution",
+      "button": "Start a Project"
+    }
+  },
+  "caseStudies": {
+    "backToProjects": "Back to projects",
+    "aboutProject": "About the project",
+    "ourServices": "Our services",
+    "resultLabel": "Result",
+    "nextProject": "Next project",
+    "festivalul-lupilor": {
+      "about": "Festivalul Lupilor is one of the largest event tourism projects in Moldova, held in the Old Orhei nature reserve. Starting as an intimate concert, the project has evolved over the years into a large-scale regional open-air festival. Today it is a multi-day event with camping, fairs and interactive zones that annually attracts tens of thousands of guests and draws tourists from abroad.",
+      "services": "Media Show Grup has been the festival organizer since its inception, providing a full production cycle. Our team develops the creative concept and promotion strategy, and implements proprietary IT solutions for ticket sales and verification. We manage complex technical production, venue construction, security coordination and logistics within the nature reserve. Special attention is given to the program and interactive content: the festival seamlessly blends folklore with contemporary music genres, offering activities for guests of all ages and featuring both local and international artists.",
+      "result": "Systematic project development has ensured steady annual audience growth and established the festival as a significant national event. The choice of location in the Old Orhei reserve has given a powerful boost to the region's tourism potential, while the implementation of modern event technologies has effectively integrated cultural heritage into a contemporary entertainment format."
+    },
+    "ziua-vinului": {
+      "about": "National Wine Day is an annual festival held since 2002 on the first weekend of October in Chișinău's central square. The event brings together Moldova's leading winemakers and attracts thousands of guests from around the world. The program includes professional tastings, thematic workshops, gastronomic and artisan fairs, and a large-scale concert program featuring folk and contemporary artists.",
+      "services": "For seven years (2017–2024, excluding 2020) Media Show Grup served as the general contractor, providing full technical and organizational support. We were responsible for script development, venue zoning, coordination of winemakers and economic agents, logistics management, decoration production and comprehensive equipping of all zones — from the main stage to interactive sectors.",
+      "result": "Years of project execution and a systematic approach to organization transformed the celebration into a world-class event, strengthening Moldova's international image. The festival provided a powerful impulse for the development of the wine industry, meeting the standards of major global expositions and attracting professional community attention."
+    },
+    "traditii-romanesti": {
+      "about": "Festivalul Tradițiilor Românești is an international cultural project aimed at promoting the heritage of Romania's historical regions. The festival is conceived as a 'cultural bridge' uniting authentic crafts, folklore and contemporary art. The program traditionally includes folk artisan exhibitions, a food court with regional cuisine and a large concert program featuring Romanian and local performers.",
+      "services": "In 2024, the Media Show Grup team executed the project at the Botanical Garden of Chișinău. We provided comprehensive management including concept development and 3D venue modeling, as well as full coordination with artists and participants. The technical department handled stage construction assembly, sound and lighting direction, and provided multi-camera live broadcast of all performances to screens in real time.",
+      "result": "Precise process synchronization and strict adherence to timing allowed the successful execution of a rich international program. The team created a comfortable space for cultural exchange where professional management highlighted the authenticity of traditions while ensuring a high level of service for guests and participants."
+    },
+    "festivalul-padurilor": {
+      "about": "Festivalul Pădurilor is a unique project under the patronage of the President of the Republic of Moldova, dedicated to ecology, national traditions and uniting society around the National Reforestation Program. The festival concept allowed guests to immerse themselves in an atmosphere of unity with nature through interactive exhibitions, workshops and a music program in the natural forest landscape.",
+      "services": "Media Show Grup became the first company to organize a mass event on the territory of the Presidential Residence in Condrița. Our team provided a full cycle of event preparation and management. We developed a detailed navigation system and ergonomic venue map, produced scenography and decor elements ensuring visual unity across all zones. The technical department handled main and secondary stage assembly, video screen integration for discussion panels, full site electrification, and artistic lighting and sound throughout the entire territory. A separate focus was creating dynamic media content: from motion graphics to multi-camera filming and the final aftermovie.",
+      "result": "We successfully integrated large-scale infrastructure into the forest ecosystem without environmental damage. Creating a functional and safe space highlighted the national significance of the reforestation program while providing an exceptional level of comfort for visitors at a non-standard location."
+    },
+    "soundstalgic": {
+      "about": "Soundstalgic is a large-scale multimedia show by Dan Balan, Moldova's only Grammy-nominated artist. The original concept is based on a retrospective of his 30-year career and the evolution of his musical style. The project is realized as a complex stage narrative where high-tech projections, lighting and set design create a unified visual space, connecting legendary world hits with the performer's personal musical world.",
+      "services": "The Media Show Grup team executed the complete technical cycle of the project, from stage and set assembly to designing artistic lighting scenarios synchronized by timecode with sound and screen graphics. We implemented unique solutions including floor-mounted screens with plexiglass covering, provided filming and live broadcasting to screens, and ensured security at entrance gates, grandstands and around the stage. A particular challenge was the extreme schedule: due to parallel setup of another show, we worked with cross-allocated resources while maintaining precise timing for rehearsals and the performance itself.",
+      "result": "Flawless synchronization of lighting, sound and video enabled the execution of a world-class high-tech show while fully preserving its unique concept. The team created a cohesive visual space, giving audiences pure emotions and a total immersion effect in the concert atmosphere."
+    },
+    "eurovision": {
+      "about": "The National Eurovision Final became a landmark musical event of 2026, marking Moldova's return to the international contest after a one-year hiatus. For the first time in history, the show was moved from television studios to the country's largest indoor venue — Arena Chișinău. This decision allowed organizers to fundamentally change the selection format, transforming it into a spectacular arena show where audiences could experience the final live, support their favorites and become part of a large-scale television production with live sound and modern production values.",
+      "services": "The Media Show Grup team prepared and executed the project in extremely tight deadlines — just two weeks. Working closely with organizers and venue management, we were responsible for concept development, 3D design and assembly of complex stage structures including technical zones, Green Room and visual space design. Our responsibilities included comprehensive artist and host coordination, logistics, technical performance support, graphic content creation and live broadcast direction. One of the most complex tasks was coordinating all departments during the live broadcast: through thorough rehearsals and precise management, backline and set changes for 16 artists were executed in minimal intervals, seamlessly invisible to live broadcast viewers.",
+      "result": "We delivered a high-tech show meeting European broadcasting standards where every element worked like clockwork. The high production standard ensured a flawless on-air picture, which was specifically noted by international experts. The success of the 2026 final elevated the national selection to a new level, demonstrating Media Show Grup's readiness for the most complex projects and European-level format management."
+    },
+    "ddt-istanbul": {
+      "about": "The DDT concert on November 29, 2025 in Istanbul marked the finale of an extensive world tour. The legendary rock band's performance took place at one of the city's largest concert venues, drawing thousands of fans from different countries. The program combined iconic hits with new compositions, accompanied by a high-tech light and video show that demanded flawless technical execution and strict compliance with the artists' international rider.",
+      "services": "Media Show Grup served as the general technical contractor, taking on a complex array of logistical and operational tasks. The key challenge was transporting equipment and crew from Chișinău to Istanbul, including organizing customs procedures and finding specialized carriers. Simultaneously, we coordinated delivery of additional equipment from Greece. Coordinated work enabled synchronization of equipment arrival with specialist flights, ensuring timely assembly of the stage, screens, sound and lighting systems, and professional multi-camera filming with broadcast direction to screens.",
+      "result": "The team provided technical support for the world tour's final show under tight timing and complex international logistics. We built an effective supply chain across multiple countries, and the impeccable quality of sound and visual effects solidified the company's reputation as a reliable partner for executing large-scale concert tours at international venues."
+    },
+    "zdob-si-zdub": {
+      "about": "The anniversary concert 'Zdubii Forever' at Arena Chișinău celebrated thirty years of the legendary band's career. The show brought together Zdob și Zdub and guest artists including Irina Rimeș, the Advahov brothers, Satoshi and many others on one stage. The event showcased a synthesis of rock and Balkan folklore, becoming one of the year's most notable musical events and uniting fans of the band across generations.",
+      "services": "Media Show Grup provided comprehensive project support, deploying resources from all divisions. We handled organizational logistics, complete technical equipping of the arena (stage, sound, lighting, screens, backline), as well as assembly of a themed photo zone and merchandise sales area. The video production team provided multi-camera filming and live broadcast of performances to screens, while the holding's security service managed all venue zones — from entrance gates to backstage.",
+      "result": "Coordinated work across all departments enabled the execution of a technically complex arena show with precise timing and high safety standards. We created a powerful audiovisual environment that amplified the energy of the live performance and ensured quality sound and lighting coverage throughout the entire arena."
+    },
+    "scriptonite": {
+      "about": "Scriptonite's first performance in Chișinău took place on March 8, 2024 and became one of the most anticipated events of the concert season. A performance by an artist of this caliber required flawless technical preparation capable of conveying the unique sound and complex visual concept of the show in a large arena setting.",
+      "services": "The Media Show Grup team served as the general technical contractor for the concert. We provided stage assembly, lighting and sound equipment, screen installation and full backline according to the artist's rider. Special attention was given to executing the lighting score: a complex fixture configuration enabled the realization of custom lighting scenarios, creating the deep atmosphere characteristic of Scriptonite's live performances.",
+      "result": "Thanks to the high class of equipment used, we achieved ideal sound quality and detailed lighting show rendering, fully meeting the artist's international standards. The project confirmed the holding's ability to provide a technical base for riders of any complexity, guaranteeing stable operation of all systems during a top performer's live show."
+    }
+  }
+}
