@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+button, [role="button"], a, select, input[type="file"], input[type="submit"], input[type="checkbox"], input[type="radio"], label[for] {
+  cursor: pointer;
+}
+
 /* ============================================
    FLUID DESIGN SYSTEM
    ============================================ */
@@ -102,7 +106,8 @@
   --font-size-3xl: clamp(1.875rem, 1.2rem + 2.5vw, 3.5rem);
   --font-size-4xl: clamp(2.25rem, 1.3rem + 3.5vw, 4.5rem);
   --font-size-5xl: clamp(3rem, 1.5rem + 5vw, 6rem);
-  --font-size-hero: clamp(3.5rem, 2rem + 6vw, 8rem);
+  --font-size-hero: clamp(2.75rem, 1.5rem + 5.5vw, 8rem);
+  --font-size-hero-mobile: clamp(2rem, 10vw, 3.5rem);
 
   /* ============================================
      FLUID SPACING
@@ -199,7 +204,10 @@
   .text-fluid-3xl { font-size: var(--font-size-3xl); }
   .text-fluid-4xl { font-size: var(--font-size-4xl); }
   .text-fluid-5xl { font-size: var(--font-size-5xl); }
-  .text-fluid-hero { font-size: var(--font-size-hero); }
+  .text-fluid-hero { font-size: var(--font-size-hero-mobile); }
+  @media (min-width: 640px) {
+    .text-fluid-hero { font-size: var(--font-size-hero); }
+  }
 
   /* Fluid Spacing Classes */
   .space-fluid-xs { --tw-space: var(--space-xs); }
@@ -258,6 +266,7 @@
     font-family: var(--font-oswald), sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+    line-height: 1.2;
   }
 }
 
@@ -394,12 +403,28 @@
   position: relative;
 }
 
+.case-card-clip {
+  clip-path: polygon(0 0, calc(100% - 40px) 0, calc(100% - 40px) 40px, 100% 40px, 100% 100%, 0 100%);
+}
+
+@media (min-width: 640px) {
+  .case-card-clip {
+    clip-path: polygon(0 0, calc(100% - 52px) 0, calc(100% - 52px) 52px, 100% 52px, 100% 100%, 0 100%);
+  }
+}
+
 .case-card-large {
   aspect-ratio: 16 / 10;
 }
 
 .case-card-regular {
   aspect-ratio: 4 / 5;
+}
+
+@media (max-width: 639px) {
+  .case-card {
+    aspect-ratio: 16 / 10 !important;
+  }
 }
 
 .case-card .case-card-title {

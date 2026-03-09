@@ -1,6 +1,6 @@
 "use client";
 
-import { type ReactNode, useEffect } from "react";
+import { type ReactNode } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ServiceHero } from "./ServiceHero";
@@ -15,10 +15,6 @@ interface ServicePageProps {
 }
 
 export function ServicePage({ namespace, heroImage, overviewImage, children }: ServicePageProps) {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
-  }, []);
-
   return (
     <>
       <Navbar logoVisible />

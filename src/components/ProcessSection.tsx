@@ -1,5 +1,7 @@
 "use client";
 
+import { Link } from "@/i18n/navigation";
+
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import { motion, useInView } from "motion/react";
@@ -23,7 +25,7 @@ function StepCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
-      className="process-step flex flex-col"
+      className="process-step flex flex-col items-center text-center sm:items-start sm:text-left"
     >
       <span className="process-step-number font-heading text-primary/30 leading-none block">
         0{index + 1}
@@ -76,7 +78,7 @@ export function ProcessSection() {
         </motion.div>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-fluid-md">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-fluid-md">
           {stepKeys.map((key, i) => (
             <StepCard key={key} stepKey={key} index={i} />
           ))}
@@ -88,16 +90,16 @@ export function ProcessSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="flex flex-col sm:flex-row items-start sm:items-center gap-fluid-sm"
+          className="flex flex-col items-center sm:flex-row sm:items-center gap-fluid-sm"
           style={{ marginTop: "var(--space-xl)" }}
         >
-          <a
-            href="#contacts"
+          <Link
+            href="/contacts"
             className="group inline-flex items-center gap-3 bg-primary text-white font-heading tracking-wider px-8 py-4 text-fluid-sm hover:bg-primary/90 transition-colors"
           >
             {t("cta")}
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-          </a>
+          </Link>
           <span className="text-fluid-xs text-black/40">
             {t("ctaHint")}
           </span>

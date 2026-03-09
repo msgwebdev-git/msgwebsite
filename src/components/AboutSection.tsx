@@ -10,24 +10,27 @@ import {
 } from "motion/react";
 import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
-import SplitText from "./SplitText";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const HeartScene = dynamic(() => import("./about/HeartScene"), {
   ssr: false,
 });
 
-function ScrollText({
+/* ─── Act text block ─── */
+function ActText({
   scrollProgress,
   fadeIn,
   fadeOut,
   children,
-  className = "",
+  align = "left",
+  isMobile = false,
 }: {
   scrollProgress: MotionValue<number>;
   fadeIn: [number, number];
   fadeOut: [number, number];
   children: React.ReactNode;
-  className?: string;
+  align?: "left" | "right" | "center";
+  isMobile?: boolean;
 }) {
   const opacity = useTransform(
     scrollProgress,
@@ -37,31 +40,120 @@ function ScrollText({
   const y = useTransform(
     scrollProgress,
     [fadeIn[0], fadeIn[1], fadeOut[0], fadeOut[1]],
-    [40, 0, 0, -20]
-  );
-  const scale = useTransform(
-    scrollProgress,
-    [fadeIn[0], fadeIn[1], fadeOut[0], fadeOut[1]],
-    [0.95, 1, 1, 0.98]
+    [60, 0, 0, -30]
   );
 
-  const smoothOpacity = useSpring(opacity, { stiffness: 200, damping: 40 });
-  const smoothY = useSpring(y, { stiffness: 150, damping: 30 });
-  const smoothScale = useSpring(scale, { stiffness: 150, damping: 30 });
+  const smoothOpacity = useSpring(opacity, { stiffness: 150, damping: 35 });
+  const smoothY = useSpring(y, { stiffness: 120, damping: 30 });
+
+  const mobileAlign = "items-center text-center left-0 right-0";
+  const desktopAlign =
+    align === "right"
+      ? "items-end text-left right-0"
+      : align === "center"
+        ? "items-center text-center left-0 right-0"
+        : "items-start text-left left-0";
 
   return (
     <motion.div
-      className={`absolute pointer-events-none ${className}`}
-      style={{ opacity: smoothOpacity, y: smoothY, scale: smoothScale }}
+      className={`absolute inset-y-0 flex flex-col justify-center pointer-events-none z-10 px-5 sm:px-8 lg:px-[6vw] ${isMobile ? mobileAlign : desktopAlign}`}
+      style={{ opacity: smoothOpacity, y: smoothY }}
     >
-      {children}
+      <div style={{ maxWidth: isMobile ? "85vw" : "35vw" }}>
+        {children}
+      </div>
     </motion.div>
   );
 }
 
+/* ─── Animated line by line ─── */
+function RevealText({
+  text,
+  scrollProgress,
+  start,
+  end,
+  className = "",
+  tag: Tag = "p",
+  style,
+}: {
+  text: string;
+  scrollProgress: MotionValue<number>;
+  start: number;
+  end: number;
+  className?: string;
+  tag?: "h2" | "h3" | "p" | "span";
+  style?: React.CSSProperties;
+}) {
+  const words = text.split(" ");
+  const range = end - start;
+
+  return (
+    <Tag className={className} style={style}>
+      {words.map((word, i) => {
+        const stagger = range / words.length;
+        const enterAt = start + i * stagger;
+        const fullAt = Math.min(enterAt + stagger * 4, end);
+
+        return (
+          <RevealWord
+            key={`${i}-${word}`}
+            word={word}
+            scrollProgress={scrollProgress}
+            enterAt={enterAt}
+            fullAt={fullAt}
+            addSpace={i < words.length - 1}
+          />
+        );
+      })}
+    </Tag>
+  );
+}
+
+function RevealWord({
+  word,
+  scrollProgress,
+  enterAt,
+  fullAt,
+  addSpace,
+}: {
+  word: string;
+  scrollProgress: MotionValue<number>;
+  enterAt: number;
+  fullAt: number;
+  addSpace: boolean;
+}) {
+  const opacity = useTransform(scrollProgress, [enterAt, fullAt], [0.15, 1]);
+  const smoothOpacity = useSpring(opacity, { stiffness: 200, damping: 30 });
+
+  return (
+    <motion.span
+      className="inline-block"
+      style={{ opacity: smoothOpacity, marginRight: addSpace ? "0.3em" : 0 }}
+    >
+      {word}
+    </motion.span>
+  );
+}
+
+/* ─── Font size helpers ─── */
+const mobileLabelSize = "clamp(0.65rem, 2.5vw, 0.875rem)";
+const desktopLabelSize = "clamp(0.65rem, 0.8vw, 1rem)";
+const mobileHeadlineSize = "clamp(1.75rem, 7vw, 2.5rem)";
+const desktopHeadlineSize = "clamp(2rem, 3.5vw, 4.5rem)";
+const mobileHeroHeadlineSize = "clamp(2rem, 8vw, 3rem)";
+const desktopHeroHeadlineSize = "clamp(2.5rem, 5.5vw, 7rem)";
+const mobileBodySize = "clamp(0.875rem, 3.5vw, 1.125rem)";
+const desktopBodySize = "clamp(0.95rem, 1.15vw, 1.35rem)";
+const mobileDividerWidth = "10vw";
+const desktopDividerWidth = "2.5vw";
+const mobileSpacing = "3vw";
+const desktopSpacing = "1.2vw";
+
+/* ─── Main Section ─── */
 export function AboutSection() {
   const t = useTranslations("aboutSection.story");
   const sectionRef = useRef<HTMLElement>(null);
+  const isMobile = useIsMobile();
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -70,193 +162,210 @@ export function AboutSection() {
 
   const hintOpacity = useTransform(scrollYProgress, [0, 0.05], [0.5, 0]);
 
-  // Canvas dims when text is active, bright in gaps
-  // Text blocks: 0.00–0.18, 0.20–0.38, 0.40–0.58, 0.60–0.78, 0.80–0.98
+  // Model brightness: dims more on mobile so text is readable over centered model
   const canvasBrightness = useTransform(
     scrollYProgress,
-    [0, 0.03, 0.14, 0.18,   0.20, 0.23, 0.34, 0.38,   0.40, 0.43, 0.54, 0.58,   0.60, 0.63, 0.74, 0.78,   0.80, 0.83, 0.94, 0.98],
-    [1, 0.25, 0.25, 1,      1,    0.25, 0.25, 1,       1,    0.25, 0.25, 1,       1,    0.25, 0.25, 1,       1,    0.25, 0.25, 0.25]
+    [
+      0, 0.04, 0.14, 0.18,
+      0.20, 0.24, 0.34, 0.38,
+      0.40, 0.44, 0.54, 0.58,
+      0.60, 0.64, 0.74, 0.78,
+      0.80, 0.84, 0.94, 0.98,
+    ],
+    isMobile
+      ? [
+          1, 0.3, 0.3, 1,
+          1, 0.3, 0.3, 1,
+          1, 0.3, 0.3, 1,
+          1, 0.3, 0.3, 1,
+          1, 0.3, 0.3, 0.3,
+        ]
+      : [
+          1, 0.5, 0.5, 1,
+          1, 0.5, 0.5, 1,
+          1, 0.5, 0.5, 1,
+          1, 0.5, 0.5, 1,
+          1, 0.5, 0.5, 0.5,
+        ]
   );
   const smoothBrightness = useSpring(canvasBrightness, { stiffness: 120, damping: 30 });
   const canvasFilter = useTransform(smoothBrightness, (v) => `brightness(${v})`);
+
+  const lbl = isMobile ? mobileLabelSize : desktopLabelSize;
+  const hdl = isMobile ? mobileHeadlineSize : desktopHeadlineSize;
+  const heroHdl = isMobile ? mobileHeroHeadlineSize : desktopHeroHeadlineSize;
+  const bdy = isMobile ? mobileBodySize : desktopBodySize;
+  const dvd = isMobile ? mobileDividerWidth : desktopDividerWidth;
+  const spc = isMobile ? mobileSpacing : desktopSpacing;
 
   return (
     <section
       ref={sectionRef}
       id="about"
       className="relative"
-      style={{ height: "1000vh" }}
+      style={{ height: isMobile ? "600vh" : "1000vh" }}
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden">
-        {/* 3D Canvas — dims when text is active */}
+        {/* 3D Canvas */}
         <motion.div className="absolute inset-0" style={{ filter: canvasFilter }}>
-          <HeartScene scrollProgress={scrollYProgress} />
+          <HeartScene scrollProgress={scrollYProgress} isMobile={isMobile} />
         </motion.div>
 
-        {/* Text overlays */}
-        <div className="absolute inset-0 z-10">
-
-        {/* Act 1: 0.00–0.18 (fade 0.00–0.04, hold 0.04–0.14, fade 0.14–0.18) */}
-        <ScrollText
+        {/* ── Act 1: Centered hero statement ── */}
+        <ActText
           scrollProgress={scrollYProgress}
           fadeIn={[0.00, 0.04]}
           fadeOut={[0.14, 0.18]}
-          className="inset-0 flex flex-col items-center justify-center text-center px-6"
+          align="center"
+          isMobile={isMobile}
         >
-          <span className="text-xs font-heading tracking-[0.4em] text-primary mb-6 block uppercase">
+          <span className="font-heading tracking-[0.4em] text-primary block uppercase" style={{ fontSize: lbl, marginBottom: spc }}>
             {t("slogan.label")}
           </span>
-          <SplitText
+          <RevealText
             text={t("slogan.headline")}
             scrollProgress={scrollYProgress}
             start={0.00}
             end={0.04}
             tag="h2"
-            splitBy="chars"
-            className="font-heading tracking-tight leading-[0.9] text-white whitespace-nowrap"
-            style={{ fontSize: "clamp(2.5rem, 6vw, 5.5rem)" }}
+            className="font-heading tracking-tight leading-[0.9] text-white"
+            style={{ fontSize: heroHdl, marginBottom: spc }}
           />
-          <div className="w-12 h-px bg-primary/40 mx-auto mt-8 mb-6" />
-          <SplitText
+          <div className="h-px bg-primary/40 mx-auto" style={{ width: dvd, marginBottom: spc }} />
+          <RevealText
             text={t("slogan.body")}
             scrollProgress={scrollYProgress}
             start={0.02}
-            end={0.05}
+            end={0.06}
             tag="p"
-            splitBy="words"
-            className="text-xl lg:text-2xl text-white/70 max-w-lg mx-auto leading-relaxed"
+            className="text-white/60 leading-relaxed" style={{ fontSize: bdy }}
           />
-        </ScrollText>
+        </ActText>
 
-        {/* Act 2: 0.20–0.38 (fade 0.20–0.24, hold 0.24–0.34, fade 0.34–0.38) */}
-        <ScrollText
+        {/* ── Act 2: Text right, model left ── */}
+        <ActText
           scrollProgress={scrollYProgress}
           fadeIn={[0.20, 0.24]}
           fadeOut={[0.34, 0.38]}
-          className="inset-y-0 right-0 w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-16 xl:px-24"
+          align="right"
+          isMobile={isMobile}
         >
-          <span className="text-xs font-heading tracking-[0.4em] text-primary mb-4 block uppercase">
+          <span className="font-heading tracking-[0.4em] text-primary block uppercase" style={{ fontSize: lbl, marginBottom: spc }}>
             {t("origin.label")}
           </span>
-          <SplitText
+          <RevealText
             text={t("origin.headline")}
             scrollProgress={scrollYProgress}
             start={0.20}
             end={0.24}
             tag="h3"
-            splitBy="chars"
-            className="font-heading tracking-tight leading-none mb-6 text-white whitespace-nowrap"
-            style={{ fontSize: "clamp(2rem, 5vw, 4.5rem)" }}
+            className="font-heading tracking-tight leading-none text-white"
+            style={{ fontSize: hdl, marginBottom: spc }}
           />
-          <div className="w-10 h-px bg-white/20 mb-6" />
-          <SplitText
+          <div className="h-px bg-white/20" style={{ width: dvd, marginBottom: spc }} />
+          <RevealText
             text={t("origin.body")}
             scrollProgress={scrollYProgress}
             start={0.22}
-            end={0.25}
+            end={0.26}
             tag="p"
-            splitBy="words"
-            className="text-xl lg:text-2xl text-white/70 max-w-md leading-relaxed"
+            className="text-white/60 leading-relaxed" style={{ fontSize: bdy }}
           />
-        </ScrollText>
+        </ActText>
 
-        {/* Act 3: 0.40–0.58 (fade 0.40–0.44, hold 0.44–0.54, fade 0.54–0.58) */}
-        <ScrollText
+        {/* ── Act 3: Text left, model right ── */}
+        <ActText
           scrollProgress={scrollYProgress}
           fadeIn={[0.40, 0.44]}
           fadeOut={[0.54, 0.58]}
-          className="inset-y-0 left-0 w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-16 xl:px-24"
+          align="left"
+          isMobile={isMobile}
         >
-          <span className="text-xs font-heading tracking-[0.4em] text-primary mb-4 block uppercase">
+          <span className="font-heading tracking-[0.4em] text-primary block uppercase" style={{ fontSize: lbl, marginBottom: spc }}>
             {t("growth.label")}
           </span>
-          <SplitText
+          <RevealText
             text={t("growth.headline")}
             scrollProgress={scrollYProgress}
             start={0.40}
             end={0.44}
             tag="h3"
-            splitBy="chars"
-            className="font-heading tracking-tight leading-none mb-6 text-white whitespace-nowrap"
-            style={{ fontSize: "clamp(2rem, 5vw, 4.5rem)" }}
+            className="font-heading tracking-tight leading-none text-white"
+            style={{ fontSize: hdl, marginBottom: spc }}
           />
-          <div className="w-10 h-px bg-white/20 mb-6" />
-          <SplitText
+          <div className="h-px bg-white/20" style={{ width: dvd, marginBottom: spc }} />
+          <RevealText
             text={t("growth.body")}
             scrollProgress={scrollYProgress}
             start={0.42}
-            end={0.45}
+            end={0.46}
             tag="p"
-            splitBy="words"
-            className="text-xl lg:text-2xl text-white/70 max-w-md leading-relaxed"
+            className="text-white/60 leading-relaxed" style={{ fontSize: bdy }}
           />
-        </ScrollText>
+        </ActText>
 
-        {/* Act 4: 0.60–0.78 (fade 0.60–0.64, hold 0.64–0.74, fade 0.74–0.78) */}
-        <ScrollText
+        {/* ── Act 4: Centered bottom ── */}
+        <ActText
           scrollProgress={scrollYProgress}
           fadeIn={[0.60, 0.64]}
           fadeOut={[0.74, 0.78]}
-          className="inset-0 flex flex-col items-center justify-end pb-[15vh] text-center px-6"
+          align="center"
+          isMobile={isMobile}
         >
-          <span className="text-xs font-heading tracking-[0.4em] text-primary mb-4 block uppercase">
+          <span className="font-heading tracking-[0.4em] text-primary block uppercase" style={{ fontSize: lbl, marginBottom: spc }}>
             {t("mission.label")}
           </span>
-          <SplitText
+          <RevealText
             text={t("mission.headline")}
             scrollProgress={scrollYProgress}
             start={0.60}
             end={0.64}
             tag="h3"
-            splitBy="chars"
-            className="font-heading tracking-tight leading-none mb-5 text-white whitespace-nowrap"
-            style={{ fontSize: "clamp(2rem, 5vw, 4.5rem)" }}
+            className="font-heading tracking-tight leading-none text-white"
+            style={{ fontSize: isMobile ? mobileHeroHeadlineSize : "clamp(2rem, 4vw, 5.5rem)", marginBottom: spc }}
           />
-          <SplitText
+          <RevealText
             text={t("mission.body")}
             scrollProgress={scrollYProgress}
             start={0.62}
-            end={0.65}
+            end={0.66}
             tag="p"
-            splitBy="words"
-            className="text-xl lg:text-2xl text-white/70 max-w-lg mx-auto leading-relaxed"
+            className="text-white/60 leading-relaxed" style={{ fontSize: bdy }}
           />
-        </ScrollText>
+        </ActText>
 
-        {/* Act 5: 0.80–0.98 (fade 0.80–0.84, hold 0.84–0.94, fade 0.94–0.98) */}
-        <ScrollText
+        {/* ── Act 5: Final centered ── */}
+        <ActText
           scrollProgress={scrollYProgress}
           fadeIn={[0.80, 0.84]}
           fadeOut={[0.94, 0.98]}
-          className="inset-0 flex flex-col items-center justify-end pb-[12vh] text-center px-6"
+          align="center"
+          isMobile={isMobile}
         >
-          <span className="text-xs font-heading tracking-[0.4em] text-primary mb-4 block uppercase">
+          <span className="font-heading tracking-[0.4em] text-primary block uppercase" style={{ fontSize: lbl, marginBottom: spc }}>
             {t("positioning.label")}
           </span>
-          <SplitText
+          <RevealText
             text={t("positioning.headline")}
             scrollProgress={scrollYProgress}
             start={0.80}
             end={0.84}
             tag="h3"
-            splitBy="chars"
-            className="font-heading tracking-tight leading-[0.95] mb-5 text-white whitespace-nowrap"
-            style={{ fontSize: "clamp(2rem, 5vw, 4.5rem)" }}
+            className="font-heading tracking-tight leading-[0.95] text-white"
+            style={{ fontSize: isMobile ? mobileHeroHeadlineSize : "clamp(2rem, 4.5vw, 4rem)", marginBottom: spc }}
           />
-          <div className="w-12 h-px bg-primary/40 mx-auto mb-5" />
-          <SplitText
+          <div className="h-px bg-primary/40 mx-auto" style={{ width: dvd, marginBottom: spc }} />
+          <RevealText
             text={t("positioning.body")}
             scrollProgress={scrollYProgress}
             start={0.82}
-            end={0.85}
+            end={0.86}
             tag="p"
-            splitBy="words"
-            className="text-xl lg:text-2xl text-white/70 max-w-lg mx-auto leading-relaxed"
+            className="text-white/60 leading-relaxed" style={{ fontSize: bdy }}
           />
-        </ScrollText>
+        </ActText>
 
-        </div>
-
+        {/* Scroll hint */}
         <motion.div
           className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center pointer-events-none z-10"
           style={{ opacity: hintOpacity }}

@@ -8,6 +8,7 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link } from "@/i18n/navigation";
 import { Container } from "./layout";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 type CaseItem = {
   title: string;
@@ -51,16 +52,13 @@ function CaseCard({
     >
       <Link href={`/cases/${item.slug}`} className="block w-full h-full">
         {/* Arrow square — outside clipPath */}
-        <span className="absolute top-0 right-0 w-10 h-10 bg-primary z-20 flex items-center justify-center">
-          <ArrowUpRight className="w-4 h-4 text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+        <span className="absolute top-0 right-0 w-8 h-8 sm:w-10 sm:h-10 bg-primary z-20 flex items-center justify-center">
+          <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </span>
 
         {/* Card with cutout */}
         <div
-          className="relative w-full h-full overflow-hidden"
-          style={{
-            clipPath: "polygon(0 0, calc(100% - 52px) 0, calc(100% - 52px) 52px, 100% 52px, 100% 100%, 0 100%)",
-          }}
+          className="relative w-full h-full overflow-hidden case-card-clip"
         >
           {/* Photo */}
           <Image
@@ -92,11 +90,15 @@ function CaseCard({
   );
 }
 
+const MOBILE_CARDS_LIMIT = 4;
+
 export function CasesSection() {
   const t = useTranslations("projects");
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.05 });
-  const items = t.raw("items") as CaseItem[];
+  const isMobile = useIsMobile();
+  const allItems = t.raw("items") as CaseItem[];
+  const items = isMobile ? allItems.slice(0, MOBILE_CARDS_LIMIT) : allItems;
 
   return (
     <section

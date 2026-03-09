@@ -94,7 +94,7 @@ function TabPanelBottom({ categoryKey }: { categoryKey: CategoryKey }) {
     >
       <div className="grid grid-cols-1 lg:grid-cols-5">
         {/* What we do — light bg */}
-        <div className="lg:col-span-3" style={{ paddingTop: "var(--space-md)", paddingBottom: "var(--space-lg)", paddingRight: "var(--gap-lg)" }}>
+        <div className="lg:col-span-3 lg:pr-[var(--gap-lg)]" style={{ paddingTop: "var(--space-md)", paddingBottom: "var(--space-lg)" }}>
           <span
             className="text-fluid-xs font-heading tracking-[0.3em] text-black/40 block"
             style={{ marginBottom: "var(--space-sm)" }}
@@ -117,15 +117,15 @@ function TabPanelBottom({ categoryKey }: { categoryKey: CategoryKey }) {
           </ul>
         </div>
 
-        {/* Cases — dark block that extends to the right edge */}
+        {/* Cases — dark block, hidden on mobile */}
         <div
-          className="lg:col-span-2 relative"
-          style={{ padding: "var(--space-md) 0 var(--space-lg) var(--space-md)" }}
+          className="hidden lg:block lg:col-span-2 relative"
+          style={{ padding: "var(--space-md) var(--space-md) var(--space-lg) var(--space-md)" }}
         >
           {/* Dark bg extending to right edge of viewport */}
           <div
-            className="absolute inset-0 bg-[#0a0a0a]"
-            style={{ right: "-50vw" }}
+            className="absolute inset-y-0 bg-[#0a0a0a]"
+            style={{ left: 0, right: "-50vw" }}
           />
           <div className="relative z-10">
             <span
@@ -146,7 +146,7 @@ function TabPanelBottom({ categoryKey }: { categoryKey: CategoryKey }) {
                   <span className="expertise-case-name text-white font-heading tracking-wide">
                     {c.name}
                   </span>
-                  <span className="expertise-case-venue text-white/40 ml-2">
+                  <span className="expertise-case-venue text-white/40 block sm:inline sm:ml-2">
                     — {c.venue}
                   </span>
                 </motion.div>
@@ -179,7 +179,7 @@ export function ExpertiseSection() {
     <motion.section
       ref={sectionRef}
       id="expertise"
-      className="relative z-10 bg-[#FAFAF9] pt-fluid-section pb-0 overflow-x-clip"
+      className="relative z-10 bg-[#FAFAF9] pt-[clamp(6rem,5rem+8vw,14rem)] pb-0 overflow-x-clip"
     >
       {/* Noise overlay */}
       <div className="absolute inset-0 pointer-events-none z-0 opacity-[0.08] mix-blend-multiply">
@@ -227,7 +227,10 @@ export function ExpertiseSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
           style={{ marginBottom: "var(--space-lg)" }}
+          className="relative"
         >
+          {/* Scroll fade hints */}
+          <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#FAFAF9] to-transparent z-10 pointer-events-none lg:hidden" />
           <div
             role="tablist"
             aria-label={t("title")}

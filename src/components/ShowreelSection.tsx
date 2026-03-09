@@ -19,7 +19,6 @@ export function ShowreelSection({
   const t = useTranslations("showreel");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
-  const [isLoaded, setIsLoaded] = useState(false);
   const [progress, setProgress] = useState(0);
 
   const sectionRef = useRef<HTMLElement>(null);
@@ -56,18 +55,23 @@ export function ShowreelSection({
     if (!video) return;
 
     const playVideo = () => {
+      video.muted = true;
       video.play().catch(() => {
         // Autoplay was prevented
       });
     };
 
-    if (video.readyState >= 3) {
+    if (video.readyState >= 2) {
       playVideo();
     } else {
+      video.addEventListener("loadeddata", playVideo, { once: true });
       video.addEventListener("canplay", playVideo, { once: true });
     }
 
-    return () => video.removeEventListener("canplay", playVideo);
+    return () => {
+      video.removeEventListener("loadeddata", playVideo);
+      video.removeEventListener("canplay", playVideo);
+    };
   }, []);
 
   // Update progress bar
@@ -127,20 +131,13 @@ export function ShowreelSection({
       <section
         ref={sectionRef}
         id="showreel"
-        className="relative py-fluid-section -mt-[15vh]"
+        className="relative py-fluid-section -mt-[5vh] sm:-mt-[15vh]"
       >
         <Container>
           <motion.div
             style={{ y, scale }}
             className="relative aspect-video overflow-hidden bg-muted group"
           >
-            {/* Loading indicator */}
-            {!isLoaded && (
-              <div className="absolute inset-0 flex items-center justify-center bg-muted z-10">
-                <div className="w-12 h-12 border-2 border-foreground/20 border-t-foreground rounded-full animate-spin" />
-              </div>
-            )}
-
             {/* Background Video */}
             <video
               ref={videoRef}
@@ -151,8 +148,7 @@ export function ShowreelSection({
               muted
               loop
               playsInline
-              preload="auto"
-              onLoadedData={() => setIsLoaded(true)}
+              preload="metadata"
             />
 
             {/* Gradient overlay */}
@@ -181,7 +177,7 @@ export function ShowreelSection({
               >
                 {/* Outer square pulse */}
                 <motion.div
-                  className="absolute border-2 border-white/30"
+                  className="absolute border-2 border-white/30 w-14 h-14 sm:w-20 sm:h-20 -ml-7 -mt-7 sm:-ml-10 sm:-mt-10 left-1/2 top-1/2"
                   animate={{
                     scale: [1, 1.3, 1],
                     opacity: [0.6, 0, 0.6],
@@ -191,17 +187,9 @@ export function ShowreelSection({
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  style={{
-                    width: "80px",
-                    height: "80px",
-                    marginLeft: "-40px",
-                    marginTop: "-40px",
-                    left: "50%",
-                    top: "50%",
-                  }}
                 />
                 <motion.div
-                  className="absolute border-2 border-white/20"
+                  className="absolute border-2 border-white/20 w-14 h-14 sm:w-20 sm:h-20 -ml-7 -mt-7 sm:-ml-10 sm:-mt-10 left-1/2 top-1/2"
                   animate={{
                     scale: [1, 1.5, 1],
                     opacity: [0.4, 0, 0.4],
@@ -212,26 +200,18 @@ export function ShowreelSection({
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  style={{
-                    width: "80px",
-                    height: "80px",
-                    marginLeft: "-40px",
-                    marginTop: "-40px",
-                    left: "50%",
-                    top: "50%",
-                  }}
                 />
 
                 {/* Main button */}
                 <div
                   className={cn(
-                    "w-20 h-20 lg:w-28 lg:h-28",
+                    "w-14 h-14 sm:w-20 sm:h-20 lg:w-28 lg:h-28",
                     "bg-primary",
                     "flex items-center justify-center",
                     "transition-all duration-300"
                   )}
                 >
-                  <Play className="w-8 h-8 lg:w-10 lg:h-10 text-white fill-white ml-1" />
+                  <Play className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-white fill-white ml-0.5" />
                 </div>
               </motion.div>
 
@@ -246,20 +226,20 @@ export function ShowreelSection({
             </button>
 
             {/* Bottom controls */}
-            <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 flex items-center justify-between opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
               {/* Mute/Unmute button */}
               <button
                 onClick={toggleMute}
                 className={cn(
-                  "w-12 h-12 flex items-center justify-center",
+                  "w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center",
                   "bg-black/50 backdrop-blur-sm",
                   "text-white hover:bg-black/70 transition-colors"
                 )}
               >
                 {isMuted ? (
-                  <VolumeX className="w-5 h-5" />
+                  <VolumeX className="w-4 h-4 sm:w-5 sm:h-5" />
                 ) : (
-                  <Volume2 className="w-5 h-5" />
+                  <Volume2 className="w-4 h-4 sm:w-5 sm:h-5" />
                 )}
               </button>
 
@@ -267,12 +247,12 @@ export function ShowreelSection({
               <button
                 onClick={openModal}
                 className={cn(
-                  "w-12 h-12 flex items-center justify-center",
+                  "w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center",
                   "bg-black/50 backdrop-blur-sm",
                   "text-white hover:bg-black/70 transition-colors"
                 )}
               >
-                <Maximize2 className="w-5 h-5" />
+                <Maximize2 className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
             </div>
           </motion.div>
@@ -292,8 +272,8 @@ export function ShowreelSection({
           <button
             onClick={closeModal}
             className={cn(
-              "absolute top-6 right-6 z-10",
-              "w-12 h-12 flex items-center justify-center",
+              "absolute top-3 right-3 sm:top-6 sm:right-6 z-10",
+              "w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center",
               "bg-white/10 hover:bg-white/20 transition-colors",
               "text-white"
             )}

@@ -1,5 +1,7 @@
 "use client";
 
+import { Link } from "@/i18n/navigation";
+
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import { motion, useInView } from "motion/react";
@@ -97,13 +99,13 @@ export function TurnkeyProcess() {
           className="flex flex-col sm:flex-row items-start sm:items-center gap-fluid-sm"
           style={{ marginTop: "var(--space-xl)" }}
         >
-          <a
-            href="#contacts"
+          <Link
+            href="/contacts"
             className="group inline-flex items-center gap-3 bg-primary text-white font-heading tracking-wider px-8 py-4 text-fluid-sm hover:bg-primary/90 transition-colors"
           >
             {t("cta")}
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-          </a>
+          </Link>
           <span className="text-fluid-xs text-black/40">{t("ctaHint")}</span>
         </motion.div>
       </Container>

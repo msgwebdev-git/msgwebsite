@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion, useInView } from "motion/react";
@@ -90,10 +89,6 @@ function ProjectCard({ item, index }: { item: CaseItem; index: number }) {
 export default function ProjectsPage() {
   const t = useTranslations("projects");
   const items = t.raw("items") as CaseItem[];
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
-  }, []);
 
   return (
     <>

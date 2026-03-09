@@ -8,14 +8,24 @@
     "eventDigital": "Soluții digitale",
     "eventAdvertising": "Producție publicitară",
     "eventSecurity": "Securitate și siguranță",
+    "expertise": "Expertiza noastră",
+    "expFestivals": "Festivaluri",
+    "expConcerts": "Concerte",
+    "expConceptProjects": "Proiecte conceptuale",
+    "expConferences": "Conferințe / Forumuri",
+    "expBrandLaunches": "Lansări de brand",
+    "expSports": "Competiții sportive",
+    "expCorporate": "Corporate & Team Building",
+    "expCustom": "Proiecte personalizate",
     "projects": "Proiecte",
     "about": "Despre noi",
     "contacts": "Contacte",
-    "getInTouch": "Contactează-ne"
+    "getInTouch": "Contactează-ne",
+    "language": "Limbă"
   },
   "hero": {
-    "titleLine1": "Agenție de evenimente",
-    "titleLine2": "cu ciclu complet",
+    "titleLine1": "Event-agenție",
+    "titleLine2": "ciclu complet",
     "subtitle": "De la concept la realizare. Tehnologii, design, emoții.",
     "cta": "Discută proiectul",
     "viewProjects": "Vezi proiecte",
@@ -98,13 +108,13 @@
     "phone": "Telefon",
     "email": "Email",
     "address": "Adresa",
-    "addressValue": "Chișinău, Moldova"
+    "addressValue": "Strada Petricani 17, Chișinău"
   },
   "process": {
     "title": "Etapele de lucru",
     "subtitle": "Proces transparent de la primul apel până la evenimentul de succes",
     "cta": "Începe proiectul",
-    "ctaHint": "Sunteți gata să începeți? Prima consultație este gratuită",
+    "ctaHint": "Sunteți gata? Să discutăm proiectul dvs.",
     "brief": {
       "title": "Brief",
       "description": "Ne întâlnim, discutăm obiectivele și așteptările dvs. de la eveniment"
@@ -156,6 +166,11 @@
     "subtitle": "20 de ani de creare a evenimentelor de orice format și amploare",
     "whatWeDoLabel": "Ce facem",
     "casesLabel": "Cazuri",
+    "resultLabel": "Rezultat",
+    "scopeLabel": "Volumul lucrărilor",
+    "ctaTitle": "Discutăm proiectul dvs.?",
+    "ctaSubtitle": "Spuneți-ne despre evenimentul dvs. — vă vom propune o soluție",
+    "ctaButton": "Contactați-ne",
     "festivals": {
       "title": "Festivaluri",
       "description": "Festivaluri muzicale, urbane și naționale de amploare, cu o concepție bine definită și un model comercial solid.",
@@ -315,6 +330,73 @@
         { "name": "Caravana de Crăciun MAIB", "venue": "2025" },
         { "name": "Exercițiul «Border shield 25»", "venue": "Presa" },
         { "name": "Proiect media «Patrimoniale»", "venue": "2023–2025" }
+      ]
+    }
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "Despre companie",
+      "description": "Media Show Grup — singura companie din Moldova care reunește ciclul complet de organizare a evenimentelor: logistică, producție, video, decor și marketing."
+    },
+    "hero": {
+      "label": "Despre noi",
+      "title": "Creăm evenimente care rămân în memorie",
+      "subtitle": "Din 2006 transformăm ideile în evenimente de nivel mondial"
+    },
+    "mission": {
+      "label": "Misiune",
+      "text": "Combinăm inovația, tehnologiile moderne, profesionalismul și creativitatea pentru a crea evenimente unice și de neuitat.",
+      "description": "Media Show Grup este singura companie de pe piața Moldovei care reunește echipe profesioniste de logistică, producție video și design, regizori de top, echipament scenic modern, sunet și lumini profesionale de la branduri mondiale, decor și producție, marketing și PR."
+    },
+    "history": {
+      "label": "Drumul nostru",
+      "title": "Istoria companiei",
+      "items": [
+        { "year": "2006", "title": "Fondare", "description": "Deschiderea companiei Media Show Grup în Chișinău" },
+        { "year": "2011", "title": "MS-PROD", "description": "Lansarea direcției de asistență tehnică pentru evenimente, achiziționarea primului echipament" },
+        { "year": "2016", "title": "NGO", "description": "Începerea lucrului cu granturi sociale și culturale" },
+        { "year": "2018", "title": "Art Garage", "description": "Lansarea direcției de decor și scenografie" },
+        { "year": "2020", "title": "Line Production", "description": "Lansarea direcției de producție video" },
+        { "year": "2020", "title": "MS Streaming", "description": "Lansarea direcției de streaming online și a proiectului Live For Life" },
+        { "year": "2020", "title": "Povestea de Iarnă", "description": "Prima ediție a proiectului original" },
+        { "year": "2021", "title": "Festivalul Lupilor", "description": "Prima ediție a festivalului la Orheiul Vechi" },
+        { "year": "2026", "title": "goQode", "description": "Lansarea agenției digitale goQode — dezvoltare web, design și soluții digitale pentru afaceri" }
+      ]
+    },
+    "principles": {
+      "label": "Principii",
+      "title": "Ce ne definește",
+      "items": [
+        { "title": "Calitate", "description": "Oferim servicii de înaltă calitate și o organizare impecabilă a evenimentelor." },
+        { "title": "Abordare individuală", "description": "Ținem cont de nevoile fiecărui client, dezvoltând o abordare unică pentru fiecare proiect." },
+        { "title": "Profesionalism", "description": "Echipa noastră este formată din profesioniști în organizare, logistică, design, scenografie, lumini, sunet, foto și video." },
+        { "title": "Inovație", "description": "Utilizăm cele mai noi instrumente de management al proiectelor și tehnologii audiovizuale moderne." },
+        { "title": "Siguranță", "description": "Respectăm strict toate normele de siguranță — de la evaluarea riscurilor până la implementarea măsurilor la eveniment." },
+        { "title": "Responsabilitate", "description": "Ne asumăm responsabilitatea pentru munca noastră și îndeplinim toate obligațiile la timp și la cel mai înalt nivel." }
+      ]
+    },
+    "team": {
+      "label": "Echipa",
+      "title": "Oamenii din culise",
+      "description": "\"NOI\" la Media Show Grup înseamnă o echipă în care fiecare rezonează cu celălalt și care de peste 19 ani știe cum să țină pasul cu timpul și tehnologiile moderne.",
+      "members": [
+        { "name": "Diana Laptedulce", "role": "Director artistic" },
+        { "name": "Inna Iurașco", "role": "Director comercial" },
+        { "name": "Nelly Stafenet", "role": "Regizor" },
+        { "name": "Sirbu Iurie", "role": "Manager de proiect" },
+        { "name": "Irina Sabristova", "role": "Regizor" },
+        { "name": "Ioana Isac", "role": "Regizor" }
+      ]
+    },
+    "divisions": {
+      "label": "Diviziuni",
+      "title": "Direcțiile noastre",
+      "items": [
+        { "name": "MS-PROD", "description": "Asistență tehnică pentru evenimente" },
+        { "name": "Line Production", "description": "Producție video și filmare" },
+        { "name": "Art Garage", "description": "Decor și scenografie" },
+        { "name": "Libra Guard", "description": "Securitatea și paza evenimentelor" },
+        { "name": "goQode", "description": "Dezvoltare web și soluții digitale" }
       ]
     }
   },
@@ -1231,6 +1313,92 @@
       "about": "Primul spectacol al lui Scriptonite la Chișinău a avut loc pe 8 martie 2024 și a devenit unul dintre cele mai așteptate evenimente ale sezonului de concerte. Un spectacol al unui artist de acest calibru necesita o pregătire tehnică impecabilă, capabilă să transmită sonoritatea unică și conceptul vizual complex al show-ului într-o arenă mare.",
       "services": "Echipa Media Show Grup a fost contractorul tehnic general al concertului. Am asigurat montajul scenei, echipamentul de iluminare și sunet, instalarea ecranelor și backline-ul complet conform rider-ului artistului. O atenție deosebită a fost acordată realizării partiturii de iluminare: configurația complexă a aparatelor a permis realizarea scenariilor de iluminare autoriale, creând atmosfera profundă caracteristică spectacolelor live ale lui Scriptonite.",
       "result": "Datorită clasei înalte a echipamentului utilizat, am obținut calitatea ideală a sunetului și redarea detaliată a spectacolului de lumini, corespunzând pe deplin standardelor internaționale ale artistului. Proiectul a confirmat capacitatea holdingului de a asigura baza tehnică pentru ridere de orice complexitate, garantând funcționarea stabilă a tuturor sistemelor în condițiile unui spectacol live al unui artist de top."
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contacte",
+      "description": "Contactați Media Show Grup — agenție de evenimente full-cycle din Chișinău"
+    },
+    "label": "CONTACTE",
+    "title": "Să creăm ceva împreună",
+    "subtitle": "Spuneți-ne despre proiectul dvs. — vă vom propune o soluție",
+    "modeSimple": "Întrebare rapidă",
+    "modeBrief": "Brief de proiect",
+    "form": {
+      "name": "Nume",
+      "namePlaceholder": "Numele dvs.",
+      "company": "Companie",
+      "companyPlaceholder": "Numele companiei",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Telefon",
+      "phonePlaceholder": "+373 ...",
+      "message": "Mesaj",
+      "messagePlaceholder": "Spuneți-ne despre proiectul dvs...",
+      "eventType": "Tipul evenimentului",
+      "eventTypes": {
+        "festival": "Festival",
+        "concert": "Concert",
+        "conference": "Conferință / Forum",
+        "corporate": "Eveniment corporate",
+        "brandLaunch": "Lansare de brand",
+        "sports": "Eveniment sportiv",
+        "custom": "Altul"
+      },
+      "services": "Ce servicii aveți nevoie?",
+      "serviceOptions": {
+        "turnkey": "Ciclu complet",
+        "technical": "Producție tehnică",
+        "video": "Producție video",
+        "logistics": "Organizare și logistică",
+        "digital": "Soluții digitale",
+        "advertising": "Producție publicitară",
+        "security": "Securitate"
+      },
+      "eventDate": "Data estimată",
+      "eventDatePlaceholder": "Selectați data",
+      "guestCount": "Număr de invitați",
+      "guestOptions": {
+        "upTo100": "până la 100",
+        "100to500": "100 — 500",
+        "500to1000": "500 — 1 000",
+        "1000to5000": "1 000 — 5 000",
+        "5000plus": "5 000+"
+      },
+      "budget": "Buget",
+      "budgetOptions": {
+        "undecided": "Nedecis",
+        "small": "până la €5 000",
+        "medium": "€5 000 — €20 000",
+        "large": "€20 000 — €50 000",
+        "enterprise": "€50 000+"
+      },
+      "details": "Detalii proiect",
+      "detailsPlaceholder": "Descrieți evenimentul: obiective, format, cerințe speciale...",
+      "file": "Atașați fișier",
+      "fileHint": "PDF, DOC, PPT, JPG până la 10 MB",
+      "fileDrop": "Trageți un fișier sau faceți clic pentru a selecta",
+      "send": "Trimite",
+      "sendBrief": "Trimite brief",
+      "next": "Înainte",
+      "back": "Înapoi",
+      "sending": "Se trimite...",
+      "success": "Mesajul a fost trimis! Vă vom contacta în curând.",
+      "error": "A apărut o eroare. Încercați mai târziu."
+    },
+    "info": {
+      "phoneLabel": "Telefon",
+      "phoneValue": "+373 22 83 85 39",
+      "emailLabel": "Email",
+      "emailValue": "info@mediashowgrup.com",
+      "addressLabel": "Adresa",
+      "addressValue": "Strada Petricani 17, Chișinău",
+      "scheduleLabel": "Program de lucru",
+      "scheduleValue": "Lun — Vin: 09:00 — 18:00"
+    },
+    "social": {
+      "label": "Urmăriți-ne"
     }
   }
 }

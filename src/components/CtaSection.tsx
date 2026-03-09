@@ -1,5 +1,7 @@
 "use client";
 
+import { Link } from "@/i18n/navigation";
+
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import { motion, useInView } from "motion/react";
@@ -57,17 +59,20 @@ export function CtaSection() {
           </motion.p>
 
           {/* CTA Button */}
-          <motion.a
-            href="mailto:info@mediashowgrup.com"
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="group inline-flex items-center gap-3 bg-primary text-white font-heading tracking-wider px-10 py-5 text-fluid-sm hover:bg-primary/90 transition-colors"
             style={{ marginBottom: "var(--space-xl)" }}
           >
-            {t("title")}
-            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-          </motion.a>
+            <Link
+              href="/contacts"
+              className="group inline-flex items-center gap-3 bg-primary text-white font-heading tracking-wider px-10 py-5 text-fluid-sm hover:bg-primary/90 transition-colors"
+            >
+              {t("title")}
+              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </motion.div>
 
           {/* Contact Info */}
           <motion.div

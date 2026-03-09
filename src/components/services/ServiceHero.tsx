@@ -1,5 +1,7 @@
 "use client";
 
+import { Link } from "@/i18n/navigation";
+
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion, useScroll, useTransform } from "motion/react";
@@ -59,7 +61,7 @@ export function ServiceHero({ namespace, image }: ServiceHeroProps) {
               initial={{ opacity: 0, y: 60 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-              className="font-heading tracking-tight text-white leading-[1.1]"
+              className="font-heading tracking-tight text-white leading-[1.2]"
               style={{ fontSize: "clamp(1.75rem, 4.5vw, 4rem)", marginBottom: "var(--space-xs)" }}
             >
               {t("hero.titleLine1")}
@@ -77,16 +79,19 @@ export function ServiceHero({ namespace, image }: ServiceHeroProps) {
               {t("hero.subtitle")}
             </motion.p>
 
-            <motion.a
-              href="#contacts"
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
-              className="group inline-flex items-center gap-3 bg-primary text-white font-heading tracking-wider px-8 py-4 text-fluid-sm hover:bg-primary/90 transition-colors"
             >
-              {t("hero.cta")}
-              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </motion.a>
+              <Link
+                href="/contacts"
+                className="group inline-flex items-center gap-3 bg-primary text-white font-heading tracking-wider px-8 py-4 text-fluid-sm hover:bg-primary/90 transition-colors"
+              >
+                {t("hero.cta")}
+                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </motion.div>
           </div>
         </Container>
       </motion.div>

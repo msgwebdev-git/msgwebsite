@@ -1,5 +1,7 @@
 "use client";
 
+import { Link } from "@/i18n/navigation";
+
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
@@ -185,8 +187,8 @@ export function ServicesSection() {
               <ArrowUpRight className="w-4 h-4 text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </span>
 
-            <a
-              href="#contacts"
+            <Link
+              href="/contacts"
               className="service-card-regular relative block bg-white cursor-pointer flex flex-col items-center justify-center text-center"
               style={{
                 clipPath: "polygon(0 0, calc(100% - 52px) 0, calc(100% - 52px) 52px, 100% 52px, 100% 100%, 0 100%)",
@@ -195,7 +197,7 @@ export function ServicesSection() {
               <span className="service-card-title font-heading tracking-tight text-black leading-[1.1]">
                 {t("cta")}
               </span>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </Container>

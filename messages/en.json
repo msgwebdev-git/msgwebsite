@@ -8,10 +8,20 @@
     "eventDigital": "Digital Solutions",
     "eventAdvertising": "Advertising Production",
     "eventSecurity": "Security & Safety",
+    "expertise": "Our Expertise",
+    "expFestivals": "Festivals",
+    "expConcerts": "Concerts",
+    "expConceptProjects": "Concept Projects",
+    "expConferences": "Conferences / Forums",
+    "expBrandLaunches": "Brand Launches",
+    "expSports": "Sports Events",
+    "expCorporate": "Corporate & Team Building",
+    "expCustom": "Custom Projects",
     "projects": "Projects",
     "about": "About",
     "contacts": "Contacts",
-    "getInTouch": "Get in Touch"
+    "getInTouch": "Get in Touch",
+    "language": "Language"
   },
   "hero": {
     "titleLine1": "Full-cycle",
@@ -98,13 +108,13 @@
     "phone": "Phone",
     "email": "Email",
     "address": "Address",
-    "addressValue": "Chișinău, Moldova"
+    "addressValue": "Strada Petricani 17, Chișinău"
   },
   "process": {
     "title": "How We Work",
     "subtitle": "Transparent process from the first call to a successful event",
     "cta": "Start a Project",
-    "ctaHint": "Ready to start? First consultation is free",
+    "ctaHint": "Ready to start? Let's discuss your project",
     "brief": {
       "title": "Brief",
       "description": "We meet, discuss your goals, objectives and expectations for the event"
@@ -156,6 +166,11 @@
     "subtitle": "20 years of creating events across every format and scale",
     "whatWeDoLabel": "What we do",
     "casesLabel": "Case studies",
+    "resultLabel": "Result",
+    "scopeLabel": "Scope of work",
+    "ctaTitle": "Let's discuss your project?",
+    "ctaSubtitle": "Tell us about your event — we'll propose a solution",
+    "ctaButton": "Get in touch",
     "festivals": {
       "title": "Festivals",
       "description": "Large-scale musical, urban, and national festivals with well-thought-out concept and commercial model.",
@@ -315,6 +330,73 @@
         { "name": "MAIB Christmas Caravan", "venue": "2025" },
         { "name": "Border Shield 25 Exercise", "venue": "Press Release" },
         { "name": "Media Project «Patrimoniale»", "venue": "2023–2025" }
+      ]
+    }
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "About Us",
+      "description": "Media Show Grup — the only company in Moldova combining a full event production cycle: logistics, production, video, decor, and marketing."
+    },
+    "hero": {
+      "label": "About Us",
+      "title": "Creating events that matter",
+      "subtitle": "Since 2006, we turn ideas into world-class events"
+    },
+    "mission": {
+      "label": "Mission",
+      "text": "We combine innovation, modern technology, professionalism, and creativity to create unforgettable and unique events.",
+      "description": "Media Show Grup is the only company in Moldova that unites professional logistics teams, video production and design, top directors, modern stage equipment, professional sound and light from world brands, decor and manufacturing, marketing and PR."
+    },
+    "history": {
+      "label": "Our Journey",
+      "title": "Company History",
+      "items": [
+        { "year": "2006", "title": "Foundation", "description": "Media Show Grup was founded in Chișinău" },
+        { "year": "2011", "title": "MS-PROD", "description": "Launch of technical event support division, first equipment purchase" },
+        { "year": "2016", "title": "NGO", "description": "Started working with social and cultural grants" },
+        { "year": "2018", "title": "Art Garage", "description": "Launch of decor and scenography division" },
+        { "year": "2020", "title": "Line Production", "description": "Launch of video production division" },
+        { "year": "2020", "title": "MS Streaming", "description": "Launch of online streaming division and Live For Life project" },
+        { "year": "2020", "title": "Povestea de Iarnă", "description": "First edition of the original project" },
+        { "year": "2021", "title": "Festivalul Lupilor", "description": "First edition of the festival in Old Orhei" },
+        { "year": "2026", "title": "goQode", "description": "Launch of digital agency goQode — web development, design and digital solutions for business" }
+      ]
+    },
+    "principles": {
+      "label": "Principles",
+      "title": "What defines us",
+      "items": [
+        { "title": "Quality", "description": "We deliver high-quality service and flawless event organization." },
+        { "title": "Individual Approach", "description": "We consider each client's needs and wishes, developing a unique approach to every project." },
+        { "title": "Professionalism", "description": "Our team are experts in organization, logistics, design, scenography, lighting, sound, photo, and video." },
+        { "title": "Innovation", "description": "We use the latest project management tools and modern audiovisual technologies." },
+        { "title": "Safety", "description": "We strictly follow all safety standards — from risk assessment to on-site implementation." },
+        { "title": "Responsibility", "description": "We take full responsibility for our work and deliver on all commitments on time and with high quality." }
+      ]
+    },
+    "team": {
+      "label": "Team",
+      "title": "People behind the scenes",
+      "description": "\"WE\" at Media Show Grup means a team where everyone resonates with each other and has known for over 19 years how to keep pace with time and modern technology.",
+      "members": [
+        { "name": "Diana Laptedulce", "role": "Art Director" },
+        { "name": "Inna Iurașco", "role": "Commercial Director" },
+        { "name": "Nelly Stafenet", "role": "Director" },
+        { "name": "Sirbu Iurie", "role": "Project Manager" },
+        { "name": "Irina Sabristova", "role": "Director" },
+        { "name": "Ioana Isac", "role": "Director" }
+      ]
+    },
+    "divisions": {
+      "label": "Divisions",
+      "title": "Our Divisions",
+      "items": [
+        { "name": "MS-PROD", "description": "Technical event support" },
+        { "name": "Line Production", "description": "Video production and filming" },
+        { "name": "Art Garage", "description": "Decor and scenography" },
+        { "name": "Libra Guard", "description": "Event security and safety" },
+        { "name": "goQode", "description": "Web development and digital solutions" }
       ]
     }
   },
@@ -1231,6 +1313,92 @@
       "about": "Scriptonite's first performance in Chișinău took place on March 8, 2024 and became one of the most anticipated events of the concert season. A performance by an artist of this caliber required flawless technical preparation capable of conveying the unique sound and complex visual concept of the show in a large arena setting.",
       "services": "The Media Show Grup team served as the general technical contractor for the concert. We provided stage assembly, lighting and sound equipment, screen installation and full backline according to the artist's rider. Special attention was given to executing the lighting score: a complex fixture configuration enabled the realization of custom lighting scenarios, creating the deep atmosphere characteristic of Scriptonite's live performances.",
       "result": "Thanks to the high class of equipment used, we achieved ideal sound quality and detailed lighting show rendering, fully meeting the artist's international standards. The project confirmed the holding's ability to provide a technical base for riders of any complexity, guaranteeing stable operation of all systems during a top performer's live show."
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contacts",
+      "description": "Get in touch with Media Show Grup — full-cycle event agency in Chișinău"
+    },
+    "label": "CONTACTS",
+    "title": "Let's create something together",
+    "subtitle": "Tell us about your project — we'll offer a solution",
+    "modeSimple": "Quick question",
+    "modeBrief": "Project brief",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "company": "Company",
+      "companyPlaceholder": "Company name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+373 ...",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "eventType": "Event type",
+      "eventTypes": {
+        "festival": "Festival",
+        "concert": "Concert",
+        "conference": "Conference / Forum",
+        "corporate": "Corporate event",
+        "brandLaunch": "Brand launch",
+        "sports": "Sports event",
+        "custom": "Other"
+      },
+      "services": "What services do you need?",
+      "serviceOptions": {
+        "turnkey": "Full cycle",
+        "technical": "Technical production",
+        "video": "Video production",
+        "logistics": "Organization & logistics",
+        "digital": "Digital solutions",
+        "advertising": "Advertising production",
+        "security": "Security"
+      },
+      "eventDate": "Expected date",
+      "eventDatePlaceholder": "Select a date",
+      "guestCount": "Guest count",
+      "guestOptions": {
+        "upTo100": "up to 100",
+        "100to500": "100 — 500",
+        "500to1000": "500 — 1,000",
+        "1000to5000": "1,000 — 5,000",
+        "5000plus": "5,000+"
+      },
+      "budget": "Budget",
+      "budgetOptions": {
+        "undecided": "Not decided",
+        "small": "up to €5,000",
+        "medium": "€5,000 — €20,000",
+        "large": "€20,000 — €50,000",
+        "enterprise": "€50,000+"
+      },
+      "details": "Project details",
+      "detailsPlaceholder": "Describe your event: goals, format, special requirements...",
+      "file": "Attach file",
+      "fileHint": "PDF, DOC, PPT, JPG up to 10 MB",
+      "fileDrop": "Drop a file or click to browse",
+      "send": "Send",
+      "sendBrief": "Send brief",
+      "next": "Next",
+      "back": "Back",
+      "sending": "Sending...",
+      "success": "Message sent! We'll get back to you shortly.",
+      "error": "Something went wrong. Please try again later."
+    },
+    "info": {
+      "phoneLabel": "Phone",
+      "phoneValue": "+373 22 83 85 39",
+      "emailLabel": "Email",
+      "emailValue": "info@mediashowgrup.com",
+      "addressLabel": "Address",
+      "addressValue": "Strada Petricani 17, Chișinău",
+      "scheduleLabel": "Working hours",
+      "scheduleValue": "Mon — Fri: 09:00 — 18:00"
+    },
+    "social": {
+      "label": "Follow us"
     }
   }
 }

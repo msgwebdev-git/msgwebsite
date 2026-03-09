@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Link } from "@/i18n/navigation";
 
 interface CutoutButtonProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
@@ -11,18 +12,23 @@ function CutoutButton({
   variant = "outline",
   className,
   children,
+  href,
   ...props
 }: CutoutButtonProps) {
   const isFilled = variant === "filled";
+  const isInternal = href && href.startsWith("/") && !href.startsWith("//");
+
+  const Comp = isInternal ? Link : "a";
 
   return (
-    <a
+    <Comp
+      href={href as string}
       className={cn(
         "group relative block overflow-hidden",
         isFilled && "bg-foreground",
         className
       )}
-      {...props}
+      {...(isInternal ? {} : props)}
     >
       {/* Red expand overlay — grows from top-right corner on hover */}
       <span
@@ -70,7 +76,7 @@ function CutoutButton({
       >
         <ArrowUpRight className="w-3 h-3 text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
       </span>
-    </a>
+    </Comp>
   );
 }
 
