@@ -55,7 +55,7 @@ export function AboutDivisions() {
                 transition={{ delay: 0.2 + i * 0.1, duration: 0.5 }}
                 className="group flex flex-col items-center text-center"
               >
-                <div className="relative w-full aspect-[3/2] mb-4 flex items-center justify-center rounded-lg bg-white/[0.04] border border-white/[0.06] group-hover:border-primary/20 group-hover:bg-white/[0.06] transition-all duration-300 overflow-hidden">
+                <div className="relative w-full aspect-[3/2] mb-4 flex items-center justify-center bg-white/[0.04] border border-white/[0.06] group-hover:border-primary/20 group-hover:bg-white/[0.06] transition-all duration-300 overflow-hidden">
                   {logo ? (
                     <Image
                       src={logo}

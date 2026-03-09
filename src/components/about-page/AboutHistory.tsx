@@ -176,7 +176,7 @@ export function AboutHistory() {
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section ref={sectionRef} className="relative z-10 py-fluid-section overflow-hidden">
+    <section ref={sectionRef} className="relative py-fluid-section overflow-hidden">
       {/* Background — below 3D */}
       <div className="absolute inset-0 z-[1] bg-[#FAFAF9]" />
       {/* Subtle noise */}
