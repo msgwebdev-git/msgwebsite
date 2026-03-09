@@ -101,11 +101,7 @@ export function TurnkeyCases({ namespace = "serviceTurnkey" }: { namespace?: str
                   <ArrowUpRight className="w-4 h-4 text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                 </span>
                 <div
-                  className="relative w-full h-full overflow-hidden"
-                  style={{
-                    clipPath:
-                      "polygon(0 0, calc(100% - 52px) 0, calc(100% - 52px) 52px, 100% 52px, 100% 100%, 0 100%)",
-                  }}
+                  className="relative w-full h-full overflow-hidden case-card-clip"
                 >
                   <Image
                     src={item.image}

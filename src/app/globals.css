@@ -449,12 +449,15 @@ button, [role="button"], a, select, input[type="file"], input[type="submit"], in
   position: relative;
 }
 
-.turnkey-card-large {
+.turnkey-card-large,
+.turnkey-card-regular {
   aspect-ratio: 16 / 10;
 }
 
-.turnkey-card-regular {
-  aspect-ratio: 4 / 5;
+@media (min-width: 640px) {
+  .turnkey-card-regular {
+    aspect-ratio: 4 / 5;
+  }
 }
 
 .turnkey-card .turnkey-card-title {

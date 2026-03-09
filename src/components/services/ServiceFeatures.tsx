@@ -77,10 +77,10 @@ export function ServiceFeatures({ namespace }: ServiceFeaturesProps) {
               className="group relative border border-white/10 p-[clamp(1.25rem,3vw,2.5rem)] hover:border-primary/40 transition-colors duration-500"
               style={{
                 clipPath:
-                  "polygon(0 0, calc(100% - 32px) 0, calc(100% - 32px) 32px, 100% 32px, 100% 100%, 0 100%)",
+                  "polygon(0 0, calc(100% - 24px) 0, calc(100% - 24px) 24px, 100% 24px, 100% 100%, 0 100%)",
               }}
             >
-              <span className="absolute top-0 right-0 w-8 h-8 bg-primary/20 group-hover:bg-primary/40 transition-colors duration-500 flex items-center justify-center">
+              <span className="absolute top-0 right-0 w-6 h-6 bg-primary/20 group-hover:bg-primary/40 transition-colors duration-500 flex items-center justify-center">
                 <span className="text-[10px] font-heading text-white/60">
                   0{i + 1}
                 </span>

@@ -59,7 +59,7 @@ export function ServiceCta({ namespace }: ServiceCtaProps) {
           >
           <Link
             href="/contacts"
-            className="group inline-flex items-center gap-3 bg-primary text-white font-heading tracking-wider px-10 py-5 text-fluid-sm hover:bg-primary/90 transition-colors"
+            className="group inline-flex items-center gap-3 bg-primary text-white font-heading tracking-wider px-8 py-4 sm:px-10 sm:py-5 text-fluid-sm hover:bg-primary/90 transition-colors"
           >
             {t("cta.button")}
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />

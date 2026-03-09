@@ -21,7 +21,7 @@ export function ServiceHero({ namespace, image }: ServiceHeroProps) {
   const heroOpacity = useTransform(scrollY, [0, 400], [1, 0.3]);
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black flex items-end">
+    <section className="relative min-h-[100dvh] overflow-hidden bg-black flex items-end pt-20 sm:pt-0 pb-24 sm:pb-0">
       <motion.div style={{ y: heroImgY }} className="absolute inset-0">
         <Image
           src={image}
@@ -86,7 +86,7 @@ export function ServiceHero({ namespace, image }: ServiceHeroProps) {
             >
               <Link
                 href="/contacts"
-                className="group inline-flex items-center gap-3 bg-primary text-white font-heading tracking-wider px-8 py-4 text-fluid-sm hover:bg-primary/90 transition-colors"
+                className="group inline-flex items-center gap-3 bg-primary text-white font-heading tracking-wider px-6 py-3 sm:px-8 sm:py-4 text-fluid-sm hover:bg-primary/90 transition-colors"
               >
                 {t("hero.cta")}
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />

@@ -65,11 +65,7 @@ function ExpertiseCard({
       </span>
 
       <div
-        className="relative w-full h-full overflow-hidden"
-        style={{
-          clipPath:
-            "polygon(0 0, calc(100% - 52px) 0, calc(100% - 52px) 52px, 100% 52px, 100% 100%, 0 100%)",
-        }}
+        className="relative w-full h-full overflow-hidden case-card-clip"
       >
         <Image
           src={categoryImages[categoryKey]}

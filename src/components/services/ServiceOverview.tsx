@@ -85,7 +85,7 @@ export function ServiceOverview({ namespace, image }: ServiceOverviewProps) {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative aspect-[4/3] overflow-hidden"
               style={{
-                clipPath: "polygon(0 0, calc(100% - 52px) 0, calc(100% - 52px) 52px, 100% 52px, 100% 100%, 0 100%)",
+                clipPath: "polygon(0 0, calc(100% - 32px) 0, calc(100% - 32px) 32px, 100% 32px, 100% 100%, 0 100%)",
               }}
             >
               <Image
