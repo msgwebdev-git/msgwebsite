@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { ExpertisePage as ExpertisePageComponent } from "@/components/expertise/ExpertisePage";
 
@@ -58,7 +58,8 @@ export default async function ExpertisePage({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
   const config = expertiseConfigs[slug];
 
   if (!config) {

@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AboutPageClient } from "./AboutPageClient";
 
 export async function generateMetadata({
@@ -32,6 +32,12 @@ export async function generateMetadata({
   };
 }
 
-export default function AboutPage() {
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return <AboutPageClient />;
 }

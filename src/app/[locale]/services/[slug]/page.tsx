@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { ServicePage as ServicePageComponent } from "@/components/services/ServicePage";
 import { TurnkeyMiddle } from "@/components/services/TurnkeyMiddle";
@@ -223,6 +223,7 @@ export default async function ServicePage({
   params: Promise<{ locale: string; slug: string }>;
 }) {
   const { locale, slug } = await params;
+  setRequestLocale(locale);
   const config = serviceConfigs[slug];
 
   if (!config) {

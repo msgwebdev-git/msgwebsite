@@ -8,9 +8,17 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Container } from "@/components/layout";
 import { cn } from "@/lib/utils";
-import { Calendar } from "@/components/ui/calendar";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import dynamic from "next/dynamic";
+
+const Calendar = dynamic(() => import("@/components/ui/calendar").then(m => m.Calendar), { ssr: false });
+const Popover = dynamic(() => import("@/components/ui/popover").then(m => m.Popover), { ssr: false });
+const PopoverContent = dynamic(() => import("@/components/ui/popover").then(m => m.PopoverContent), { ssr: false });
+const PopoverTrigger = dynamic(() => import("@/components/ui/popover").then(m => m.PopoverTrigger), { ssr: false });
+const Select = dynamic(() => import("@/components/ui/select").then(m => m.Select), { ssr: false });
+const SelectContent = dynamic(() => import("@/components/ui/select").then(m => m.SelectContent), { ssr: false });
+const SelectItem = dynamic(() => import("@/components/ui/select").then(m => m.SelectItem), { ssr: false });
+const SelectTrigger = dynamic(() => import("@/components/ui/select").then(m => m.SelectTrigger), { ssr: false });
+const SelectValue = dynamic(() => import("@/components/ui/select").then(m => m.SelectValue), { ssr: false });
 
 const EVENT_TYPE_KEYS = ["festival", "concert", "conference", "corporate", "brandLaunch", "sports", "custom"] as const;
 const SERVICE_KEYS = ["turnkey", "technical", "video", "logistics", "digital", "advertising", "security"] as const;

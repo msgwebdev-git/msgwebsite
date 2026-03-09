@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import { CaseStudyContent } from "@/components/CaseStudyContent";
 
 const projectSlugs = [
@@ -19,8 +20,9 @@ export function generateStaticParams() {
 export default async function CaseStudyPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
   return <CaseStudyContent slug={slug} />;
 }
