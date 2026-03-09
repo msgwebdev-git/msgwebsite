@@ -1,6 +1,12 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { buildPageMetadata } from "@/lib/metadata-helpers";
+import { BreadcrumbJsonLd } from "@/components/json-ld/BreadcrumbJsonLd";
+import { JsonLdScript } from "@/components/json-ld/JsonLdScript";
+import { getLocalizedUrl } from "@/lib/metadata-helpers";
 import { ExpertisePage as ExpertisePageComponent } from "@/components/expertise/ExpertisePage";
+
+const HOST = "https://mediashowgrup.com";
 
 const expertiseConfigs: Record<string, { category: string; image: string }> = {
   festivals: { category: "festivals", image: "/expertise/festivals.jpg" },
@@ -30,27 +36,13 @@ export async function generateMetadata({
 
   const t = await getTranslations({ locale, namespace: "expertise" });
 
-  const title = `${t(`${config.category}.title`)} | Media Show Grup`;
-  const description = t(`${config.category}.description`);
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      siteName: "Media Show Grup",
-    },
-    alternates: {
-      canonical: `/${locale}/expertise/${slug}`,
-      languages: {
-        ru: `/ru/expertise/${slug}`,
-        ro: `/ro/expertise/${slug}`,
-        en: `/en/expertise/${slug}`,
-      },
-    },
-  };
+  return buildPageMetadata({
+    locale,
+    path: `/expertise/${slug}`,
+    title: t(`${config.category}.title`),
+    description: t(`${config.category}.description`),
+    ogImage: `${HOST}${config.image}`,
+  });
 }
 
 export default async function ExpertisePage({
@@ -66,5 +58,36 @@ export default async function ExpertisePage({
     notFound();
   }
 
-  return <ExpertisePageComponent category={config.category} image={config.image} />;
+  const t = await getTranslations({ locale, namespace: "expertise" });
+  const jsonLdT = await getTranslations({ locale, namespace: "jsonLd" });
+  const categoryTitle = t(`${config.category}.title`);
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: categoryTitle,
+    description: t(`${config.category}.description`),
+    url: getLocalizedUrl(locale, `/expertise/${slug}`),
+    provider: {
+      "@type": "Organization",
+      name: "Media Show Grup",
+      url: HOST,
+    },
+    serviceType: categoryTitle,
+    areaServed: ["MD", "RO", "EU"],
+  };
+
+  return (
+    <>
+      <BreadcrumbJsonLd
+        locale={locale}
+        items={[
+          { name: jsonLdT("expertise") },
+          { name: categoryTitle, path: `/expertise/${slug}` },
+        ]}
+      />
+      <JsonLdScript data={serviceSchema} />
+      <ExpertisePageComponent category={config.category} image={config.image} />
+    </>
+  );
 }

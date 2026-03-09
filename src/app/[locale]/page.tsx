@@ -1,39 +1,36 @@
-"use client";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/metadata-helpers";
+import { HomeJsonLd } from "@/components/json-ld/HomeJsonLd";
+import HomeClient from "./HomeClient";
 
-import { useState } from "react";
-import { Navbar } from "@/components/Navbar";
-import { HeroSection } from "@/components/HeroSection";
-import { Marquee } from "@/components/Marquee";
-import { ShowreelSection } from "@/components/ShowreelSection";
-import { AboutSection } from "@/components/AboutSection";
-import { ServicesSection } from "@/components/ServicesSection";
-import { ExpertiseSection } from "@/components/ExpertiseSection";
-import { CasesSection } from "@/components/CasesSection";
-import { ProcessSection } from "@/components/ProcessSection";
-import { CtaSection } from "@/components/CtaSection";
-import { Footer } from "@/components/Footer";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo" });
 
-import { PageLoader } from "@/components/PageLoader";
+  return buildPageMetadata({
+    locale,
+    path: "",
+    title: t("home.title"),
+    description: t("home.description"),
+    keywords: t("home.keywords").split(", "),
+  });
+}
 
-export default function Home() {
-  const [loaderDone, setLoaderDone] = useState(false);
-
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
-      <PageLoader onComplete={() => setLoaderDone(true)} />
-      <Navbar logoVisible={loaderDone} />
-      <main>
-        <HeroSection startAnimations={loaderDone} />
-        <Marquee />
-        <ShowreelSection />
-        <AboutSection />
-        <ServicesSection />
-        <ExpertiseSection />
-        <CasesSection />
-        <ProcessSection />
-        <CtaSection />
-      </main>
-      <Footer />
+      <HomeJsonLd locale={locale} />
+      <HomeClient />
     </>
   );
 }

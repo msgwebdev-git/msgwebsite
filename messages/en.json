@@ -1400,5 +1400,37 @@
     "social": {
       "label": "Follow us"
     }
+  },
+  "jsonLd": {
+    "home": "Home",
+    "about": "About",
+    "contacts": "Contacts",
+    "projects": "Projects",
+    "services": "Services",
+    "expertise": "Expertise",
+    "orgDescription": "Full-cycle event agency from Moldova since 2006. Festivals, concerts, conferences, corporate events.",
+    "turnkey": "Turnkey Events",
+    "logistics": "Event Logistics",
+    "technical": "Technical Support",
+    "videoproduction": "Video Production",
+    "digital": "Digital Solutions",
+    "advertising": "Advertising Production",
+    "security": "Security & Safety"
+  },
+  "seo": {
+    "home": {
+      "title": "Media Show Grup — Full-Cycle Event Agency in Moldova",
+      "description": "Event agency in Moldova since 2006. We organize festivals, concerts, conferences, corporate events. Logistics, technical support, video production, digital solutions.",
+      "keywords": "event agency Moldova, event planning Chisinau, festivals Moldova, concerts, conferences, corporate events, Media Show Grup"
+    },
+    "projects": {
+      "title": "Our Projects",
+      "description": "Media Show Grup portfolio: festivals, concerts, conferences and corporate events organized in Moldova and the region.",
+      "keywords": "event projects Moldova, event portfolio, organized festivals, produced concerts"
+    },
+    "cases": {
+      "title": "Case Study",
+      "description": "Project details: concept, execution and results."
+    }
   }
 }

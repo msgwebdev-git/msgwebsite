@@ -2,8 +2,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { ThemeProvider } from "@/components/providers";
 import { AnimatedNoise } from "@/components/AnimatedNoise";
+import { CookieConsentBanner } from "@/components/CookieConsent";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
+import "vanilla-cookieconsent/dist/cookieconsent.css";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -31,6 +33,7 @@ export default async function LocaleLayout({
       <NextIntlClientProvider messages={messages}>
         <AnimatedNoise opacity={0.03} />
         {children}
+        <CookieConsentBanner />
       </NextIntlClientProvider>
     </ThemeProvider>
   );

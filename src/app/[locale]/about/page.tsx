@@ -1,4 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/metadata-helpers";
+import { BreadcrumbJsonLd } from "@/components/json-ld/BreadcrumbJsonLd";
 import { AboutPageClient } from "./AboutPageClient";
 
 export async function generateMetadata({
@@ -9,27 +11,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "aboutPage" });
 
-  const title = `${t("meta.title")} | Media Show Grup`;
-  const description = t("meta.description");
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      siteName: "Media Show Grup",
-    },
-    alternates: {
-      canonical: `/${locale}/about`,
-      languages: {
-        ru: "/ru/about",
-        ro: "/ro/about",
-        en: "/en/about",
-      },
-    },
-  };
+  return buildPageMetadata({
+    locale,
+    path: "/about",
+    title: t("meta.title"),
+    description: t("meta.description"),
+  });
 }
 
 export default async function AboutPage({
@@ -39,5 +26,16 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <AboutPageClient />;
+
+  const t = await getTranslations({ locale, namespace: "jsonLd" });
+
+  return (
+    <>
+      <BreadcrumbJsonLd
+        locale={locale}
+        items={[{ name: t("about"), path: "/about" }]}
+      />
+      <AboutPageClient />
+    </>
+  );
 }

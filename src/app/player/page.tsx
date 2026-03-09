@@ -1,4 +1,9 @@
+import type { Metadata } from "next";
 import { LimeplayMediaPlayer } from "@/components/basic-player/components/media-player"
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 export default function Page() {
   return (

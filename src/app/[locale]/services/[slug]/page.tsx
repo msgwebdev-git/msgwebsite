@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { buildPageMetadata } from "@/lib/metadata-helpers";
 import { ServicePage as ServicePageComponent } from "@/components/services/ServicePage";
 import { TurnkeyMiddle } from "@/components/services/TurnkeyMiddle";
 import { ServiceFeatures } from "@/components/services/ServiceFeatures";
@@ -18,7 +19,7 @@ import { VideoEquipment } from "@/components/services/VideoEquipment";
 import { VideoStats } from "@/components/services/VideoStats";
 import { AdvertisingMaterials } from "@/components/services/AdvertisingMaterials";
 import { AdvertisingStats } from "@/components/services/AdvertisingStats";
-import { TurnkeyJsonLd } from "@/components/services/TurnkeyJsonLd";
+import { ServiceJsonLd } from "@/components/json-ld/ServiceJsonLd";
 
 const serviceConfigs: Record<
   string,
@@ -78,27 +79,13 @@ export async function generateMetadata({
 
   const t = await getTranslations({ locale, namespace: config.namespace });
 
-  const title = `${t("meta.title")} | Media Show Grup`;
-  const description = t("meta.description");
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      siteName: "Media Show Grup",
-    },
-    alternates: {
-      canonical: `/${locale}/services/${slug}`,
-      languages: {
-        ru: `/ru/services/${slug}`,
-        ro: `/ro/services/${slug}`,
-        en: `/en/services/${slug}`,
-      },
-    },
-  };
+  return buildPageMetadata({
+    locale,
+    path: `/services/${slug}`,
+    title: t("meta.title"),
+    description: t("meta.description"),
+    ogImage: `https://mediashowgrup.com${config.heroImage}`,
+  });
 }
 
 // Case slugs relevant to each service
@@ -232,7 +219,7 @@ export default async function ServicePage({
 
   return (
     <>
-      {slug === "turnkey" && <TurnkeyJsonLd locale={locale} />}
+      <ServiceJsonLd locale={locale} slug={slug} namespace={config.namespace} />
       <ServicePageComponent
         namespace={config.namespace}
         heroImage={config.heroImage}

@@ -1400,5 +1400,37 @@
     "social": {
       "label": "Urmăriți-ne"
     }
+  },
+  "jsonLd": {
+    "home": "Acasă",
+    "about": "Despre noi",
+    "contacts": "Contacte",
+    "projects": "Proiecte",
+    "services": "Servicii",
+    "expertise": "Expertiza noastră",
+    "orgDescription": "Agenție de evenimente full-cycle din Moldova din 2006. Festivaluri, concerte, conferințe, evenimente corporative.",
+    "turnkey": "Evenimente «la cheie»",
+    "logistics": "Organizare și logistică",
+    "technical": "Suport tehnic",
+    "videoproduction": "Producție video",
+    "digital": "Soluții digitale",
+    "advertising": "Producție publicitară",
+    "security": "Securitate și siguranță"
+  },
+  "seo": {
+    "home": {
+      "title": "Media Show Grup — Event-Agenție Ciclu Complet în Moldova",
+      "description": "Agenție de evenimente din Moldova din 2006. Organizăm festivaluri, concerte, conferințe, evenimente corporative. Logistică, suport tehnic, producție video, soluții digitale.",
+      "keywords": "agenție evenimente Moldova, organizare evenimente Chișinău, festivaluri Moldova, concerte, conferințe, evenimente corporative, Media Show Grup"
+    },
+    "projects": {
+      "title": "Proiecte realizate",
+      "description": "Portofoliul Media Show Grup: festivaluri, concerte, conferințe și evenimente corporative organizate în Moldova și în regiune.",
+      "keywords": "proiecte evenimente Moldova, portofoliu evenimente, festivaluri organizate, concerte realizate"
+    },
+    "cases": {
+      "title": "Studiu de caz",
+      "description": "Detalii despre proiect: concept, realizare și rezultate."
+    }
   }
 }
