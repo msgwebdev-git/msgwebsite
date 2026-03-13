@@ -44,8 +44,8 @@ function ServiceCard({
         <ArrowUpRight className="w-4 h-4 text-black transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
       </span>
 
-      <a
-        href={`#${serviceKey}`}
+      <Link
+        href={`/services/${serviceKey}`}
         className={cn(
           "relative block bg-[#0a0a0a] cursor-pointer flex flex-col justify-between",
           featured ? "service-card-featured" : "service-card-regular"
@@ -88,7 +88,7 @@ function ServiceCard({
             <div className="h-full w-0 bg-white transition-all duration-700 ease-out group-hover:w-full" />
           </div>
         </div>
-      </a>
+      </Link>
     </motion.div>
   );
 }

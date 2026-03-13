@@ -66,7 +66,7 @@
     },
     "videoproduction": {
       "title": "Video Production",
-      "description": "Full cycle of photo and video content production: professional event coverage, commercials, music videos, podcasts, and live streams. Post-production, graphics, 2D/3D animation, and motion design."
+      "description": "Full-cycle video production: professional event coverage, commercials, music videos, podcasts, and live streams. Post-production, graphics, 2D/3D animation, and motion design."
     },
     "digital": {
       "title": "Digital Solutions & Communications",
@@ -137,6 +137,16 @@
     }
   },
   "footer": {
+    "tagline": "Full-cycle event agency. From concept to execution.",
+    "services": "Services",
+    "company": "Company",
+    "contacts": "Contacts",
+    "social": "Follow us",
+    "cta": "Discuss a project",
+    "aboutLink": "About",
+    "projectsLink": "Projects",
+    "contactsLink": "Contacts",
+    "schedule": "Mon – Fri: 09:00 – 18:00",
     "rights": "All rights reserved",
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions"
@@ -774,19 +784,19 @@
       "items": [
         {
           "title": "Sound Systems",
-          "description": "Line arrays, monitor systems, microphones, and mixing consoles — any scale from 100 to 50,000 people"
+          "description": "L'Acoustics K2 & KARA2 line arrays, Allen & Heath dLive & Midas PRO2 consoles, Shure & Sennheiser microphones — coverage up to 50,000 people"
         },
         {
           "title": "Lighting Design",
-          "description": "Artistic and architectural lighting, moving heads, LED bars, laser systems, light show programming"
+          "description": "Robe BMFL & MegaPointe moving heads, ProLights Genesis, grandMA 3 control — from artistic lighting to architectural illumination"
         },
         {
           "title": "LED Screens",
-          "description": "Modular LED panels for indoor and outdoor, video projection, media servers, real-time broadcasting"
+          "description": "Yes-Tech MG7 modular LED panels (pitch 3.9–5.9) for indoor & outdoor, NovaStar processors, Blackmagic video mixers"
         },
         {
           "title": "Stage Structures",
-          "description": "Design and assembly of stages, podiums, trusses, tent and canopy structures of any complexity"
+          "description": "Eurotruss trusses, Allustage platforms, Layher scaffolding systems — stages, canopies, and grandstands of any complexity"
         },
         {
           "title": "3D Visualization",
@@ -805,19 +815,19 @@
       "items": [
         {
           "title": "Sound Systems",
-          "specs": ["L-Acoustics, JBL line arrays", "DiGiCo, Yamaha mixing consoles", "Shure PSM monitoring systems", "Shure, Sennheiser, DPA microphones", "Coverage up to 50,000 people"]
+          "specs": ["L'Acoustics K2, KARA2, SB18, KS28 line arrays", "Allen & Heath dLive, Midas PRO2, Yamaha LS9 consoles", "L'Acoustics X15 HiQ, 115XT HiQ monitors", "Shure, Sennheiser, AKG, DPA microphones", "Sennheiser EW G4 in-ear monitoring"]
         },
         {
           "title": "Lighting Equipment",
-          "specs": ["Clay Paky, Robe moving heads", "LED bars and panels", "Laser systems", "grandMA lighting consoles", "Strobes and hazers"]
+          "specs": ["Robe BMFL Spot, MegaPointe, Spiider, Tarrantula", "ProLights Genesis, Unico, Reflex", "grandMA 3, grandMA 2, Avolites Tiger Touch consoles", "Martin Atomic LED, SGM XC5 strobes", "Look Solution, Antari, Robe Haze 500 FT hazers"]
         },
         {
           "title": "LED Screens & Video",
-          "specs": ["P2.9 – P4.8 LED panels indoor/outdoor", "Resolume, Disguise media servers", "Broadcast cameras", "10,000+ lumen projectors", "Blackmagic video mixers"]
+          "specs": ["Yes-Tech MG7 LED panels pitch 3.9–5.9", "NovaStar VX1000, MCTRL 4K processors", "Blackmagic ATEM Mini Pro video mixer", "Media servers & content laptops", "HDMI extenders & splitters"]
         },
         {
           "title": "Stage Structures",
-          "specs": ["Prolyte aluminum trusses", "Stages and platforms up to 200 m²", "Tent structures", "Rigging and suspension systems", "Barriers and fencing"]
+          "specs": ["Eurotruss HD34, HD44, FD34 trusses", "Allustage & Eurotruss platforms", "Layher & OLAN scaffolding systems", "Chainmaster, Movecat electric chain hoists", "Heras barriers, crowd fencing, tent structures"]
         }
       ]
     },
@@ -859,19 +869,19 @@
   "serviceVideoproduction": {
     "meta": {
       "title": "Video Production",
-      "description": "Media Show Grup — full-cycle photo and video production: event coverage, commercials, music videos, podcasts, live streams, post-production, and animation."
+      "description": "Media Show Grup — full-cycle video production: event coverage, commercials, music videos, podcasts, live streams, post-production, and animation."
     },
     "hero": {
       "label": "Video Production",
       "titleLine1": "Content that",
       "titleLine2": "delivers results",
-      "subtitle": "Full-cycle photo and video content production for business — from filming to post-production and adaptation for all platforms",
+      "subtitle": "Full-cycle video production for business — from filming to post-production and adaptation for all platforms",
       "cta": "Discuss Your Project"
     },
     "overview": {
       "label": "What We Do",
       "title": "Full-Cycle Video Production",
-      "description": "We create professional photo and video content of any format: from event coverage and commercials to music videos, podcasts, and live streams. We handle all post-production and platform adaptation.",
+      "description": "We create professional video content of any format: from event coverage and commercials to music videos, podcasts, and live streams. We handle all post-production and platform adaptation.",
       "includes": [
         "Event filming & coverage",
         "Commercials & brand videos",
@@ -950,7 +960,7 @@
       "title": "Experience in Numbers",
       "items": [
         { "value": "500+", "label": "Video Projects", "description": "Commercials, music videos, broadcasts & reports" },
-        { "value": "50+", "label": "Music Videos", "description": "For Moldovan and international artists" },
+        { "value": "10 000+", "label": "Hours of Footage", "description": "Filmed and edited for our clients" },
         { "value": "200+", "label": "Live Streams", "description": "Online broadcasts of events and concerts" },
         { "value": "8", "label": "Cameras Simultaneously", "description": "Maximum multi-camera production" }
       ]
@@ -1400,6 +1410,12 @@
     "social": {
       "label": "Follow us"
     }
+  },
+  "thankYou": {
+    "title": "Thank you for reaching out!",
+    "subtitle": "We've received your request and will get back to you shortly. We typically respond within a few hours during business hours.",
+    "backHome": "Back to Home",
+    "backContacts": "Back to Contacts"
   },
   "jsonLd": {
     "home": "Home",

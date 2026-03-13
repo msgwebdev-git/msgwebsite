@@ -66,7 +66,7 @@
     },
     "videoproduction": {
       "title": "Producție video",
-      "description": "Ciclu complet de producție foto și video: filmări profesionale de evenimente, clipuri publicitare, videoclipuri muzicale, podcasturi și transmisiuni în direct. Post-producție, grafică, animații 2D/3D și motion design."
+      "description": "Ciclu complet de producție video: filmări profesionale de evenimente, clipuri publicitare, videoclipuri muzicale, podcasturi și transmisiuni în direct. Post-producție, grafică, animații 2D/3D și motion design."
     },
     "digital": {
       "title": "Soluții digitale și comunicare",
@@ -137,6 +137,16 @@
     }
   },
   "footer": {
+    "tagline": "Agenție de evenimente full-cycle. De la concept la realizare.",
+    "services": "Servicii",
+    "company": "Compania",
+    "contacts": "Contacte",
+    "social": "Rețele sociale",
+    "cta": "Discută un proiect",
+    "aboutLink": "Despre noi",
+    "projectsLink": "Proiecte",
+    "contactsLink": "Contacte",
+    "schedule": "Lun – Vin: 09:00 – 18:00",
     "rights": "Toate drepturile rezervate",
     "privacy": "Politica de confidențialitate",
     "terms": "Termeni și condiții"
@@ -774,19 +784,19 @@
       "items": [
         {
           "title": "Sisteme de sunet",
-          "description": "Line arrays, sisteme de monitorizare, microfoane si console de mixaj — orice scala de la 100 la 50.000 de persoane"
+          "description": "Line arrays L'Acoustics K2 și KARA2, console Allen & Heath dLive și Midas PRO2, microfoane Shure și Sennheiser — acoperire până la 50.000 de persoane"
         },
         {
-          "title": "Solutii de iluminare",
-          "description": "Iluminare artistica si arhitecturala, moving heads, bare LED, sisteme laser, programare spectacole de lumini"
+          "title": "Soluții de iluminare",
+          "description": "Moving heads Robe BMFL și MegaPointe, ProLights Genesis, control grandMA 3 — de la iluminare artistică la iluminare arhitecturală"
         },
         {
           "title": "Ecrane LED",
-          "description": "Panouri LED modulare pentru indoor si outdoor, proiectie video, servere media, transmisie in timp real"
+          "description": "Panouri LED modulare Yes-Tech MG7 (pitch 3.9–5.9) indoor și outdoor, procesoare NovaStar, mixere video Blackmagic"
         },
         {
           "title": "Structuri scenice",
-          "description": "Proiectare si montaj scene, podiumuri, ferme, structuri cu copertina de orice complexitate"
+          "description": "Ferme Eurotruss, podiumuri Allustage, sisteme de schele Layher — scene, copertine și tribune de orice complexitate"
         },
         {
           "title": "Vizualizare 3D",
@@ -805,19 +815,19 @@
       "items": [
         {
           "title": "Sisteme de sunet",
-          "specs": ["Linii de sunet L-Acoustics, JBL", "Console de mixare DiGiCo, Yamaha", "Sisteme de monitorizare Shure PSM", "Microfoane Shure, Sennheiser, DPA", "Acoperire până la 50 000 de persoane"]
+          "specs": ["L'Acoustics K2, KARA2, SB18, KS28", "Console Allen & Heath dLive, Midas PRO2, Yamaha LS9", "Monitoare L'Acoustics X15 HiQ, 115XT HiQ", "Microfoane Shure, Sennheiser, AKG, DPA", "Monitorizare in-ear Sennheiser EW G4"]
         },
         {
           "title": "Echipament de iluminat",
-          "specs": ["Moving heads Clay Paky, Robe", "Bare și panouri LED", "Sisteme laser", "Console de iluminat grandMA", "Stroboscoapele și hazere"]
+          "specs": ["Robe BMFL Spot, MegaPointe, Spiider, Tarrantula", "ProLights Genesis, Unico, Reflex", "Console grandMA 3, grandMA 2, Avolites Tiger Touch", "Martin Atomic LED, SGM XC5 strobes", "Hazere Look Solution, Antari, Robe Haze 500 FT"]
         },
         {
           "title": "Ecrane LED și video",
-          "specs": ["Panouri LED P2.9 – P4.8 indoor/outdoor", "Servere media Resolume, Disguise", "Camere pentru transmisiuni", "Proiectoare 10 000+ lumeni", "Mixere video Blackmagic"]
+          "specs": ["Panouri LED Yes-Tech MG7 pitch 3.9–5.9", "Procesoare NovaStar VX1000, MCTRL 4K", "Mixer video Blackmagic ATEM Mini Pro", "Servere media și laptopuri pentru conținut", "Extendere și splittere HDMI"]
         },
         {
           "title": "Construcții scenice",
-          "specs": ["Ferme din aluminiu Prolyte", "Podiumuri și scene până la 200 m²", "Construcții cu corturi", "Rigging și sisteme de suspendare", "Bariere și garduri"]
+          "specs": ["Ferme Eurotruss HD34, HD44, FD34", "Podiumuri Allustage și Eurotruss", "Sisteme de schele Layher și OLAN", "Trolii electrice Chainmaster, Movecat", "Bariere Heras, garduri, structuri cu copertină"]
         }
       ]
     },
@@ -859,19 +869,19 @@
   "serviceVideoproduction": {
     "meta": {
       "title": "Productie video",
-      "description": "Media Show Grup — ciclu complet de productie foto si video: filmari evenimente, clipuri publicitare, videoclipuri muzicale, podcasturi, transmisiuni live, post-productie si animatie."
+      "description": "Media Show Grup — ciclu complet de producție video: filmări evenimente, clipuri publicitare, videoclipuri muzicale, podcasturi, transmisiuni live, post-producție și animație."
     },
     "hero": {
       "label": "Productie video",
       "titleLine1": "Continut care",
       "titleLine2": "aduce rezultate",
-      "subtitle": "Ciclu complet de productie foto si video pentru afaceri — de la filmare la post-productie si adaptare pentru toate platformele",
+      "subtitle": "Ciclu complet de producție video pentru afaceri — de la filmare la post-producție și adaptare pentru toate platformele",
       "cta": "Discuta proiectul"
     },
     "overview": {
       "label": "Ce facem",
       "title": "Ciclu complet de productie video",
-      "description": "Cream continut foto si video profesional de orice format: de la filmari de evenimente si clipuri publicitare la videoclipuri muzicale, podcasturi si transmisiuni live. Asiguram toata post-productia si adaptarea pentru platforme.",
+      "description": "Creăm conținut video profesional de orice format: de la filmări de evenimente și clipuri publicitare la videoclipuri muzicale, podcasturi și transmisiuni live. Asigurăm toată post-producția și adaptarea pentru platforme.",
       "includes": [
         "Filmari evenimente si reportaje",
         "Clipuri publicitare si de imagine",
@@ -950,7 +960,7 @@
       "title": "Experiență în cifre",
       "items": [
         { "value": "500+", "label": "Proiecte video", "description": "Clipuri, reclame, transmisiuni și reportaje" },
-        { "value": "50+", "label": "Videoclipuri muzicale", "description": "Pentru artiști moldoveni și internaționali" },
+        { "value": "10 000+", "label": "Ore de material", "description": "Filmate și montate pentru clienți" },
         { "value": "200+", "label": "Transmisiuni live", "description": "Transmisiuni online ale evenimentelor și concertelor" },
         { "value": "8", "label": "Camere simultan", "description": "Producție multi-cameră maximă" }
       ]
@@ -1400,6 +1410,12 @@
     "social": {
       "label": "Urmăriți-ne"
     }
+  },
+  "thankYou": {
+    "title": "Mulțumim pentru mesaj!",
+    "subtitle": "Am primit solicitarea dvs. și vă vom contacta în curând. De obicei răspundem în câteva ore în timpul programului de lucru.",
+    "backHome": "Pagina principală",
+    "backContacts": "Înapoi la contacte"
   },
   "jsonLd": {
     "home": "Acasă",

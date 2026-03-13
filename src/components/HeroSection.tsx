@@ -187,7 +187,7 @@ export function HeroSection({ startAnimations = true }: HeroSectionProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={startAnimations ? { opacity: 1, y: 0 } : false}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex justify-between sm:justify-center gap-4 sm:gap-12 lg:gap-20 mt-10 sm:mt-16 lg:mt-24"
+          className="flex justify-between sm:justify-center gap-4 sm:gap-12 lg:gap-16 mt-10 sm:mt-16 lg:mt-24"
         >
           {stats.map((stat, index) => (
             <motion.div
@@ -195,7 +195,7 @@ export function HeroSection({ startAnimations = true }: HeroSectionProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={startAnimations ? { opacity: 1, y: 0 } : false}
               transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-              className="flex flex-1 flex-col items-center text-center"
+              className="flex flex-1 sm:flex-none flex-col items-center text-center"
             >
               <span className="text-fluid-xl font-heading text-foreground">
                 {stat.value}

@@ -27,38 +27,38 @@ const serviceConfigs: Record<
 > = {
   turnkey: {
     namespace: "serviceTurnkey",
-    heroImage: "/expertise/festivals.jpg",
-    overviewImage: "/expertise/concept-projects.jpg",
+    heroImage: "/services/turnkey.jpg",
+    overviewImage: "/services/service-second/turnkey.jpg",
   },
   logistics: {
     namespace: "serviceLogistics",
-    heroImage: "/expertise/conferences.jpg",
-    overviewImage: "/expertise/corporate.jpg",
+    heroImage: "/services/event-managment.jpg",
+    overviewImage: "/services/service-second/eventmanagment.jpg",
   },
   videoproduction: {
     namespace: "serviceVideoproduction",
-    heroImage: "/expertise/concept-projects.jpg",
-    overviewImage: "/expertise/concerts.jpg",
+    heroImage: "/services/video.jpg",
+    overviewImage: "/services/service-second/video.jpg",
   },
   technical: {
     namespace: "serviceTechnical",
-    heroImage: "/expertise/concerts.jpg",
-    overviewImage: "/expertise/conferences.jpg",
+    heroImage: "/services/technical.jpg",
+    overviewImage: "/services/service-second/technical.jpg",
   },
   advertising: {
     namespace: "serviceAdvertising",
-    heroImage: "/expertise/brand-launches.jpg",
-    overviewImage: "/expertise/festivals.jpg",
+    heroImage: "/services/advert.jpg",
+    overviewImage: "/services/service-second/advertisment.jpg",
   },
   digital: {
     namespace: "serviceDigital",
-    heroImage: "/expertise/brand-launches.jpg",
-    overviewImage: "/expertise/corporate.jpg",
+    heroImage: "/services/digital-solutions.jpg",
+    overviewImage: "/services/digital-solutions.jpg",
   },
   security: {
     namespace: "serviceSecurity",
-    heroImage: "/expertise/sports.jpg",
-    overviewImage: "/expertise/custom.jpg",
+    heroImage: "/services/secirity.jpg",
+    overviewImage: "/services/service-second/security.jpg",
   },
 };
 

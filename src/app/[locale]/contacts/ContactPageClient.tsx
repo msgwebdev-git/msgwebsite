@@ -8,6 +8,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Container } from "@/components/layout";
 import { cn } from "@/lib/utils";
+import { useRouter } from "@/i18n/navigation";
 import dynamic from "next/dynamic";
 
 const Calendar = dynamic(() => import("@/components/ui/calendar").then(m => m.Calendar), { ssr: false });
@@ -27,7 +28,7 @@ const BUDGET_KEYS = ["undecided", "small", "medium", "large", "enterprise"] as c
 
 const TOTAL_STEPS = 5;
 
-const inputClass = "bg-white/[0.04] border border-white/[0.08] px-5 py-4 text-white text-fluid-sm placeholder:text-white/20 focus:outline-none focus:border-primary/40 transition-colors";
+const inputClass = "bg-white/[0.04] border border-white/[0.08] px-4 py-3 text-white text-fluid-sm placeholder:text-white/20 focus:outline-none focus:border-primary/40 transition-colors";
 const labelClass = "text-fluid-xs font-heading tracking-[0.2em] text-white/40 uppercase";
 
 function Chip({ selected, onClick, children }: { selected: boolean; onClick: () => void; children: React.ReactNode }) {
@@ -50,6 +51,7 @@ function Chip({ selected, onClick, children }: { selected: boolean; onClick: () 
 
 export function ContactPageClient() {
   const t = useTranslations("contactPage");
+  const router = useRouter();
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
 
@@ -92,8 +94,8 @@ export function ContactPageClient() {
     if (f && f.size <= 10 * 1024 * 1024) setFile(f);
   }, []);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (e?: React.FormEvent) => {
+    e?.preventDefault();
     setStatus("sending");
     try {
       const body = mode === "simple"
@@ -105,13 +107,7 @@ export function ContactPageClient() {
         body: JSON.stringify(body),
       });
       if (res.ok) {
-        setStatus("success");
-        if (mode === "simple") setSimple({ name: "", email: "", phone: "", message: "" });
-        else {
-          setBrief({ name: "", company: "", email: "", phone: "", eventTypes: [], services: [], eventDate: "", guestCount: "", budget: "", details: "" });
-          setFile(null);
-          setStep(1);
-        }
+        router.push("/contacts/thank-you");
       } else setStatus("error");
     } catch { setStatus("error"); }
   };
@@ -182,30 +178,29 @@ export function ContactPageClient() {
 
               <AnimatePresence mode="wait">
                 {mode === "simple" ? (
-                  <motion.form key="simple" onSubmit={handleSubmit} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }} transition={{ duration: 0.3 }} className="flex flex-col gap-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      <div className="flex flex-col gap-2">
+                  <motion.form key="simple" onSubmit={handleSubmit} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }} transition={{ duration: 0.3 }} className="flex flex-col gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                      <div className="flex flex-col gap-1.5">
                         <label className={labelClass}>{t("form.name")}</label>
                         <input type="text" required value={simple.name} onChange={(e) => setSimple((s) => ({ ...s, name: e.target.value }))} placeholder={t("form.namePlaceholder")} className={inputClass} />
                       </div>
-                      <div className="flex flex-col gap-2">
+                      <div className="flex flex-col gap-1.5">
                         <label className={labelClass}>{t("form.email")}</label>
                         <input type="email" required value={simple.email} onChange={(e) => setSimple((s) => ({ ...s, email: e.target.value }))} placeholder={t("form.emailPlaceholder")} className={inputClass} />
                       </div>
+                      <div className="flex flex-col gap-1.5">
+                        <label className={labelClass}>{t("form.phone")}</label>
+                        <input type="tel" value={simple.phone} onChange={(e) => setSimple((s) => ({ ...s, phone: e.target.value }))} placeholder={t("form.phonePlaceholder")} className={inputClass} />
+                      </div>
                     </div>
-                    <div className="flex flex-col gap-2">
-                      <label className={labelClass}>{t("form.phone")}</label>
-                      <input type="tel" value={simple.phone} onChange={(e) => setSimple((s) => ({ ...s, phone: e.target.value }))} placeholder={t("form.phonePlaceholder")} className={inputClass} />
-                    </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-1.5">
                       <label className={labelClass}>{t("form.message")}</label>
-                      <textarea required rows={5} value={simple.message} onChange={(e) => setSimple((s) => ({ ...s, message: e.target.value }))} placeholder={t("form.messagePlaceholder")} className={cn(inputClass, "resize-none")} />
+                      <textarea required rows={4} value={simple.message} onChange={(e) => setSimple((s) => ({ ...s, message: e.target.value }))} placeholder={t("form.messagePlaceholder")} className={cn(inputClass, "resize-none")} />
                     </div>
-                    <button type="submit" disabled={status === "sending"} className="group flex items-center justify-between bg-primary px-8 py-5 text-white font-heading tracking-wider text-fluid-sm hover:bg-primary/90 transition-colors disabled:opacity-60">
+                    <button type="submit" disabled={status === "sending"} className="group flex items-center justify-between bg-primary px-8 py-4 text-white font-heading tracking-wider text-fluid-sm hover:bg-primary/90 transition-colors disabled:opacity-60">
                       {status === "sending" ? t("form.sending") : t("form.send")}
                       <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                     </button>
-                    {status === "success" && <p className="text-green-400 text-fluid-sm">{t("form.success")}</p>}
                     {status === "error" && <p className="text-red-400 text-fluid-sm">{t("form.error")}</p>}
                   </motion.form>
                 ) : (
@@ -227,8 +222,7 @@ export function ContactPageClient() {
                       </div>
                     </div>
 
-                    <form onSubmit={handleSubmit}>
-                      <AnimatePresence mode="wait">
+                    <AnimatePresence mode="wait">
                         {/* Step 1: Contact info */}
                         {step === 1 && (
                           <motion.div key="s1" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.15 }} className="flex flex-col gap-6">
@@ -236,7 +230,7 @@ export function ContactPageClient() {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                               <div className="flex flex-col gap-2">
                                 <label className={labelClass}>{t("form.name")} *</label>
-                                <input type="text" required value={brief.name} onChange={(e) => setBrief((s) => ({ ...s, name: e.target.value }))} placeholder={t("form.namePlaceholder")} className={inputClass} />
+                                <input type="text" value={brief.name} onChange={(e) => setBrief((s) => ({ ...s, name: e.target.value }))} placeholder={t("form.namePlaceholder")} className={inputClass} />
                               </div>
                               <div className="flex flex-col gap-2">
                                 <label className={labelClass}>{t("form.company")}</label>
@@ -246,7 +240,7 @@ export function ContactPageClient() {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                               <div className="flex flex-col gap-2">
                                 <label className={labelClass}>{t("form.email")} *</label>
-                                <input type="email" required value={brief.email} onChange={(e) => setBrief((s) => ({ ...s, email: e.target.value }))} placeholder={t("form.emailPlaceholder")} className={inputClass} />
+                                <input type="email" value={brief.email} onChange={(e) => setBrief((s) => ({ ...s, email: e.target.value }))} placeholder={t("form.emailPlaceholder")} className={inputClass} />
                               </div>
                               <div className="flex flex-col gap-2">
                                 <label className={labelClass}>{t("form.phone")}</label>
@@ -370,33 +364,6 @@ export function ContactPageClient() {
                             <div className="flex flex-col gap-2">
                               <textarea rows={5} value={brief.details} onChange={(e) => setBrief((s) => ({ ...s, details: e.target.value }))} placeholder={t("form.detailsPlaceholder")} className={cn(inputClass, "resize-none")} />
                             </div>
-                            <div className="flex flex-col gap-2">
-                              <label className={labelClass}>{t("form.file")}</label>
-                              <div
-                                onDragOver={(e) => { e.preventDefault(); setIsDragging(true); }}
-                                onDragLeave={() => setIsDragging(false)}
-                                onDrop={handleDrop}
-                                onClick={() => fileInputRef.current?.click()}
-                                className={cn(
-                                  "border border-dashed px-6 py-8 flex flex-col items-center justify-center gap-3 cursor-pointer transition-all duration-200",
-                                  isDragging ? "border-primary/60 bg-primary/5" : file ? "border-primary/30 bg-white/[0.02]" : "border-white/[0.08] bg-white/[0.02] hover:border-white/20"
-                                )}
-                              >
-                                <input ref={fileInputRef} type="file" className="hidden" accept=".pdf,.doc,.docx,.ppt,.pptx,.jpg,.jpeg,.png" onChange={(e) => { const f = e.target.files?.[0]; if (f && f.size <= 10 * 1024 * 1024) setFile(f); }} />
-                                {file ? (
-                                  <div className="flex items-center gap-3">
-                                    <span className="text-fluid-xs text-white/70 font-heading">{file.name}</span>
-                                    <button type="button" onClick={(e) => { e.stopPropagation(); setFile(null); }} className="text-white/30 hover:text-white/60"><X className="w-4 h-4" /></button>
-                                  </div>
-                                ) : (
-                                  <>
-                                    <Upload className="w-6 h-6 text-white/20" />
-                                    <span className="text-fluid-xs text-white/30">{t("form.fileDrop")}</span>
-                                  </>
-                                )}
-                                <span className="text-[11px] text-white/15">{t("form.fileHint")}</span>
-                              </div>
-                            </div>
                           </motion.div>
                         )}
                       </AnimatePresence>
@@ -416,16 +383,14 @@ export function ContactPageClient() {
                             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                           </button>
                         ) : (
-                          <button type="submit" disabled={status === "sending"} className="group flex items-center gap-2 bg-primary px-8 py-4 text-white font-heading tracking-wider text-fluid-xs hover:bg-primary/90 transition-colors disabled:opacity-60">
+                          <button type="button" onClick={handleSubmit} disabled={status === "sending"} className="group flex items-center gap-2 bg-primary px-8 py-4 text-white font-heading tracking-wider text-fluid-xs hover:bg-primary/90 transition-colors disabled:opacity-60">
                             {status === "sending" ? t("form.sending") : t("form.sendBrief")}
                             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                           </button>
                         )}
                       </div>
 
-                      {status === "success" && <p className="text-green-400 text-fluid-sm mt-4">{t("form.success")}</p>}
                       {status === "error" && <p className="text-red-400 text-fluid-sm mt-4">{t("form.error")}</p>}
-                    </form>
                   </motion.div>
                 )}
               </AnimatePresence>

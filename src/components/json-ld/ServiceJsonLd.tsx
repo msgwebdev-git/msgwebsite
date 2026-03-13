@@ -38,6 +38,7 @@ export async function ServiceJsonLd({
   // Try to read FAQ items if they exist
   let faqSchema = null;
   try {
+    if (!t.has("faq.items")) throw new Error("no faq");
     const faqItems = JSON.parse(
       JSON.stringify(t.raw("faq.items"))
     ) as Array<{ question: string; answer: string }>;
