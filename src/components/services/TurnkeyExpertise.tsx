@@ -7,6 +7,7 @@ import { motion, useInView } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Container } from "../layout";
+import { Link } from "@/i18n/navigation";
 
 const categoryKeys = [
   "festivals",
@@ -30,6 +31,17 @@ const categoryImages: Record<CategoryKey, string> = {
   sports: "/expertise/sports.jpg",
   corporate: "/expertise/corporate.jpg",
   custom: "/expertise/custom.jpg",
+};
+
+const categorySlugs: Record<CategoryKey, string> = {
+  festivals: "festivals",
+  concerts: "concerts",
+  conceptProjects: "concept-projects",
+  conferences: "conferences",
+  brandLaunches: "brand-launches",
+  sports: "sports",
+  corporate: "corporate",
+  custom: "custom",
 };
 
 const gridPlacements = [
@@ -64,8 +76,9 @@ function ExpertiseCard({
         <ArrowUpRight className="w-4 h-4 text-white" />
       </span>
 
-      <div
-        className="relative w-full h-full overflow-hidden case-card-clip"
+      <Link
+        href={`/expertise/${categorySlugs[categoryKey]}`}
+        className="relative w-full h-full overflow-hidden case-card-clip block"
       >
         <Image
           src={categoryImages[categoryKey]}
@@ -96,7 +109,7 @@ function ExpertiseCard({
             {t(`${categoryKey}.description`)}
           </p>
         </div>
-      </div>
+      </Link>
     </motion.div>
   );
 }
