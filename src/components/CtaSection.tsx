@@ -82,11 +82,11 @@ export function CtaSection() {
             className="flex flex-col sm:flex-row items-center gap-fluid-md"
           >
             <a
-              href="tel:+37322000000"
+              href="tel:+37322838539"
               className="flex items-center gap-3 text-white/40 hover:text-white transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span className="text-fluid-sm font-heading tracking-wider">+373 22 000 000</span>
+              <span className="text-fluid-sm font-heading tracking-wider">+373 22 83 85 39</span>
             </a>
 
             <span className="hidden sm:block w-px h-4 bg-white/20" />

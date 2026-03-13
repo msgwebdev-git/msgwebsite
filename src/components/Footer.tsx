@@ -212,12 +212,12 @@ export function Footer() {
             © {year} Media Show Grup. {t("rights")}
           </span>
           <div className="flex items-center gap-fluid-sm">
-            <a href="#" className="text-fluid-xs text-white/30 hover:text-white/60 transition-colors">
+            <Link href="/privacy" className="text-fluid-xs text-white/30 hover:text-white/60 transition-colors">
               {t("privacy")}
-            </a>
-            <a href="#" className="text-fluid-xs text-white/30 hover:text-white/60 transition-colors">
+            </Link>
+            <Link href="/terms" className="text-fluid-xs text-white/30 hover:text-white/60 transition-colors">
               {t("terms")}
-            </a>
+            </Link>
           </div>
         </div>
       </Container>
