@@ -15,7 +15,6 @@ interface TurnkeyMiddleProps {
 export function TurnkeyMiddle({ namespace }: TurnkeyMiddleProps) {
   return (
     <>
-      <TurnkeyClients namespace={namespace} />
       <TurnkeyExpertise namespace={namespace} />
       <TurnkeyResults namespace={namespace} />
       <TurnkeyCases namespace={namespace} />
