@@ -51,7 +51,7 @@ export function buildPageMetadata({
   ogImage?: string;
 }): Metadata {
   const url = getLocalizedUrl(locale, path);
-  const image = ogImage ?? `${SITE_URL}/og.jpg`;
+  const image = `${SITE_URL}/og.jpg`;
 
   return {
     title,
