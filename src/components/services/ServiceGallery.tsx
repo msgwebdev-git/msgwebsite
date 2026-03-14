@@ -42,9 +42,9 @@ export function ServiceGallery({ namespace }: ServiceGalleryProps) {
 
       <Container className="relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.4 }}
           style={{ marginBottom: "var(--space-lg)" }}
         >
           <span
@@ -67,10 +67,10 @@ export function ServiceGallery({ namespace }: ServiceGalleryProps) {
           {items.map((item, i) => (
             <motion.div
               key={item.image}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.15 }}
-              transition={{ duration: 0.5, delay: i * 0.08 }}
+              transition={{ duration: 0.4, delay: i * 0.05 }}
               className="group relative aspect-[3/4] overflow-hidden"
             >
               <Image

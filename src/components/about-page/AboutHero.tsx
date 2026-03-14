@@ -35,9 +35,9 @@ export function AboutHero() {
           {/* Main content */}
           <div className="lg:col-span-8">
             <motion.span
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.4 }}
               className="text-fluid-xs font-heading tracking-[0.5em] text-primary uppercase block"
               style={{ marginBottom: "var(--space-sm)" }}
             >
@@ -45,9 +45,9 @@ export function AboutHero() {
             </motion.span>
 
             <motion.h1
-              initial={{ opacity: 0, y: 60 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ delay: 0.4, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="font-heading text-white leading-[1.15] tracking-tight"
               style={{ fontSize: "clamp(1.75rem, 5vw, 5rem)" }}
             >
@@ -57,15 +57,15 @@ export function AboutHero() {
             <motion.div
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
-              transition={{ delay: 0.8, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ delay: 0.5, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="w-20 h-[2px] bg-primary origin-left"
               style={{ marginTop: "var(--space-md)", marginBottom: "var(--space-md)" }}
             />
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.9, duration: 0.6 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.4 }}
               className="text-fluid-lg text-white/50 max-w-xl"
             >
               {t("hero.subtitle")}
@@ -77,7 +77,7 @@ export function AboutHero() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 0.6 }}
+              transition={{ delay: 0.7, duration: 0.4 }}
               className="flex flex-row lg:flex-col gap-4 sm:gap-8"
             >
               {[
@@ -87,9 +87,9 @@ export function AboutHero() {
               ].map((stat, i) => (
                 <motion.div
                   key={stat.label}
-                  initial={{ opacity: 0, x: 30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 1.1 + i * 0.15 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.7 + i * 0.1 }}
                   className="border-l-2 border-primary/40 pl-5"
                 >
                   <span

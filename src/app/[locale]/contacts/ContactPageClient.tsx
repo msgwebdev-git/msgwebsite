@@ -11,15 +11,15 @@ import { cn } from "@/lib/utils";
 import { useRouter } from "@/i18n/navigation";
 import dynamic from "next/dynamic";
 
-const Calendar = dynamic(() => import("@/components/ui/calendar").then(m => m.Calendar), { ssr: false });
-const Popover = dynamic(() => import("@/components/ui/popover").then(m => m.Popover), { ssr: false });
-const PopoverContent = dynamic(() => import("@/components/ui/popover").then(m => m.PopoverContent), { ssr: false });
-const PopoverTrigger = dynamic(() => import("@/components/ui/popover").then(m => m.PopoverTrigger), { ssr: false });
-const Select = dynamic(() => import("@/components/ui/select").then(m => m.Select), { ssr: false });
-const SelectContent = dynamic(() => import("@/components/ui/select").then(m => m.SelectContent), { ssr: false });
-const SelectItem = dynamic(() => import("@/components/ui/select").then(m => m.SelectItem), { ssr: false });
-const SelectTrigger = dynamic(() => import("@/components/ui/select").then(m => m.SelectTrigger), { ssr: false });
-const SelectValue = dynamic(() => import("@/components/ui/select").then(m => m.SelectValue), { ssr: false });
+const Calendar = dynamic(() => import("@/components/ui/calendar").then(m => m.Calendar), { ssr: false, loading: () => null });
+const Popover = dynamic(() => import("@/components/ui/popover").then(m => m.Popover), { ssr: false, loading: () => null });
+const PopoverContent = dynamic(() => import("@/components/ui/popover").then(m => m.PopoverContent), { ssr: false, loading: () => null });
+const PopoverTrigger = dynamic(() => import("@/components/ui/popover").then(m => m.PopoverTrigger), { ssr: false, loading: () => null });
+const Select = dynamic(() => import("@/components/ui/select").then(m => m.Select), { ssr: false, loading: () => null });
+const SelectContent = dynamic(() => import("@/components/ui/select").then(m => m.SelectContent), { ssr: false, loading: () => null });
+const SelectItem = dynamic(() => import("@/components/ui/select").then(m => m.SelectItem), { ssr: false, loading: () => null });
+const SelectTrigger = dynamic(() => import("@/components/ui/select").then(m => m.SelectTrigger), { ssr: false, loading: () => null });
+const SelectValue = dynamic(() => import("@/components/ui/select").then(m => m.SelectValue), { ssr: false, loading: () => null });
 
 const EVENT_TYPE_KEYS = ["festival", "concert", "conference", "corporate", "brandLaunch", "sports", "custom"] as const;
 const SERVICE_KEYS = ["turnkey", "technical", "video", "logistics", "digital", "advertising", "security"] as const;
@@ -135,13 +135,13 @@ export function ContactPageClient() {
       {/* Hero */}
       <section className="relative z-10 bg-black pt-32 pb-fluid-lg">
         <Container>
-          <motion.span initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-fluid-xs font-heading tracking-[0.4em] text-primary uppercase block" style={{ marginBottom: "var(--space-xs)" }}>
+          <motion.span initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} style={{ marginBottom: "var(--space-xs)", willChange: "opacity, transform" }} className="text-fluid-xs font-heading tracking-[0.4em] text-primary uppercase block">
             {t("label")}
           </motion.span>
-          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="font-heading tracking-tight text-white leading-[1.15]" style={{ fontSize: "clamp(2rem, 5vw, 6rem)" }}>
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} style={{ fontSize: "clamp(2rem, 5vw, 6rem)", willChange: "opacity, transform" }} className="font-heading tracking-tight text-white leading-[1.15]">
             {t("title")}
           </motion.h1>
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="text-fluid-lg text-white/50 mt-4 max-w-2xl">
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4, delay: 0.2 }} style={{ willChange: "opacity" }} className="text-fluid-lg text-white/50 mt-4 max-w-2xl">
             {t("subtitle")}
           </motion.p>
         </Container>
@@ -152,7 +152,7 @@ export function ContactPageClient() {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-fluid-xl">
             {/* Form Column */}
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
+            <motion.div initial={{ opacity: 0 }} animate={isInView ? { opacity: 1 } : {}} transition={{ duration: 0.4 }}>
               {/* Toggle */}
               <div className="flex gap-0 mb-8">
                 <button
@@ -398,9 +398,9 @@ export function ContactPageClient() {
             </motion.div>
 
             {/* Contact Info */}
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.15 }} className="flex flex-col gap-8 lg:pt-16">
+            <motion.div initial={{ opacity: 0 }} animate={isInView ? { opacity: 1 } : {}} transition={{ duration: 0.4, delay: 0.1 }} className="flex flex-col gap-8 lg:pt-16">
               {infoItems.map((item, i) => (
-                <motion.div key={i} initial={{ opacity: 0, x: 20 }} animate={isInView ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.2 + i * 0.1, duration: 0.5 }} className="flex items-start gap-5 group">
+                <motion.div key={i} initial={{ opacity: 0 }} animate={isInView ? { opacity: 1 } : {}} transition={{ delay: 0.1 + i * 0.05, duration: 0.4 }} className="flex items-start gap-5 group">
                   <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center border border-white/[0.08] bg-white/[0.03] group-hover:border-primary/30 transition-colors">
                     <item.icon className="w-5 h-5 text-white/40 group-hover:text-primary transition-colors" />
                   </div>

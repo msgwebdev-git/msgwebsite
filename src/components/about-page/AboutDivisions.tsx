@@ -25,18 +25,18 @@ export function AboutDivisions() {
       <Container className="relative z-10">
         <div className="text-center" style={{ marginBottom: "var(--space-xl)" }}>
           <motion.span
-            initial={{ opacity: 0, y: 12 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4 }}
             className="text-fluid-xs font-heading tracking-[0.4em] text-primary uppercase block"
             style={{ marginBottom: "var(--space-xs)" }}
           >
             {t("divisions.label")}
           </motion.span>
           <motion.h2
-            initial={{ opacity: 0, y: 24 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.05 }}
             className="font-heading tracking-tight text-white leading-[1.3]"
             style={{ fontSize: "clamp(1.75rem, 3.5vw, 3.5rem)" }}
           >
@@ -50,9 +50,9 @@ export function AboutDivisions() {
             return (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 24 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 0.2 + i * 0.1, duration: 0.5 }}
+                initial={{ opacity: 0 }}
+                animate={isInView ? { opacity: 1 } : {}}
+                transition={{ delay: 0.1 + i * 0.05, duration: 0.4 }}
                 className="group flex flex-col items-center text-center"
               >
                 <div className="relative w-full aspect-[3/2] mb-4 flex items-center justify-center bg-white/[0.04] border border-white/[0.06] group-hover:border-primary/20 group-hover:bg-white/[0.06] transition-all duration-300 overflow-hidden">

@@ -144,11 +144,10 @@ export function ShowreelSection({
               src={videoSrc}
               poster={posterSrc}
               className="w-full h-full object-cover"
-              autoPlay
               muted
               loop
               playsInline
-              preload="metadata"
+              preload="none"
             />
 
             {/* Gradient overlay */}
@@ -217,8 +216,8 @@ export function ShowreelSection({
 
               {/* Label */}
               <motion.span
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 className="mt-6 text-fluid-base lg:text-fluid-lg font-heading tracking-widest text-white"
               >
                 {t("play")} {t("title")}

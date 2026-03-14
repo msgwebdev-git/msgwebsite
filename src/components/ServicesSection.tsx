@@ -33,9 +33,9 @@ function ServiceCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.5, delay: 0.1 + index * 0.1, ease: "easeOut" }}
+      initial={{ opacity: 0 }}
+      animate={isInView ? { opacity: 1 } : {}}
+      transition={{ duration: 0.4, delay: 0.05 + index * 0.05, ease: "easeOut" }}
       className="group relative"
       style={{ containerType: "inline-size" }}
     >
@@ -134,9 +134,9 @@ export function ServicesSection() {
       <Container className="relative z-10">
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.4 }}
           style={{ marginBottom: "var(--space-xl)" }}
         >
           <span className="text-fluid-xs font-heading tracking-[0.4em] text-white/60 block" style={{ marginBottom: "var(--space-xs)" }}>
@@ -176,9 +176,9 @@ export function ServicesSection() {
 
           {/* CTA Card */}
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.1 + (featuredKeys.length + regularKeys.length) * 0.1, ease: "easeOut" }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.05 + (featuredKeys.length + regularKeys.length) * 0.05, ease: "easeOut" }}
             className="group relative"
             style={{ containerType: "inline-size" }}
           >

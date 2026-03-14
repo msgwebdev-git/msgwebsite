@@ -17,18 +17,18 @@ export function AboutTeam() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-fluid-xl" style={{ marginBottom: "var(--space-xl)" }}>
           <div className="lg:col-span-5">
             <motion.span
-              initial={{ opacity: 0, y: 12 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.4 }}
               className="text-fluid-xs font-heading tracking-[0.4em] text-primary uppercase block"
               style={{ marginBottom: "var(--space-xs)" }}
             >
               {t("team.label")}
             </motion.span>
             <motion.h2
-              initial={{ opacity: 0, y: 24 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.4, delay: 0.05 }}
               className="font-heading tracking-tight text-white leading-[1.3]"
               style={{ fontSize: "clamp(1.75rem, 3.5vw, 3.5rem)" }}
             >
@@ -38,9 +38,9 @@ export function AboutTeam() {
 
           <div className="lg:col-span-7 flex items-end">
             <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.4, delay: 0.1 }}
               className="text-fluid-base text-white/50 leading-relaxed"
             >
               {t("team.description")}
@@ -53,9 +53,9 @@ export function AboutTeam() {
           {members.map((member, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 24 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.3 + i * 0.08, duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ delay: 0.1 + i * 0.05, duration: 0.4 }}
               className="text-center"
             >
               {/* Avatar placeholder */}

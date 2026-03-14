@@ -48,8 +48,8 @@ export function ServiceHero({ namespace, image }: ServiceHeroProps) {
         <Container>
           <div style={{ paddingBottom: "var(--space-xl)" }}>
             <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
               className="text-fluid-xs font-heading tracking-[0.4em] text-primary uppercase block"
               style={{ marginBottom: "var(--space-md)" }}
@@ -58,9 +58,9 @@ export function ServiceHero({ namespace, image }: ServiceHeroProps) {
             </motion.span>
 
             <motion.h1
-              initial={{ opacity: 0, y: 60 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ delay: 0.3, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="font-heading tracking-tight text-white leading-[1.2]"
               style={{ fontSize: "clamp(1.75rem, 4.5vw, 4rem)", marginBottom: "var(--space-xs)" }}
             >
@@ -70,9 +70,9 @@ export function ServiceHero({ namespace, image }: ServiceHeroProps) {
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.4 }}
               className="text-fluid-lg text-white/50 max-w-2xl"
               style={{ marginBottom: "var(--space-lg)" }}
             >
@@ -80,9 +80,9 @@ export function ServiceHero({ namespace, image }: ServiceHeroProps) {
             </motion.p>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
             >
               <Link
                 href="/contacts"

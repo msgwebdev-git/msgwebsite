@@ -19,9 +19,9 @@ export function ExpertiseResult({ category }: ExpertiseResultProps) {
       <Container className="relative z-10">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           <motion.span
-            initial={{ opacity: 0, y: 12 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4 }}
             className="text-fluid-xs font-heading tracking-[0.4em] text-primary uppercase block"
             style={{ marginBottom: "var(--space-lg)" }}
           >
@@ -30,9 +30,9 @@ export function ExpertiseResult({ category }: ExpertiseResultProps) {
 
           {/* Large quote-style result */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.15 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.5, delay: 0.05 }}
             className="relative"
           >
             {/* Decorative quote marks */}

@@ -22,18 +22,18 @@ export function ExpertiseScope({ category }: ExpertiseScopeProps) {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between" style={{ marginBottom: "var(--space-xl)" }}>
           <div>
             <motion.span
-              initial={{ opacity: 0, y: 12 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.4 }}
               className="text-fluid-xs font-heading tracking-[0.4em] text-primary uppercase block"
               style={{ marginBottom: "var(--space-xs)" }}
             >
               {t("scopeLabel")}
             </motion.span>
             <motion.h2
-              initial={{ opacity: 0, y: 24 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.4, delay: 0.05 }}
               className="font-heading tracking-tight text-white"
               style={{ fontSize: "clamp(1.75rem, 3.5vw, 3.5rem)" }}
             >
@@ -53,9 +53,9 @@ export function ExpertiseScope({ category }: ExpertiseScopeProps) {
           {items.map((item, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.3 + i * 0.08, duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ delay: 0.1 + i * 0.05, duration: 0.4 }}
               className="group flex items-start gap-6 border-b border-white/[0.06] py-6"
             >
               <span

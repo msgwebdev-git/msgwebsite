@@ -17,9 +17,9 @@ export function AboutMission() {
           {/* Left: label + large quote */}
           <div className="lg:col-span-5">
             <motion.span
-              initial={{ opacity: 0, y: 12 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.4 }}
               className="text-fluid-xs font-heading tracking-[0.4em] text-primary uppercase block"
               style={{ marginBottom: "var(--space-md)" }}
             >
@@ -27,9 +27,9 @@ export function AboutMission() {
             </motion.span>
 
             <motion.blockquote
-              initial={{ opacity: 0, y: 24 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, delay: 0.1 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.5, delay: 0.05 }}
               className="relative"
             >
               <span
@@ -50,9 +50,9 @@ export function AboutMission() {
           {/* Right: description */}
           <div className="lg:col-span-7 flex items-end">
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.4, delay: 0.1 }}
               className="text-fluid-base text-white/50 leading-relaxed lg:max-w-xl lg:ml-auto"
             >
               {t("mission.description")}

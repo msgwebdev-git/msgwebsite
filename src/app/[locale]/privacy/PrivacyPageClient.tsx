@@ -72,9 +72,9 @@ function Section({
       ref={ref}
       id={id}
       className="scroll-mt-28 border-t border-white/[0.06] pt-10 pb-10"
-      initial={{ opacity: 0, y: 30 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0 }}
+      animate={isInView ? { opacity: 1 } : {}}
+      transition={{ duration: 0.4 }}
     >
       {children}
     </motion.div>
@@ -147,9 +147,9 @@ export function PrivacyPageClient() {
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <motion.span
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.4 }}
               className="text-fluid-xs font-heading tracking-[0.5em] text-primary uppercase block"
               style={{ marginBottom: "var(--space-sm)" }}
             >
@@ -157,9 +157,9 @@ export function PrivacyPageClient() {
             </motion.span>
 
             <motion.h1
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ delay: 0.3, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="font-heading text-white leading-[1.1] tracking-tight"
               style={{ fontSize: "clamp(2rem, 5vw, 5rem)" }}
             >
@@ -169,15 +169,15 @@ export function PrivacyPageClient() {
             <motion.div
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
-              transition={{ delay: 0.7, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ delay: 0.5, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="w-16 h-[2px] bg-primary mx-auto"
               style={{ marginTop: "var(--space-md)", marginBottom: "var(--space-md)" }}
             />
 
             <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.6 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.4 }}
               className="text-fluid-sm text-white/40 font-heading tracking-wider"
             >
               Последнее обновление: 04 декабря 2025 года

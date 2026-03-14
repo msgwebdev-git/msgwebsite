@@ -37,10 +37,10 @@ function TabPanelTop({ categoryKey }: { categoryKey: CategoryKey }) {
   return (
     <motion.div
       key={categoryKey}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -10 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
       className="expertise-panel"
     >
       {/* Photo + description side by side */}
@@ -86,10 +86,10 @@ function TabPanelBottom({ categoryKey }: { categoryKey: CategoryKey }) {
   return (
     <motion.div
       key={categoryKey}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -10 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
       className="container-fluid"
     >
       <div className="grid grid-cols-1 lg:grid-cols-5">
@@ -105,9 +105,9 @@ function TabPanelBottom({ categoryKey }: { categoryKey: CategoryKey }) {
             {whatWeDo.map((item, i) => (
               <motion.li
                 key={i}
-                initial={{ opacity: 0, x: -8 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.1 + i * 0.04 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.05 + i * 0.03 }}
                 className="flex items-start gap-3 py-1.5"
               >
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-[0.45em] flex-shrink-0" />
@@ -138,9 +138,9 @@ function TabPanelBottom({ categoryKey }: { categoryKey: CategoryKey }) {
               {cases.map((c, i) => (
                 <motion.div
                   key={c.name}
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.1 + i * 0.05 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3, delay: 0.05 + i * 0.05 }}
                   className="py-3 first:pt-0"
                 >
                   <span className="expertise-case-name text-white font-heading tracking-wide">
@@ -199,9 +199,9 @@ export function ExpertiseSection() {
       <Container className="relative z-10">
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.4 }}
           style={{ marginBottom: "var(--space-xl)" }}
         >
           <span
@@ -223,9 +223,9 @@ export function ExpertiseSection() {
 
         {/* Tab Triggers */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.4, delay: 0.1 }}
           style={{ marginBottom: "var(--space-lg)" }}
           className="relative"
         >

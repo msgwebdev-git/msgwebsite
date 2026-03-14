@@ -44,9 +44,9 @@ function TimelineItem({
 
       {/* Right: content */}
       <motion.div
-        initial={{ opacity: 0, x: 20 }}
-        animate={isInView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.6, delay: 0.15 }}
+        initial={{ opacity: 0 }}
+        animate={isInView ? { opacity: 1 } : {}}
+        transition={{ duration: 0.4, delay: 0.1 }}
         className="py-4 pl-3"
       >
         <span className="font-heading text-primary leading-none tracking-tight block text-xl mb-1">
@@ -69,9 +69,9 @@ function TimelineItem({
       <div className={`py-8 ${isEven ? "pr-8 lg:pr-16" : ""}`}>
         {isEven ? (
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.15 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="text-right"
           >
             <span
@@ -126,9 +126,9 @@ function TimelineItem({
       <div className={`py-8 ${!isEven ? "pl-8 lg:pl-16" : ""}`}>
         {!isEven ? (
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.15 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.1 }}
           >
             <span
               className="font-heading text-primary leading-none tracking-tight block"
@@ -193,18 +193,18 @@ export function AboutHistory() {
         {/* Header */}
         <div className="text-center" style={{ marginBottom: "var(--space-xl)" }}>
           <motion.span
-            initial={{ opacity: 0, y: 12 }}
-            animate={headerInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0 }}
+            animate={headerInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4 }}
             className="text-fluid-xs font-heading tracking-[0.4em] text-primary uppercase block"
             style={{ marginBottom: "var(--space-xs)" }}
           >
             {t("history.label")}
           </motion.span>
           <motion.h2
-            initial={{ opacity: 0, y: 24 }}
-            animate={headerInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            initial={{ opacity: 0 }}
+            animate={headerInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.05 }}
             className="font-heading tracking-tight text-black leading-[1.3]"
             style={{ fontSize: "clamp(1.75rem, 3.5vw, 3.5rem)", marginBottom: "var(--space-sm)" }}
           >
@@ -213,9 +213,9 @@ export function AboutHistory() {
 
           {/* Year range pills */}
           <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={headerInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.25 }}
+            initial={{ opacity: 0 }}
+            animate={headerInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="inline-flex items-center gap-3"
           >
             <span className="font-heading text-black/30 tracking-tight" style={{ fontSize: "clamp(1rem, 1.5vw, 1.5rem)" }}>

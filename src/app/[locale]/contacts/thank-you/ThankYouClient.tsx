@@ -31,9 +31,9 @@ export function ThankYouClient() {
 
             {/* Title */}
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               className="text-fluid-4xl font-heading tracking-tight text-white mb-4"
             >
               {t("title")}
@@ -41,9 +41,9 @@ export function ThankYouClient() {
 
             {/* Subtitle */}
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
               className="text-fluid-lg text-white/50 mb-12"
             >
               {t("subtitle")}
@@ -51,9 +51,9 @@ export function ThankYouClient() {
 
             {/* CTA buttons */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.4, delay: 0.4 }}
               className="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
               <Link

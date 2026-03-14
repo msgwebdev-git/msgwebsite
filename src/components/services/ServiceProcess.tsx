@@ -42,9 +42,9 @@ export function ServiceProcess({ namespace }: ServiceProcessProps) {
 
       <Container className="relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.4 }}
           style={{ marginBottom: "var(--space-xl)" }}
         >
           <span
@@ -68,10 +68,10 @@ export function ServiceProcess({ namespace }: ServiceProcessProps) {
           {steps.map((step, i) => (
             <motion.div
               key={step.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 + i * 0.1 }}
+              transition={{ duration: 0.4, delay: 0.05 + i * 0.05 }}
               className="process-step flex flex-col"
             >
               <span className="process-step-number font-heading text-primary/30 leading-none block">
@@ -95,10 +95,10 @@ export function ServiceProcess({ namespace }: ServiceProcessProps) {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.6 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
           className="flex flex-col sm:flex-row items-start sm:items-center gap-fluid-sm"
           style={{ marginTop: "var(--space-xl)" }}
         >

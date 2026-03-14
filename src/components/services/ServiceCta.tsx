@@ -32,9 +32,9 @@ export function ServiceCta({ namespace }: ServiceCtaProps) {
       <Container className="relative z-10">
         <div className="flex flex-col items-center text-center">
           <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4 }}
             className="text-fluid-5xl font-heading tracking-tight text-white"
             style={{ marginBottom: "var(--space-xs)" }}
           >
@@ -42,9 +42,9 @@ export function ServiceCta({ namespace }: ServiceCtaProps) {
           </motion.h2>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.05 }}
             className="text-fluid-xl text-white/50 max-w-xl"
             style={{ marginBottom: "var(--space-lg)" }}
           >
@@ -52,9 +52,9 @@ export function ServiceCta({ namespace }: ServiceCtaProps) {
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.1 }}
             style={{ marginBottom: "var(--space-xl)" }}
           >
           <Link
@@ -67,9 +67,9 @@ export function ServiceCta({ namespace }: ServiceCtaProps) {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.15 }}
             className="flex flex-col sm:flex-row items-center gap-fluid-md"
           >
             <a href="tel:+37322838539" className="flex items-center gap-3 text-white/40 hover:text-white transition-colors">

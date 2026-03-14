@@ -34,10 +34,10 @@ const gridPlacements = [
 function ProjectCard({ item, index }: { item: CaseItem; index: number }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
+      transition={{ duration: 0.4, delay: index * 0.05, ease: "easeOut" }}
       className={cn("case-card group relative", gridPlacements[index])}
     >
       <Link href={`/cases/${item.slug}`} className="block w-full h-full">
@@ -114,9 +114,9 @@ export default function ProjectsClient() {
         <Container className="relative z-10">
           {/* Header */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5 }}
             style={{ marginBottom: "var(--space-xl)" }}
           >
             <span

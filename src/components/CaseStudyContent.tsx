@@ -34,9 +34,9 @@ function ContentBlock({
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 40 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, delay: 0.1 + index * 0.15 }}
+      initial={{ opacity: 0 }}
+      animate={isInView ? { opacity: 1 } : {}}
+      transition={{ duration: 0.4, delay: 0.05 + index * 0.05 }}
       className="flex flex-col"
     >
       <span
@@ -99,9 +99,9 @@ export function CaseStudyContent({ slug }: { slug: string }) {
 
         {/* Back link */}
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.3 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
           className="absolute top-28 left-0 right-0 z-20"
         >
           <Container>
@@ -123,27 +123,27 @@ export function CaseStudyContent({ slug }: { slug: string }) {
           <Container>
             <div style={{ paddingBottom: "var(--space-xl)" }}>
               <motion.span
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.1 }}
                 className="text-fluid-xs font-heading tracking-[0.3em] text-primary uppercase block"
                 style={{ marginBottom: "var(--space-xs)" }}
               >
                 {project.category}
               </motion.span>
               <motion.h1
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.6 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
                 className="text-fluid-hero font-heading tracking-tight text-white leading-[0.95]"
                 style={{ marginBottom: "var(--space-sm)" }}
               >
                 {project.title}
               </motion.h1>
               <motion.span
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
                 className="text-fluid-lg text-white/50 font-heading tracking-wider"
               >
                 {project.venue}

@@ -41,9 +41,9 @@ export function ServiceFeatures({ namespace }: ServiceFeaturesProps) {
 
       <Container className="relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.4 }}
           style={{ marginBottom: "var(--space-xl)" }}
         >
           <span
@@ -70,10 +70,10 @@ export function ServiceFeatures({ namespace }: ServiceFeaturesProps) {
           {items.map((item, i) => (
             <motion.div
               key={item.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.15 }}
-              transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
+              transition={{ duration: 0.4, delay: i * 0.05, ease: "easeOut" }}
               className="group relative border border-white/10 p-[clamp(1.25rem,3vw,2.5rem)] hover:border-primary/40 transition-colors duration-500"
               style={{
                 clipPath:

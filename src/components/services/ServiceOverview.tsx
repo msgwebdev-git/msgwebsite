@@ -33,9 +33,9 @@ export function ServiceOverview({ namespace, image }: ServiceOverviewProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-fluid-xl">
           <div>
             <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.4 }}
               className="text-fluid-xs font-heading tracking-[0.4em] text-black/50 uppercase block"
               style={{ marginBottom: "var(--space-xs)" }}
             >
@@ -43,9 +43,9 @@ export function ServiceOverview({ namespace, image }: ServiceOverviewProps) {
             </motion.span>
 
             <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.4, delay: 0.05 }}
               className="font-heading tracking-tight text-black"
               style={{ fontSize: "clamp(1.75rem, 3.5vw, 3.5rem)", marginBottom: "var(--space-sm)" }}
             >
@@ -53,9 +53,9 @@ export function ServiceOverview({ namespace, image }: ServiceOverviewProps) {
             </motion.h2>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.4, delay: 0.1 }}
               className="text-fluid-base text-black/60 leading-relaxed"
               style={{ marginBottom: "var(--space-lg)" }}
             >
@@ -66,9 +66,9 @@ export function ServiceOverview({ namespace, image }: ServiceOverviewProps) {
               {includes.map((item, i) => (
                 <motion.li
                   key={i}
-                  initial={{ opacity: 0, x: -12 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ delay: 0.3 + i * 0.06 }}
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : {}}
+                  transition={{ delay: 0.1 + i * 0.04 }}
                   className="flex items-start gap-3 py-2"
                 >
                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-[0.5em] flex-shrink-0" />
@@ -105,9 +105,9 @@ export function ServiceOverview({ namespace, image }: ServiceOverviewProps) {
               ].map((stat, i) => (
                 <motion.div
                   key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ delay: 0.4 + i * 0.1 }}
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : {}}
+                  transition={{ delay: 0.2 + i * 0.05 }}
                   className="text-center"
                 >
                   <span className="text-fluid-4xl font-heading text-primary block leading-none">

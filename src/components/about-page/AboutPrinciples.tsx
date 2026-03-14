@@ -15,18 +15,18 @@ export function AboutPrinciples() {
     <section ref={ref} className="relative z-10 bg-black/85 backdrop-blur-sm py-fluid-section overflow-hidden">
       <Container className="relative z-10">
         <motion.span
-          initial={{ opacity: 0, y: 12 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.4 }}
           className="text-fluid-xs font-heading tracking-[0.4em] text-primary uppercase block"
           style={{ marginBottom: "var(--space-xs)" }}
         >
           {t("principles.label")}
         </motion.span>
         <motion.h2
-          initial={{ opacity: 0, y: 24 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.1 }}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.4, delay: 0.05 }}
           className="font-heading tracking-tight text-white leading-[1.3]"
           style={{ fontSize: "clamp(1.75rem, 3.5vw, 3.5rem)", marginBottom: "var(--space-xl)" }}
         >
@@ -37,9 +37,9 @@ export function AboutPrinciples() {
           {items.map((item, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.2 + i * 0.08, duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ delay: 0.1 + i * 0.05, duration: 0.4 }}
               className="group relative border border-white/[0.06] p-5 sm:p-8 hover:border-primary/20 transition-colors duration-500"
             >
               {/* Number */}

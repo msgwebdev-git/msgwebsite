@@ -41,10 +41,10 @@ function CaseCard({
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
+      transition={{ duration: 0.4, delay: index * 0.05, ease: "easeOut" }}
       className={cn(
         "case-card group relative",
         gridPlacements[index]
@@ -124,9 +124,9 @@ export function CasesSection() {
       <Container className="relative z-10">
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.4 }}
           style={{ marginBottom: "var(--space-xl)" }}
         >
           <span
@@ -155,10 +155,10 @@ export function CasesSection() {
 
         {/* View All */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
           className="flex justify-center"
           style={{ marginTop: "var(--space-xl)" }}
         >

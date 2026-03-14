@@ -38,9 +38,9 @@ export function CtaSection() {
         <div className="flex flex-col items-center text-center">
           {/* Title */}
           <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4 }}
             className="text-fluid-5xl font-heading tracking-tight text-white"
             style={{ marginBottom: "var(--space-xs)" }}
           >
@@ -49,9 +49,9 @@ export function CtaSection() {
 
           {/* Subtitle */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.05 }}
             className="text-fluid-xl text-white/50 max-w-xl"
             style={{ marginBottom: "var(--space-lg)" }}
           >
@@ -60,9 +60,9 @@ export function CtaSection() {
 
           {/* CTA Button */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.1 }}
             style={{ marginBottom: "var(--space-xl)" }}
           >
             <Link
@@ -76,9 +76,9 @@ export function CtaSection() {
 
           {/* Contact Info */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.15 }}
             className="flex flex-col sm:flex-row items-center gap-fluid-md"
           >
             <a

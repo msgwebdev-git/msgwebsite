@@ -19,9 +19,9 @@ export function ExpertiseCta() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-fluid-lg">
           <div>
             <motion.h2
-              initial={{ opacity: 0, y: 24 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.4 }}
               className="font-heading tracking-tight text-white whitespace-nowrap"
               style={{ fontSize: "clamp(2rem, 5vw, 6rem)", marginBottom: "var(--space-xs)" }}
             >
@@ -29,9 +29,9 @@ export function ExpertiseCta() {
             </motion.h2>
 
             <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.4, delay: 0.05 }}
               className="text-fluid-lg text-white/70"
             >
               {t("ctaSubtitle")}
@@ -39,9 +39,9 @@ export function ExpertiseCta() {
           </div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="flex flex-col gap-4"
           >
             <Link

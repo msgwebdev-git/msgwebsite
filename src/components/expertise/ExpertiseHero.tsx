@@ -31,9 +31,9 @@ export function ExpertiseHero({ category, image }: ExpertiseHeroProps) {
       {/* Large category title — centered, editorial style */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
         <motion.span
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.6 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.4 }}
           className="text-fluid-xs font-heading tracking-[0.5em] text-white/60 uppercase block"
           style={{ marginBottom: "var(--space-sm)" }}
         >
@@ -41,9 +41,9 @@ export function ExpertiseHero({ category, image }: ExpertiseHeroProps) {
         </motion.span>
 
         <motion.h1
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ delay: 0.2, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="font-heading text-white leading-[1.15] tracking-tight uppercase"
           style={{ fontSize: "clamp(3rem, 10vw, 10rem)" }}
         >
@@ -53,15 +53,15 @@ export function ExpertiseHero({ category, image }: ExpertiseHeroProps) {
         <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
-          transition={{ delay: 0.6, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ delay: 0.4, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="w-24 h-[2px] bg-primary origin-center"
           style={{ marginTop: "var(--space-md)", marginBottom: "var(--space-md)" }}
         />
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.6 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.4 }}
           className="text-fluid-lg text-white/70 max-w-3xl leading-relaxed"
         >
           {t(`${category}.description`)}

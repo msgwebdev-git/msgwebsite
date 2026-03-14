@@ -21,10 +21,10 @@ function StepCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
+      transition={{ duration: 0.4, delay: 0.05 + index * 0.05 }}
       className="process-step flex flex-col items-center text-center sm:items-start sm:text-left"
     >
       <span className="process-step-number font-heading text-primary/30 leading-none block">
@@ -61,9 +61,9 @@ export function ProcessSection() {
       <Container className="relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.4 }}
           style={{ marginBottom: "var(--space-xl)" }}
         >
           <h2
@@ -86,10 +86,10 @@ export function ProcessSection() {
 
         {/* CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.6 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
           className="flex flex-col items-center sm:flex-row sm:items-center gap-fluid-sm"
           style={{ marginTop: "var(--space-xl)" }}
         >
