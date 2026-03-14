@@ -21,8 +21,10 @@ export function AnimatedNoise({ opacity = 0.15, className = "" }: AnimatedNoiseP
     let frame = 0;
 
     const resize = () => {
-      canvas.width = window.innerWidth / 2;
-      canvas.height = window.innerHeight / 2;
+      // Use higher resolution on small screens to avoid chunky grain
+      const scale = window.innerWidth <= 768 ? 1 : 0.5;
+      canvas.width = Math.ceil(window.innerWidth * scale);
+      canvas.height = Math.ceil(window.innerHeight * scale);
     };
 
     const noise = () => {

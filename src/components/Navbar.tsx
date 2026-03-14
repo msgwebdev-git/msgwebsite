@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useTransition } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { ChevronDown, Globe, X, ArrowRight, Check, Phone } from "lucide-react";
@@ -38,6 +38,7 @@ export function Navbar({ logoVisible = true }: NavbarProps) {
 
   const router = useRouter();
   const pathname = usePathname();
+  const [isPending, startTransition] = useTransition();
 
   const navLinks = [
     {
@@ -125,8 +126,10 @@ export function Navbar({ logoVisible = true }: NavbarProps) {
   const logoSrc = "/white-logo.svg";
 
   const switchLocale = (locale: string) => {
-    router.replace(pathname, { locale, scroll: false });
     setLangMenuOpen(false);
+    startTransition(() => {
+      router.replace(pathname, { locale, scroll: false });
+    });
   };
 
   const getCurrentLocale = () => {
@@ -142,6 +145,13 @@ export function Navbar({ logoVisible = true }: NavbarProps) {
 
   return (
     <>
+      {/* Locale switch loading overlay */}
+      {isPending && (
+        <div className="fixed inset-0 z-[999] bg-black/60 backdrop-blur-sm flex items-center justify-center">
+          <div className="w-8 h-8 border-2 border-white/20 border-t-white animate-spin" />
+        </div>
+      )}
+
       <header
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
@@ -286,9 +296,10 @@ export function Navbar({ logoVisible = true }: NavbarProps) {
                       <button
                         key={lang.code}
                         onClick={() => switchLocale(lang.code)}
+                        disabled={isPending}
                         className={cn(
                           "block w-full px-3 py-1.5 text-left text-sm",
-                          "hover:bg-muted transition-colors",
+                          "hover:bg-muted transition-colors disabled:opacity-50",
                           (mounted ? getCurrentLocale() : "RO") === lang.label
                             ? "text-primary font-medium"
                             : "text-foreground/70"
@@ -355,10 +366,11 @@ export function Navbar({ logoVisible = true }: NavbarProps) {
                         <button
                           key={lang.code}
                           onClick={() => switchLocale(lang.code)}
+                          disabled={isPending}
                           className={cn(
                             "w-full flex items-center justify-between px-4 py-4",
                             "border-b border-border last:border-0",
-                            "transition-colors",
+                            "transition-colors disabled:opacity-50",
                             isActive
                               ? "text-primary"
                               : "text-foreground/70 hover:text-foreground"
