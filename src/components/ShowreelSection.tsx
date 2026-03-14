@@ -230,6 +230,7 @@ export function ShowreelSection({
               {/* Mute/Unmute button */}
               <button
                 onClick={toggleMute}
+                aria-label={isMuted ? "Unmute" : "Mute"}
                 className={cn(
                   "w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center",
                   "bg-black/50 backdrop-blur-sm",
@@ -246,6 +247,7 @@ export function ShowreelSection({
               {/* Fullscreen button */}
               <button
                 onClick={openModal}
+                aria-label="Fullscreen"
                 className={cn(
                   "w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center",
                   "bg-black/50 backdrop-blur-sm",
@@ -271,6 +273,7 @@ export function ShowreelSection({
           {/* Close button */}
           <button
             onClick={closeModal}
+            aria-label="Close"
             className={cn(
               "absolute top-3 right-3 sm:top-6 sm:right-6 z-10",
               "w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center",

@@ -131,6 +131,7 @@ export function PrivacyPageClient() {
     <>
       <Navbar />
 
+      <main>
       {/* ═══════════════════════ HERO ═══════════════════════ */}
       <section className="relative z-10 bg-[#0a0a0a] pt-32 sm:pt-40 lg:pt-48 pb-12 sm:pb-16 overflow-hidden">
         {/* Noise */}
@@ -518,6 +519,8 @@ export function PrivacyPageClient() {
           </>
         )}
       </AnimatePresence>
+
+      </main>
 
       <Footer />
     </>

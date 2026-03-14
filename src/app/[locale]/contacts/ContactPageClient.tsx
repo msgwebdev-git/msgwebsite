@@ -131,6 +131,7 @@ export function ContactPageClient() {
     <>
       <Navbar logoVisible />
 
+      <main>
       {/* Hero */}
       <section className="relative z-10 bg-black pt-32 pb-fluid-lg">
         <Container>
@@ -444,6 +445,7 @@ export function ContactPageClient() {
           </div>
         </Container>
       </section>
+      </main>
 
       <Footer />
     </>

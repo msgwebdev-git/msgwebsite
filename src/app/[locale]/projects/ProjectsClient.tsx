@@ -94,6 +94,7 @@ export default function ProjectsClient() {
     <>
       <Navbar logoVisible />
 
+      <main>
       <section className="relative z-10 bg-[#0a0a0a] pt-40 pb-fluid-section overflow-hidden">
         {/* Noise overlay */}
         <div className="absolute inset-0 pointer-events-none z-0 opacity-[0.35] mix-blend-overlay">
@@ -143,6 +144,7 @@ export default function ProjectsClient() {
           </div>
         </Container>
       </section>
+      </main>
 
       <Footer />
     </>

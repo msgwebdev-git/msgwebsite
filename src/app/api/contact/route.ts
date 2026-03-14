@@ -2,7 +2,56 @@ import { NextResponse } from "next/server";
 
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+const ALLOWED_ORIGINS = [
+  "https://mediashowgrup.com",
+  "https://www.mediashowgrup.com",
+];
 
+// --- Rate limiting (in-memory, per IP) ---
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
+const RATE_LIMIT_MAX = 5;
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+
+  if (!entry || now > entry.resetAt) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+    return false;
+  }
+
+  entry.count++;
+  return entry.count > RATE_LIMIT_MAX;
+}
+
+// --- Validation ---
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const MAX_TEXT = 5000;
+const MAX_NAME = 200;
+
+function validateSimple(body: Record<string, unknown>): string | null {
+  const { name, email, message } = body;
+  if (!name || typeof name !== "string" || name.length > MAX_NAME) return "Invalid name";
+  if (!email || typeof email !== "string" || !EMAIL_RE.test(email)) return "Invalid email";
+  if (!message || typeof message !== "string" || message.length > MAX_TEXT) return "Invalid message";
+  return null;
+}
+
+function validateBrief(body: Record<string, unknown>): string | null {
+  const { name, email } = body;
+  if (!name || typeof name !== "string" || name.length > MAX_NAME) return "Invalid name";
+  if (!email || typeof email !== "string" || !EMAIL_RE.test(email)) return "Invalid email";
+  if (body.details && (typeof body.details !== "string" || (body.details as string).length > MAX_TEXT))
+    return "Invalid details";
+  if (body.phone && (typeof body.phone !== "string" || (body.phone as string).length > 30))
+    return "Invalid phone";
+  if (body.company && (typeof body.company !== "string" || (body.company as string).length > MAX_NAME))
+    return "Invalid company";
+  return null;
+}
+
+// --- Labels ---
 const EVENT_TYPE_LABELS: Record<string, string> = {
   festival: "Фестиваль",
   concert: "Концерт",
@@ -39,6 +88,7 @@ const BUDGET_LABELS: Record<string, string> = {
   enterprise: "€50 000+",
 };
 
+// --- Telegram ---
 async function sendTelegram(text: string) {
   if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
     console.warn("Telegram credentials not configured");
@@ -137,25 +187,51 @@ function formatBrief(body: Record<string, unknown>) {
   return lines.filter((l) => l !== null).join("\n");
 }
 
+// --- Handler ---
 export async function POST(request: Request) {
   try {
+    // Origin check (skip in development)
+    const origin = request.headers.get("origin");
+    if (
+      process.env.NODE_ENV === "production" &&
+      origin &&
+      !ALLOWED_ORIGINS.includes(origin)
+    ) {
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+    }
+
+    // Rate limiting by IP
+    const ip =
+      request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      request.headers.get("x-real-ip") ||
+      "unknown";
+
+    if (isRateLimited(ip)) {
+      return NextResponse.json(
+        { error: "Too many requests. Please try again later." },
+        { status: 429 }
+      );
+    }
+
     const body = await request.json();
 
     if (body.type === "brief") {
-      if (!body.name || !body.email) {
-        return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+      const error = validateBrief(body);
+      if (error) {
+        return NextResponse.json({ error }, { status: 400 });
       }
       await sendTelegram(formatBrief(body));
     } else {
-      const { name, email, message } = body;
-      if (!name || !email || !message) {
-        return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+      const error = validateSimple(body);
+      if (error) {
+        return NextResponse.json({ error }, { status: 400 });
       }
       await sendTelegram(formatSimple(body));
     }
 
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (err) {
+    console.error("[Contact API Error]", err);
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }

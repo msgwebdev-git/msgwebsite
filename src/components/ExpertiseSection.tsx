@@ -129,7 +129,7 @@ function TabPanelBottom({ categoryKey }: { categoryKey: CategoryKey }) {
           />
           <div className="relative z-10">
             <span
-              className="text-fluid-xs font-heading tracking-[0.3em] text-white/40 block"
+              className="text-fluid-xs font-heading tracking-[0.3em] text-white/60 block"
               style={{ marginBottom: "var(--space-sm)" }}
             >
               {t("casesLabel")}
@@ -146,7 +146,7 @@ function TabPanelBottom({ categoryKey }: { categoryKey: CategoryKey }) {
                   <span className="expertise-case-name text-white font-heading tracking-wide">
                     {c.name}
                   </span>
-                  <span className="expertise-case-venue text-white/40 block sm:inline sm:ml-2">
+                  <span className="expertise-case-venue text-white/60 block sm:inline sm:ml-2">
                     — {c.venue}
                   </span>
                 </motion.div>

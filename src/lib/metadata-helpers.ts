@@ -21,11 +21,11 @@ export function getLocalizedUrl(locale: string, path: string = ""): string {
   return `${SITE_URL}/${locale}${cleanPath}`;
 }
 
-export function getAlternates(path: string = "") {
+export function getAlternates(path: string = "", locale?: string) {
   const cleanPath = path.startsWith("/") ? path : `/${path}`;
 
   return {
-    canonical: getLocalizedUrl(DEFAULT_LOCALE, cleanPath),
+    canonical: getLocalizedUrl(locale || DEFAULT_LOCALE, cleanPath),
     languages: {
       ro: getLocalizedUrl("ro", cleanPath),
       ru: getLocalizedUrl("ru", cleanPath),
@@ -51,7 +51,7 @@ export function buildPageMetadata({
   ogImage?: string;
 }): Metadata {
   const url = getLocalizedUrl(locale, path);
-  const image = `${SITE_URL}/og.jpg`;
+  const image = ogImage || `${SITE_URL}/og.jpg`;
 
   return {
     title,
@@ -73,7 +73,7 @@ export function buildPageMetadata({
       description,
       images: [image],
     },
-    alternates: getAlternates(path),
+    alternates: getAlternates(path, locale),
   };
 }
 

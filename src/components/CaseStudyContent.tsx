@@ -81,6 +81,7 @@ export function CaseStudyContent({ slug }: { slug: string }) {
     <>
       <Navbar logoVisible />
 
+      <main>
       {/* Hero */}
       <section className="relative h-[70vh] lg:h-[85vh] min-h-[500px] overflow-hidden bg-black">
         <motion.div style={{ y: heroImgY }} className="absolute inset-0">
@@ -206,6 +207,8 @@ export function CaseStudyContent({ slug }: { slug: string }) {
           </Link>
         </Container>
       </section>
+
+      </main>
 
       <Footer />
     </>

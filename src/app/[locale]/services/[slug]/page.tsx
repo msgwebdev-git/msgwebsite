@@ -92,8 +92,8 @@ export async function generateMetadata({
 const serviceCaseSlugs: Record<string, string[]> = {
   logistics: [
     "festivalul-lupilor",
-    "ziua-nationala-a-vinului",
-    "festivalul-traditiilor-romanesti",
+    "ziua-vinului",
+    "traditii-romanesti",
     "festivalul-padurilor",
     "soundstalgic",
     "eurovision",
@@ -103,14 +103,14 @@ const serviceCaseSlugs: Record<string, string[]> = {
     "soundstalgic",
     "zdob-si-zdub",
     "scriptonite",
-    "ziua-nationala-a-vinului",
+    "ziua-vinului",
     "festivalul-padurilor",
   ],
   advertising: [
     "festivalul-lupilor",
-    "ziua-nationala-a-vinului",
+    "ziua-vinului",
     "festivalul-padurilor",
-    "festivalul-traditiilor-romanesti",
+    "traditii-romanesti",
     "soundstalgic",
     "eurovision",
   ],
@@ -120,7 +120,7 @@ const serviceCaseSlugs: Record<string, string[]> = {
     "zdob-si-zdub",
     "scriptonite",
     "eurovision",
-    "ddt",
+    "ddt-istanbul",
   ],
 };
 

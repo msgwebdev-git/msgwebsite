@@ -1411,6 +1411,12 @@
       "label": "Follow us"
     }
   },
+  "error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again or return to the home page.",
+    "retry": "Try again",
+    "home": "Home page"
+  },
   "thankYou": {
     "title": "Thank you for reaching out!",
     "subtitle": "We've received your request and will get back to you shortly. We typically respond within a few hours during business hours.",

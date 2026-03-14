@@ -1411,6 +1411,12 @@
       "label": "Urmăriți-ne"
     }
   },
+  "error": {
+    "title": "Ceva nu a funcționat",
+    "description": "A apărut o eroare neașteptată. Încercați din nou sau reveniți la pagina principală.",
+    "retry": "Încercați din nou",
+    "home": "Pagina principală"
+  },
   "thankYou": {
     "title": "Mulțumim pentru mesaj!",
     "subtitle": "Am primit solicitarea dvs. și vă vom contacta în curând. De obicei răspundem în câteva ore în timpul programului de lucru.",

@@ -124,6 +124,7 @@ export function TermsPageClient() {
     <>
       <Navbar />
 
+      <main>
       {/* ═══════════════════════ HERO ═══════════════════════ */}
       <section className="relative z-10 bg-[#0a0a0a] pt-32 sm:pt-40 lg:pt-48 pb-12 sm:pb-16 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none z-0 opacity-[0.35] mix-blend-overlay">
@@ -490,6 +491,8 @@ export function TermsPageClient() {
           </>
         )}
       </AnimatePresence>
+
+      </main>
 
       <Footer />
     </>
