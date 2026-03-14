@@ -34,11 +34,11 @@ export default async function ContactsPage({
     "@context": "https://schema.org",
     "@type": "ContactPage",
     name: `${t("contacts")} — Media Show Grup`,
-    url: "https://mediashowgrup.com/contacts",
+    url: "https://www.mediashowgrup.com/contacts",
     mainEntity: {
       "@type": "Organization",
       name: "Media Show Grup",
-      url: "https://mediashowgrup.com",
+      url: "https://www.mediashowgrup.com",
       telephone: "+37322838539",
       email: "info@mediashowgrup.com",
       contactPoint: [

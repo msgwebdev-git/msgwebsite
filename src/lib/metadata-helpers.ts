@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const SITE_URL = "https://mediashowgrup.com";
+const SITE_URL = "https://www.mediashowgrup.com";
 const SITE_NAME = "Media Show Grup";
 
 const OG_LOCALES: Record<string, string> = {

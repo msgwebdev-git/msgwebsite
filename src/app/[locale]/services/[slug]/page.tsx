@@ -84,7 +84,7 @@ export async function generateMetadata({
     path: `/services/${slug}`,
     title: t("meta.title"),
     description: t("meta.description"),
-    ogImage: `https://mediashowgrup.com${config.heroImage}`,
+    ogImage: `https://www.mediashowgrup.com${config.heroImage}`,
   });
 }
 

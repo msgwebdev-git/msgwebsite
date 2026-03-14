@@ -3,7 +3,7 @@ import { getLocalizedUrl } from "@/lib/metadata-helpers";
 import { JsonLdScript } from "./JsonLdScript";
 import { BreadcrumbJsonLd } from "./BreadcrumbJsonLd";
 
-const HOST = "https://mediashowgrup.com";
+const HOST = "https://www.mediashowgrup.com";
 
 const caseImages: Record<string, string> = {
   "festivalul-lupilor": "/cases/fl.jpg",

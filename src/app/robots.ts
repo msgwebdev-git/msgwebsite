@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/", "/player"],
       },
     ],
-    sitemap: "https://mediashowgrup.com/sitemap.xml",
+    sitemap: "https://www.mediashowgrup.com/sitemap.xml",
   };
 }

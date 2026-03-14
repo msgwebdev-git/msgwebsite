@@ -6,7 +6,7 @@ import { JsonLdScript } from "@/components/json-ld/JsonLdScript";
 import { getLocalizedUrl } from "@/lib/metadata-helpers";
 import { ExpertisePage as ExpertisePageComponent } from "@/components/expertise/ExpertisePage";
 
-const HOST = "https://mediashowgrup.com";
+const HOST = "https://www.mediashowgrup.com";
 
 const expertiseConfigs: Record<string, { category: string; image: string }> = {
   festivals: { category: "festivals", image: "/expertise/festivals.jpg" },

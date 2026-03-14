@@ -19,7 +19,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mediashowgrup.com"),
+  metadataBase: new URL("https://www.mediashowgrup.com"),
   title: {
     default: "Media Show Grup — Event Agency Moldova",
     template: "%s | Media Show Grup",

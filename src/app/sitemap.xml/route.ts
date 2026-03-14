@@ -1,4 +1,4 @@
-const host = "https://mediashowgrup.com";
+const host = "https://www.mediashowgrup.com";
 const LOCALES = ["ro", "ru", "en"] as const;
 const DEFAULT_LOCALE = "ro";
 

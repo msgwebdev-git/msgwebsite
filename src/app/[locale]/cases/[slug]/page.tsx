@@ -50,7 +50,7 @@ export async function generateMetadata({
   const title = `${seoT("cases.title")} — ${slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}`;
 
   const ogImage = projectImages[slug]
-    ? `https://mediashowgrup.com${projectImages[slug]}`
+    ? `https://www.mediashowgrup.com${projectImages[slug]}`
     : undefined;
 
   return buildPageMetadata({

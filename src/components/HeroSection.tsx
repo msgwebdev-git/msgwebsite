@@ -94,6 +94,7 @@ export function HeroSection({ startAnimations = true }: HeroSectionProps) {
           {/* Square button */}
           <motion.a
             href="#showreel"
+            aria-label={t("watchReel")}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={startAnimations ? { opacity: 1, scale: 1 } : false}
             transition={{ duration: 0.5, delay: 0.7 }}

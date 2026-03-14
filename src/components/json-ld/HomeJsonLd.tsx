@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { JsonLdScript } from "./JsonLdScript";
 
-const HOST = "https://mediashowgrup.com";
+const HOST = "https://www.mediashowgrup.com";
 
 export async function HomeJsonLd({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: "jsonLd" });
